@@ -17,14 +17,14 @@ struct TabBarView: View {
                     TabBarItem(title: "Core", image: "arrow.up.arrow.down.square")
                 }
                 .tag(Index.core)
-
+            
             UIPage()
                 .tabItem {
                     TabBarItem(title: "UI", image: "magnifyingglass.circle.fill")
                 }
                 .tag(Index.ui)
-
-
+            
+            
             CombinePage()
                 .tabItem {
                     TabBarItem(title: "Combine", image: "arrow.3.trianglepath")

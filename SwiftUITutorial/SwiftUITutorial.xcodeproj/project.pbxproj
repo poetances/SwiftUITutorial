@@ -31,6 +31,10 @@
 		DED79E052B195C34007C257C /* UIPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED79E042B195C34007C257C /* UIPage.swift */; };
 		DEE449932B59452100EFBA84 /* SwiftMacroTutorail.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE449922B59452100EFBA84 /* SwiftMacroTutorail.swift */; };
 		DEE81E992B1E1CD300D59ADE /* PickerTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE81E982B1E1CD300D59ADE /* PickerTutorial.swift */; };
+		DEE9F8232B6106C000C6E0CE /* WindowTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE9F8222B6106C000C6E0CE /* WindowTutorial.swift */; };
+		DEE9F8252B61108900C6E0CE /* DocumentGroupToturial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE9F8242B61108900C6E0CE /* DocumentGroupToturial.swift */; };
+		DEE9F8272B61142400C6E0CE /* NavigationTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE9F8262B61142400C6E0CE /* NavigationTutorial.swift */; };
+		DEE9F8292B62829500C6E0CE /* TabViewTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE9F8282B62829500C6E0CE /* TabViewTutorial.swift */; };
 		FB3A564AA288C38A9B78FFE4 /* Pods_SwiftUITutorial_SwiftUITutorialUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B14A4A2B1CE2FDB50B046E /* Pods_SwiftUITutorial_SwiftUITutorialUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -86,6 +90,10 @@
 		DED79E042B195C34007C257C /* UIPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPage.swift; sourceTree = "<group>"; };
 		DEE449922B59452100EFBA84 /* SwiftMacroTutorail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftMacroTutorail.swift; sourceTree = "<group>"; };
 		DEE81E982B1E1CD300D59ADE /* PickerTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerTutorial.swift; sourceTree = "<group>"; };
+		DEE9F8222B6106C000C6E0CE /* WindowTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowTutorial.swift; sourceTree = "<group>"; };
+		DEE9F8242B61108900C6E0CE /* DocumentGroupToturial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentGroupToturial.swift; sourceTree = "<group>"; };
+		DEE9F8262B61142400C6E0CE /* NavigationTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTutorial.swift; sourceTree = "<group>"; };
+		DEE9F8282B62829500C6E0CE /* TabViewTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewTutorial.swift; sourceTree = "<group>"; };
 		F3CAC3C5AF0952135C7BBFE7 /* Pods-SwiftUITutorial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUITutorial.debug.xcconfig"; path = "Target Support Files/Pods-SwiftUITutorial/Pods-SwiftUITutorial.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -244,6 +252,10 @@
 				DED79E042B195C34007C257C /* UIPage.swift */,
 				DE759E0B2B5D649100300751 /* AppTutorial.swift */,
 				DE759E0D2B5D662100300751 /* SceneTutorail.swift */,
+				DEE9F8222B6106C000C6E0CE /* WindowTutorial.swift */,
+				DEE9F8242B61108900C6E0CE /* DocumentGroupToturial.swift */,
+				DEE9F8262B61142400C6E0CE /* NavigationTutorial.swift */,
+				DEE9F8282B62829500C6E0CE /* TabViewTutorial.swift */,
 				DEE81E982B1E1CD300D59ADE /* PickerTutorial.swift */,
 			);
 			path = UI;
@@ -503,8 +515,10 @@
 			files = (
 				DE759E0C2B5D649100300751 /* AppTutorial.swift in Sources */,
 				DE174F222B47809500039E92 /* CombinePage.swift in Sources */,
+				DEE9F8292B62829500C6E0CE /* TabViewTutorial.swift in Sources */,
 				DE539B952B2925C100F91DE2 /* ResultBuildTutorial.swift in Sources */,
 				DED79E052B195C34007C257C /* UIPage.swift in Sources */,
+				DEE9F8272B61142400C6E0CE /* NavigationTutorial.swift in Sources */,
 				DE547D6A2B4EEC9500459CD2 /* RenderLoopTutorail.swift in Sources */,
 				DE759E0A2B5D5D6500300751 /* ObservationTutorial.swift in Sources */,
 				DED734892B5E533700315E79 /* WebView.swift in Sources */,
@@ -514,6 +528,8 @@
 				DED79E032B195B69007C257C /* CorePage.swift in Sources */,
 				DE759E0E2B5D662100300751 /* SceneTutorail.swift in Sources */,
 				DE3D05892B608ECD00930B69 /* AttributedStringTutorial.swift in Sources */,
+				DEE9F8232B6106C000C6E0CE /* WindowTutorial.swift in Sources */,
+				DEE9F8252B61108900C6E0CE /* DocumentGroupToturial.swift in Sources */,
 				DEE449932B59452100EFBA84 /* SwiftMacroTutorail.swift in Sources */,
 				DED79DFE2B195A66007C257C /* TabBarView.swift in Sources */,
 				DED79D802B19552D007C257C /* SwiftUITutorialApp.swift in Sources */,
