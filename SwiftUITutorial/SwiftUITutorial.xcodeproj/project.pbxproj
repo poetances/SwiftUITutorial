@@ -10,6 +10,7 @@
 		B8A5BE399A253C875D0E5616 /* Pods_SwiftUITutorial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 501C68E55187A4B1A48FB8E7 /* Pods_SwiftUITutorial.framework */; };
 		DDD6DE44B9B803309C9AFEC5 /* Pods_SwiftUITutorialTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C474B16181EA3D9D8D5CB1D8 /* Pods_SwiftUITutorialTests.framework */; };
 		DE174F222B47809500039E92 /* CombinePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE174F212B47809500039E92 /* CombinePage.swift */; };
+		DE2CDB3E2B6333380032BB12 /* ModalPresentationsTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2CDB3D2B6333380032BB12 /* ModalPresentationsTutorial.swift */; };
 		DE3D05892B608ECD00930B69 /* AttributedStringTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3D05882B608ECD00930B69 /* AttributedStringTutorial.swift */; };
 		DE539B902B268CD100F91DE2 /* StateObjectTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE539B8F2B268CD100F91DE2 /* StateObjectTutorial.swift */; };
 		DE539B952B2925C100F91DE2 /* ResultBuildTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE539B942B2925C100F91DE2 /* ResultBuildTutorial.swift */; };
@@ -65,6 +66,7 @@
 		C474B16181EA3D9D8D5CB1D8 /* Pods_SwiftUITutorialTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftUITutorialTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA147CE32B3DCF8694968B1F /* Pods-SwiftUITutorial-SwiftUITutorialUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUITutorial-SwiftUITutorialUITests.release.xcconfig"; path = "Target Support Files/Pods-SwiftUITutorial-SwiftUITutorialUITests/Pods-SwiftUITutorial-SwiftUITutorialUITests.release.xcconfig"; sourceTree = "<group>"; };
 		DE174F212B47809500039E92 /* CombinePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombinePage.swift; sourceTree = "<group>"; };
+		DE2CDB3D2B6333380032BB12 /* ModalPresentationsTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalPresentationsTutorial.swift; sourceTree = "<group>"; };
 		DE3928E72B560165003E290B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		DE3D05882B608ECD00930B69 /* AttributedStringTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributedStringTutorial.swift; sourceTree = "<group>"; };
 		DE539B8F2B268CD100F91DE2 /* StateObjectTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateObjectTutorial.swift; sourceTree = "<group>"; };
@@ -256,6 +258,7 @@
 				DEE9F8242B61108900C6E0CE /* DocumentGroupToturial.swift */,
 				DEE9F8262B61142400C6E0CE /* NavigationTutorial.swift */,
 				DEE9F8282B62829500C6E0CE /* TabViewTutorial.swift */,
+				DE2CDB3D2B6333380032BB12 /* ModalPresentationsTutorial.swift */,
 				DEE81E982B1E1CD300D59ADE /* PickerTutorial.swift */,
 			);
 			path = UI;
@@ -514,6 +517,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE759E0C2B5D649100300751 /* AppTutorial.swift in Sources */,
+				DE2CDB3E2B6333380032BB12 /* ModalPresentationsTutorial.swift in Sources */,
 				DE174F222B47809500039E92 /* CombinePage.swift in Sources */,
 				DEE9F8292B62829500C6E0CE /* TabViewTutorial.swift in Sources */,
 				DE539B952B2925C100F91DE2 /* ResultBuildTutorial.swift in Sources */,
