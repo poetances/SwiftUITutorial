@@ -28,34 +28,29 @@ Publisher协议、里面有很多operator方法，每个方法返回的还是一
  减少 SwiftUI 中对视图的无效更新，提高应用性能。
  */
 
-struct CombinePage: View {
+struct CombineTutorail: View {
 
     // MARK: - private
     @State private var cancelables = Set<AnyCancellable>()
 
     // MARK: - system
     var body: some View {
-        NavigationView {
-            ScrollView {
-                VStack {
-                    Button("Future") {
+        ScrollView {
+            VStack {
+                Button("Future") {
 
-                        future().sink { value in
-                            print(value, Thread.current)
-                        }.store(in: &cancelables)
-                    }.padding()
-
-
-                    NavigationLink("Observation") {
-                        ObservationTutorial()
-                    }
-                }
-            }.navigationTitle("Comebint")
+                    future().sink { value in
+                        print(value, Thread.current)
+                    }.store(in: &cancelables)
+                }.padding()
+            }
         }
+        .navigationTitle("Combine")
+        // .navigationBarBackButtonHidden()
     }
 }
 
-private extension CombinePage {
+private extension CombineTutorail {
 
     func future() -> Future<Int, Never> {
         Future { promise in
@@ -72,7 +67,7 @@ private extension CombinePage {
 }
 
 #Preview {
-    CombinePage()
+    CombineTutorail()
 }
 
 @Observable

@@ -54,6 +54,8 @@ struct CorePage: View {
                     AttributedStringTutorial()
                 }
             }
+            .toolbarBackground(Color.blue, for: .navigationBar, .tabBar)
+            .toolbarRole(.browser)
         }
     }
 }

@@ -16,7 +16,9 @@ struct UIPage: View {
         Content("DocumentGroup", .documentgroup),
         Content("Navigation", .navigation),
         Content("TabView", .tabview),
-        Content("modal", .modalpresentations)
+        Content("Modal", .modalpresentations),
+        Content("ToolBar", .toolbar),
+        Content("Search", .search)
     ]
 
     @State private var isShowDetail = false
@@ -51,6 +53,10 @@ struct UIPage: View {
                     TabViewTutorial()
                 case .modalpresentations:
                     ModalPresentationsTutorial()
+                case .toolbar:
+                    ToolBarToturial()
+                case .search:
+                    SearchTutorial()
                 }
             }
             .navigationDestination(isPresented: $isShowDetail) {
@@ -72,6 +78,8 @@ extension UIPage {
         case navigation
         case tabview
         case modalpresentations
+        case toolbar
+        case search
     }
 
     struct Content: Identifiable {

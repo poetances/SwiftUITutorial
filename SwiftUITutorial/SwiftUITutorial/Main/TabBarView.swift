@@ -12,24 +12,28 @@ struct TabBarView: View {
 
     var body: some View {
         TabView(selection: $index) {
-            CorePage()
-                .tabItem {
-                    TabBarItem(title: "Core", image: "arrow.up.arrow.down.square")
-                }
-                .tag(Index.core)
-            
-            UIPage()
-                .tabItem {
-                    TabBarItem(title: "UI", image: "magnifyingglass.circle.fill")
-                }
-                .tag(Index.ui)
-            
-            
-            CombinePage()
-                .tabItem {
-                    TabBarItem(title: "Combine", image: "arrow.3.trianglepath")
-                }
-                .tag(Index.combine)
+            Group {
+                CorePage()
+                    .tabItem {
+                        TabBarItem(title: "Core", image: "arrow.up.arrow.down.square")
+                    }
+                    .tag(Index.core)
+
+                UIPage()
+                    .tabItem {
+                        TabBarItem(title: "UI", image: "magnifyingglass.circle.fill")
+                    }
+                    .tag(Index.ui)
+
+
+                FoundationPage()
+                    .tabItem {
+                        TabBarItem(title: "Combine", image: "arrow.3.trianglepath")
+                    }
+                    .tag(Index.combine)
+            }
+            .toolbarBackground(Color.blue, for: .tabBar)
+            .toolbar(.visible, for: .tabBar)
         }
     }
 }
