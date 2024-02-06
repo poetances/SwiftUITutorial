@@ -9,6 +9,7 @@ import SwiftUI
 
 struct CorePage: View {
     @EnvironmentObject private var appDelegate: SwiftUIAppDelegate
+    @State private var book = EnvironmentBook()
 
     @State private var paths = [Destination]()
 
@@ -18,12 +19,15 @@ struct CorePage: View {
         Content("ResultBuilder", .resultBuilder),
         Content("RenderLoop", .renderLoop),
         Content("SwiftMacro", .macro),
-        Content("AttibutedString", .attibutedString)
+        Content("AttibutedString", .attibutedString),
+        Content("ModelData", .modelData),
+        Content("Environment", .environment),
+        Content("Preference", .preference)
     ]
 
     // MARK: - system
     var body: some View {
-        NavigationStack(path: $paths) {
+        NavigationStack {
 
             List {
                 ForEach(contents) { content in
@@ -52,11 +56,21 @@ struct CorePage: View {
                     SwiftMacroTutorail()
                 case .attibutedString:
                     AttributedStringTutorial()
+                case .modelData:
+                    ModelDataTutorial()
+                case .environment:
+                    EnvironmentTutorial()
+                case .preference:
+                    PreferenceToturial()
                 }
+            }
+            .navigationDestination(for: String.self) { _ in
+                AttributedStringTutorial()
             }
             .toolbarBackground(Color.blue, for: .navigationBar, .tabBar)
             .toolbarRole(.browser)
         }
+        .environment(book)
     }
 }
 
@@ -68,6 +82,9 @@ extension CorePage {
         case renderLoop
         case macro
         case attibutedString
+        case modelData
+        case environment
+        case preference
     }
 
     struct Content: Identifiable {

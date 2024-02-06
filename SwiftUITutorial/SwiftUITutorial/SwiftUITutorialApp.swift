@@ -23,8 +23,10 @@ struct SwiftUITutorialApp: App {
         .defaultSize(width: 400, height: 400) // 只在mac、ipad上起作用
         // .defaultAppStorage(UserDefaults(user: "Custom"))。 
 
-        WindowGroup("Title", id: "two") {
-            Text("Window Two")
+        // Cannot open windows when app does not support multiple scenes
+        // iphone os是不支持多场景的
+        WindowGroup(id: "mail-viewer") {
+            Text("MailViewwer")
         }
     }
 }

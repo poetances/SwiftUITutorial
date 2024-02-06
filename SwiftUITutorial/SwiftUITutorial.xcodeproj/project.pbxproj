@@ -19,7 +19,9 @@
 		DE759E0A2B5D5D6500300751 /* ObservationTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE759E092B5D5D6500300751 /* ObservationTutorial.swift */; };
 		DE759E0C2B5D649100300751 /* AppTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE759E0B2B5D649100300751 /* AppTutorial.swift */; };
 		DE759E0E2B5D662100300751 /* SceneTutorail.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE759E0D2B5D662100300751 /* SceneTutorail.swift */; };
+		DE8251662B6E23A20094A0C9 /* ModelDataTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8251652B6E23A20094A0C9 /* ModelDataTutorial.swift */; };
 		DEA9CAEF2B65FD8B00A0114C /* ToolBarToturial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA9CAEE2B65FD8B00A0114C /* ToolBarToturial.swift */; };
+		DED357E72B705E9C00FA7867 /* EnvironmentTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED357E62B705E9B00FA7867 /* EnvironmentTutorial.swift */; };
 		DED734892B5E533700315E79 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED734882B5E533700315E79 /* WebView.swift */; };
 		DED79D802B19552D007C257C /* SwiftUITutorialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED79D7F2B19552D007C257C /* SwiftUITutorialApp.swift */; };
 		DED79D842B19552F007C257C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DED79D832B19552F007C257C /* Assets.xcassets */; };
@@ -40,6 +42,7 @@
 		DEF0C11B2B68F984004E2BA0 /* SearchTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF0C11A2B68F984004E2BA0 /* SearchTutorial.swift */; };
 		DEF0C11D2B69F4A1004E2BA0 /* ConcurrencyTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF0C11C2B69F4A1004E2BA0 /* ConcurrencyTutorial.swift */; };
 		DEF0C11F2B69F578004E2BA0 /* FoundationPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF0C11E2B69F578004E2BA0 /* FoundationPage.swift */; };
+		DEF59F392B70D7DE001CEC0D /* PreferenceToturial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF59F382B70D7DE001CEC0D /* PreferenceToturial.swift */; };
 		FB3A564AA288C38A9B78FFE4 /* Pods_SwiftUITutorial_SwiftUITutorialUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B14A4A2B1CE2FDB50B046E /* Pods_SwiftUITutorial_SwiftUITutorialUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -80,7 +83,9 @@
 		DE759E092B5D5D6500300751 /* ObservationTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservationTutorial.swift; sourceTree = "<group>"; };
 		DE759E0B2B5D649100300751 /* AppTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTutorial.swift; sourceTree = "<group>"; };
 		DE759E0D2B5D662100300751 /* SceneTutorail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneTutorail.swift; sourceTree = "<group>"; };
+		DE8251652B6E23A20094A0C9 /* ModelDataTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelDataTutorial.swift; sourceTree = "<group>"; };
 		DEA9CAEE2B65FD8B00A0114C /* ToolBarToturial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolBarToturial.swift; sourceTree = "<group>"; };
+		DED357E62B705E9B00FA7867 /* EnvironmentTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentTutorial.swift; sourceTree = "<group>"; };
 		DED734882B5E533700315E79 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		DED79D7C2B19552D007C257C /* SwiftUITutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUITutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DED79D7F2B19552D007C257C /* SwiftUITutorialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUITutorialApp.swift; sourceTree = "<group>"; };
@@ -104,6 +109,7 @@
 		DEF0C11A2B68F984004E2BA0 /* SearchTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTutorial.swift; sourceTree = "<group>"; };
 		DEF0C11C2B69F4A1004E2BA0 /* ConcurrencyTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcurrencyTutorial.swift; sourceTree = "<group>"; };
 		DEF0C11E2B69F578004E2BA0 /* FoundationPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundationPage.swift; sourceTree = "<group>"; };
+		DEF59F382B70D7DE001CEC0D /* PreferenceToturial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceToturial.swift; sourceTree = "<group>"; };
 		F3CAC3C5AF0952135C7BBFE7 /* Pods-SwiftUITutorial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUITutorial.debug.xcconfig"; path = "Target Support Files/Pods-SwiftUITutorial/Pods-SwiftUITutorial.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -254,6 +260,9 @@
 				DE547D692B4EEC9500459CD2 /* RenderLoopTutorail.swift */,
 				DEE449922B59452100EFBA84 /* SwiftMacroTutorail.swift */,
 				DE3D05882B608ECD00930B69 /* AttributedStringTutorial.swift */,
+				DE8251652B6E23A20094A0C9 /* ModelDataTutorial.swift */,
+				DED357E62B705E9B00FA7867 /* EnvironmentTutorial.swift */,
+				DEF59F382B70D7DE001CEC0D /* PreferenceToturial.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -534,7 +543,9 @@
 				DEE9F8292B62829500C6E0CE /* TabViewTutorial.swift in Sources */,
 				DE539B952B2925C100F91DE2 /* ResultBuildTutorial.swift in Sources */,
 				DED79E052B195C34007C257C /* UIPage.swift in Sources */,
+				DED357E72B705E9C00FA7867 /* EnvironmentTutorial.swift in Sources */,
 				DEE9F8272B61142400C6E0CE /* NavigationTutorial.swift in Sources */,
+				DE8251662B6E23A20094A0C9 /* ModelDataTutorial.swift in Sources */,
 				DE547D6A2B4EEC9500459CD2 /* RenderLoopTutorail.swift in Sources */,
 				DE759E0A2B5D5D6500300751 /* ObservationTutorial.swift in Sources */,
 				DED734892B5E533700315E79 /* WebView.swift in Sources */,
@@ -544,6 +555,7 @@
 				DE539B902B268CD100F91DE2 /* StateObjectTutorial.swift in Sources */,
 				DED79E032B195B69007C257C /* CorePage.swift in Sources */,
 				DE759E0E2B5D662100300751 /* SceneTutorail.swift in Sources */,
+				DEF59F392B70D7DE001CEC0D /* PreferenceToturial.swift in Sources */,
 				DE3D05892B608ECD00930B69 /* AttributedStringTutorial.swift in Sources */,
 				DEE9F8232B6106C000C6E0CE /* WindowTutorial.swift in Sources */,
 				DEE9F8252B61108900C6E0CE /* DocumentGroupToturial.swift in Sources */,
