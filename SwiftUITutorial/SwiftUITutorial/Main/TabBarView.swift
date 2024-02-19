@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct TabBarView: View {
-    @State private var index: Index = .core
+    @AppStorage("selectionTabViewIndex") private var index: Index = .core
 
     var body: some View {
         TabView(selection: $index) {
@@ -32,8 +32,8 @@ struct TabBarView: View {
                     }
                     .tag(Index.combine)
             }
-            .toolbarBackground(Color.blue, for: .tabBar)
-            .toolbar(.visible, for: .tabBar)
+            // .toolbarBackground(Color.blue, for: .tabBar)
+            // .toolbar(.visible, for: .tabBar)
         }
     }
 }

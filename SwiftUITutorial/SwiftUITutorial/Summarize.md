@@ -1,84 +1,6 @@
 
 import SwiftUI
 
-SwiftUI，声明式界面开发。
-
-1、swiftui 中，我们声明的配置项，这点和flutter其实是很像的。而且使用结构体的话，也会降低性能的开销。真的的渲染我们是留给框架黑盒处理。
-
-2、@State属性包装。我们看苹果的声明，其实就是结构体。
-
-@State var showFavoritesOnly = true
-Toggle(isOn: $showFavoritesOnly) {
-    Text("Favious Only")
-}
-
-// State的本质
-@frozen @propertyWrapper public struct State<Value> : DynamicProperty {
-    public init(initialValue value: Value)
-
-    public var value: Value { get nonmutating set }
-
-    public var binding: Binding<Value> { get }
-
-    public var delegateValue: Binding<Value> { get }
-}
-
-// 上面的代码，其实可以转换为如下
-var showFavoritesOnly = State(initialValue: true)
-
-Toggle(isOn: showFavoritesOnly.binding) {
-
-}
-
-if showFavoritesOnly.value {
-
-}
-
-// 总结：
->所以@State其实就是State struct的一种简写而已。State里对如何读写属性进行了定义，读取的话直接使用State.value就可以。
->而$showFavoritesOnly只是对showFavoritesOnly.binding进行简写而已。binding将创建showFavoritesOnly的一个引用，并将值传给Toggle
->而State的value didSet将触发body的刷新。
->@State只能修饰值类型。如果修饰引用类型，可能没有效果。
->@State需要用private 修饰，同时，只能用于view和子View。
-当我们@State创建一个属性时，我们会将其控制权交给SwiftUI，这样只要试图存在，它就会存在内容中保持持久性。
-
-3、@Binding主要作用
->在不持有数据源的情况下，任意读取
->从State获取数据，并保持同步
->对包装值采用传址而不是传值
-
->常见使用就是配合@State使用。
-
-4、ObservableObject。 是一个协议，类似RxSwift发布者和订阅者模式。
-(public protocol ObservableObject : AnyObject {} )
->ObservableObject是一个协议，必须要类实现改协议。适用于多个ui之间的数据同步。
->在实际开发中，很多数据其实并不是在View内部产生，这些数据可能是一些本地数据，或者一些网络数据，
-    这些数据默认和Swiftui没有关系，而且也不能使用@State进行修饰。所以想要与SwiftUI建立联系，就需要
-    用到ObservableObject，同时需要配和@ObservedObject和@Publish两个修饰符。
->@Published修饰的属性一旦发生了变化，会自动触发ObservableObject的objectwillChange的send方法，刷新
-    页面，这一步是系统帮我们实现的。
->@ObservedObject：被观察者对象，告诉SwiftUI，这个对象是可以被观察的，里面包含了被@Published包含的属性。
->@ObservedObect包装的对象，必须遵循ObserveableObject协议。也就是必须是class，而不能是struct。
->@ObservedObject允许外部进行访问和修改。
-
-// 这点很重要
-因为ObservedObject不拥有ObservableObject的生命周期，所以引入StateObject。
-当我们将一个属性用StateObject声明时，它提供一个初始值，SwiftUI将会在第一次执行body内容前初始化这个值。
-SwiftUI将会在view的生命周期中保持这个对象一直存在。
-
-
-5、EnvironmentObject。包装的属性是全局的，整个app都能使用。
->主要是为了解决跨组件数据传递问题。
->组件层级嵌套太深，就会出现数据逐级传递的问题，@EnvironmentObject可以帮助组件快速访问全局数据，避免不必要
-    的组件数据传递问题。
->使用基本上和@ObservedObject一样，但@EnvironmentObject突出强调此数据将由某个外部实体提供，所以不需要初始化，
-    一般由外部提供。
->使用@EnvironmentObject，SwiftUI将立即在环境中搜索正确类型对象。如果找不到这样的对象，程序会立即崩溃，所以要
-    谨慎使用。
-    
-6、StateObject。包装属性和ObservedObject的区别。
-
-
 ##所以一般Property、@State、@Binding一般修饰的都是View内部的数据。
 ##@ObservedObject、@EnvironmentObject都是修饰View外部的数据：
 ##    比如本地数据、网络数据等。
@@ -209,8 +131,6 @@ Embedded Framework 开发中使用的动态库会被放入ipa下的framework目�
     Mirror for Group<_ConditionalContent<Color, Text>>
     虽然Text永远不会变得可见，但它仍然存在于_ConditionalContent<Color, Text>.
     
-4、swiftui中的color。 extension Color : ShapeStyle {}
-    extension Color : View {}
 
 5、async/await、actor。 
     actor的引入其实就是为了解决数据争夺的。
@@ -356,3 +276,8 @@ AnyObject是一个协议。而AnyClass是元类型，即AnyObject.Type
 线程资源消耗：线程并不是无成本的。每个线程都有其自己的堆栈，而且需要时间进行上下文切换。如果线程数量过多，它们将占用大量内存，并且频繁的上下文切换将消耗大量 CPU 时间。这可能会导致应用程序响应变慢，甚至出现内存不足的情况。
 
 因此我們可以確定，Swift Concurrency 就是利用一個專用的 concurrent queue 來限制 thread 的數量，讓它不過多於 CPU core，來防止 thread explosion：
+
+2024.2.18
+1、不透明类型some
+    具有不透明返回类型的函数或方法会隐藏返回值的类型信息。函数不再提供具体的类型作为返回类型，而是根据它支持的协议来描述返回值。在处理模块和调用代码之间的关系时，隐藏类型信息非常有用，因为返回的底层数据类型仍然可以保持私有。而且不同于返回协议类型，不透明类型能保证类型一致性：编译器能获取到类型信息，同时模块使用者却不能获取到。
+    

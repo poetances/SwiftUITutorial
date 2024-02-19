@@ -19,7 +19,7 @@ import Combine
  */
 struct SwiftMacroTutorail: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text("Hello, World!")
     }
 }
 
@@ -27,6 +27,15 @@ struct SwiftMacroTutorail: View {
 #Preview {
     SwiftMacroTutorail()
 }
+
+/// 可以增加名字
+#Preview("Other", body: {
+    SwiftMacroTutorail()
+})
+
+#Preview("Second", traits: .landscapeLeft, body: {
+    SwiftMacroTutorail()
+})
 
 
 /// 附加宏

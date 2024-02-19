@@ -22,7 +22,9 @@ struct CorePage: View {
         Content("AttibutedString", .attibutedString),
         Content("ModelData", .modelData),
         Content("Environment", .environment),
-        Content("Preference", .preference)
+        Content("Preference", .preference),
+        Content("Storage", .storage),
+        Content("CoreData", .coreData)
     ]
 
     // MARK: - system
@@ -62,6 +64,10 @@ struct CorePage: View {
                     EnvironmentTutorial()
                 case .preference:
                     PreferenceToturial()
+                case .storage:
+                    StorageTutorial()
+                case .coreData:
+                    CoreDataTutorial()
                 }
             }
             .navigationDestination(for: String.self) { _ in
@@ -85,6 +91,8 @@ extension CorePage {
         case modelData
         case environment
         case preference
+        case storage
+        case coreData
     }
 
     struct Content: Identifiable {

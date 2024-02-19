@@ -157,6 +157,12 @@ extension ToolBarToturial {
 
     var custom: some View {
         Text("Custom")
+            .navigationTitle("ToolBar")
+            .toolbarTitleMenu(content: {
+                Button("Tsk") {
+
+                }
+            })
             .toolbar(id: "main") {
                 ToolbarItem(id: "left", placement: .topBarTrailing) {
                     Toggle(isOn: $bold) {

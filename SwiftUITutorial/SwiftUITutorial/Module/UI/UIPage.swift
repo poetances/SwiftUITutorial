@@ -18,7 +18,12 @@ struct UIPage: View {
         Content("TabView", .tabview),
         Content("Modal", .modalpresentations),
         Content("ToolBar", .toolbar),
-        Content("Search", .search)
+        Content("Search", .search),
+        Content("AppearanceModifiers", .appearanceModifiers),
+        Content("DrawingAndGraphics", .drawingAndGraphics),
+        Content("ViewModifierTutorial", .viewModifierTutorial),
+        Content("ViewStyles", .viewStyles),
+        Content("ControlsAndIndicators", .controlsAndIndicators)
     ]
 
     @State private var isShowDetail = false
@@ -36,6 +41,7 @@ struct UIPage: View {
                     }
                 }
             }
+            .scrollContentBackground(.visible)
             .environment(\.defaultMinListRowHeight, 46)
             .navigationDestination(for: Destination.self) { des in
                 switch des {
@@ -57,6 +63,16 @@ struct UIPage: View {
                     ToolBarToturial()
                 case .search:
                     SearchTutorial()
+                case .appearanceModifiers:
+                    AppearanceModifiersTutorial()
+                case .drawingAndGraphics:
+                    DrawingAndGraphicsTutorial()
+                case .viewModifierTutorial:
+                    ViewModifierTutorial()
+                case .viewStyles:
+                    ViewStylesPage()
+                case .controlsAndIndicators:
+                    ControlsAndIndicatorsPage()
                 }
             }
             .navigationDestination(isPresented: $isShowDetail) {
@@ -80,6 +96,11 @@ extension UIPage {
         case modalpresentations
         case toolbar
         case search
+        case appearanceModifiers
+        case drawingAndGraphics
+        case viewModifierTutorial
+        case viewStyles
+        case controlsAndIndicators
     }
 
     struct Content: Identifiable {

@@ -136,18 +136,18 @@ struct EnvironmentChildView: View {
         Button("Change") {
             book.name += "book "
         }
-        .environment(\.customBook, Book())
+        .environment(\.customBook, ModelDataBook())
     }
 }
 
 
 // Custom EnvironmentValues
 struct BookKey: EnvironmentKey {
-    static var defaultValue = Book()
+    static var defaultValue = ModelDataBook()
 }
 
 extension EnvironmentValues {
-    var customBook: Book {
+    var customBook: ModelDataBook {
         get { self[BookKey.self] }
         set { self[BookKey.self] = newValue }
     }

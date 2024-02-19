@@ -16,22 +16,60 @@ import SwiftUI
 struct PreferenceToturial: View {
 
     private let messages: [String] = ["one","two","three"]
+
+    @State private var inputText = ""
+
     // MARK: - system
     var body: some View {
-        Group {
-            List(messages, id: \.self) { message in
-                Text(message).preference(key: NavigationTitlePreferenceKey.self, value: message)
+        VStack(alignment: .center, spacing: 15) {
+            ZStack {
+                Text(inputText)
+                    .anchorPreference(key: BoundsPreferenceKey.self, value: .bounds, transform: { $0 })
             }
+            .overlayPreferenceValue(BoundsPreferenceKey.self, { value in
+                GeometryReader(content: { geometry in
+                    value.map {
+                        Rectangle()
+                            .stroke()
+                            .frame(
+                                width: geometry[$0].width,
+                                height: geometry[$0].height
+                            )
+                            .offset(
+                                x: geometry[$0].minX,
+                                y: geometry[$0].minY
+                            )
+                    }
+                })
+            })
+
+
+            TextField("input pwd", text: $inputText)
+                .textFieldStyle(.roundedBorder)
+                .padding(.horizontal, 20)
+            List(messages, id: \.self) { message in
+                Text(message)
+            }
+            .preference(key: NavigationTitlePreferenceKey.self, value: "message")
+            .transformPreference(NavigationTitlePreferenceKey.self, { value in
+                value += " transform"
+            })
 
         }
         .onPreferenceChange(NavigationTitlePreferenceKey.self, perform: { value in
-            print("onPreferenceChange", value)
+            print("NavigationTitlePreferenceKey", value)
         })
     }
 }
 
 
-
+/*
+ preference(key:value:)
+ func transformPreference<K>(
+     _ key: K.Type = K.self,
+     _ callback: @escaping (inout K.Value) -> Void
+ ) -> some View where K : PreferenceKey
+ */
 struct NavigationTitlePreferenceKey: PreferenceKey {
 
     static var defaultValue = ""
@@ -45,6 +83,32 @@ struct NavigationTitlePreferenceKey: PreferenceKey {
         value = nextValue()
     }
 }
+
+/*
+ func anchorPreference<A, K>(
+     key _: K.Type = K.self,
+     value: Anchor<A>.Source,
+     transform: @escaping (Anchor<A>) -> K.Value
+ ) -> some View where K : PreferenceKey
+
+ func transformAnchorPreference<A, K>(
+     key _: K.Type = K.self,
+     value: Anchor<A>.Source,
+     transform: @escaping (inout K.Value, Anchor<A>) -> Void
+ ) -> some View where K : PreferenceKey
+
+
+ Anchor的使用：Anchor<CGRect>类型是用于在父视图或其他视图的坐标空间中引用一个视图的位置或尺寸。要有效使用它，通常需要在另一个视图中通过.overlay、.background等修饰符和GeometryReader来解析这个Anchor<CGRect>。
+ 所以要注意里面的细节使用
+ */
+struct BoundsPreferenceKey: PreferenceKey {
+
+    static var defaultValue: Anchor<CGRect>? = nil
+    static func reduce(value: inout Anchor<CGRect>?, nextValue: () -> Anchor<CGRect>?) {
+        value = nextValue()
+    }
+}
+
 
 #Preview {
     PreferenceToturial()

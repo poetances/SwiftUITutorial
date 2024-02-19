@@ -22,10 +22,10 @@ struct ModelDataTutorial: View {
      */
     @State private var count = 0
 
-    @State private var books = [Book(), Book(), Book()]
+    @State private var books = [ModelDataBook(), ModelDataBook(), ModelDataBook()]
 
     // 这里甚至可以用@State也会有效果。但是还是建议用@state，因为这样在保证数据真实来源有帮助
-    @State private var book = Book()
+    @State private var book = ModelDataBook()
 
     // @State、@StateObject都建议使用private，防止外部引用模型进行更改
     @StateObject private var bookObservable = BookObservableObject()
@@ -151,7 +151,7 @@ extension ModelDataTutorial {
 }
 
 extension EnvironmentValues {
-    var book: Book {
+    var book: ModelDataBook {
         get { self[BookKey.self] }
         set { self[BookKey.self] = newValue }
     }
@@ -191,7 +191,7 @@ extension ModelDataTutorial {
 
 // MARK: - Bindable
 @Observable
-class Book: Identifiable {
+class ModelDataBook: Identifiable {
     var id = UUID().uuidString
     var title = "Sample Book Title"
     var isAvailable = true
@@ -239,7 +239,7 @@ struct ModelDataChildView: View {
 struct ModelDataBookView: View {
 
     // Book如果是可监听的，共享时候是可以不用加@Bindable的、甚至可以不用@state
-    var book: Book
+    var book: ModelDataBook
     // @Bindable var book: Book
 
     // MARK: - system
