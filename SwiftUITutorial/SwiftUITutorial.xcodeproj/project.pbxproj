@@ -30,6 +30,20 @@
 		DEBFD2B52B82D7D000F7FDA8 /* PasteButtonTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFD2B42B82D7D000F7FDA8 /* PasteButtonTutorial.swift */; };
 		DEBFD2B72B82EF7F00F7FDA8 /* RenameButtonTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFD2B62B82EF7E00F7FDA8 /* RenameButtonTutorial.swift */; };
 		DEBFD2B92B82F28400F7FDA8 /* LinkTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFD2B82B82F28400F7FDA8 /* LinkTutorial.swift */; };
+		DEBFD2BB2B82F6EC00F7FDA8 /* SlideTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFD2BA2B82F6EC00F7FDA8 /* SlideTutorial.swift */; };
+		DEBFD2BD2B82FC2500F7FDA8 /* StepperTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFD2BC2B82FC2500F7FDA8 /* StepperTutorial.swift */; };
+		DEBFD2BF2B83673A00F7FDA8 /* ToggleTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFD2BE2B83673A00F7FDA8 /* ToggleTutorial.swift */; };
+		DEBFD2C12B84271D00F7FDA8 /* DatePickerTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFD2C02B84271D00F7FDA8 /* DatePickerTutorial.swift */; };
+		DEBFD2C32B843D3D00F7FDA8 /* ColorPickerTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFD2C22B843D3D00F7FDA8 /* ColorPickerTutorial.swift */; };
+		DEBFD2C52B84465D00F7FDA8 /* GaugeTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFD2C42B84465D00F7FDA8 /* GaugeTutorial.swift */; };
+		DEBFD2C72B844BE500F7FDA8 /* ProgressViewTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFD2C62B844BE500F7FDA8 /* ProgressViewTutorial.swift */; };
+		DEBFD2C92B8470FF00F7FDA8 /* ContentUnavailableViewTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFD2C82B8470FE00F7FDA8 /* ContentUnavailableViewTutorial.swift */; };
+		DEBFD2CB2B84749100F7FDA8 /* SensoryFeedbackTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFD2CA2B84749100F7FDA8 /* SensoryFeedbackTutorial.swift */; };
+		DEBFD2CD2B847C7D00F7FDA8 /* ControlSizeTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFD2CC2B847C7D00F7FDA8 /* ControlSizeTutorial.swift */; };
+		DEBFD2CF2B847E4700F7FDA8 /* PickerStyleTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFD2CE2B847E4700F7FDA8 /* PickerStyleTutorial.swift */; };
+		DEBFD2D12B84813A00F7FDA8 /* MenuStyleTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFD2D02B84813A00F7FDA8 /* MenuStyleTutorial.swift */; };
+		DEBFD2D42B84835700F7FDA8 /* MenuAndCommandsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFD2D32B84835700F7FDA8 /* MenuAndCommandsPage.swift */; };
+		DEBFD2D62B8483E000F7FDA8 /* MenuTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFD2D52B8483E000F7FDA8 /* MenuTutorial.swift */; };
 		DED357E72B705E9C00FA7867 /* EnvironmentTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED357E62B705E9B00FA7867 /* EnvironmentTutorial.swift */; };
 		DED734892B5E533700315E79 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED734882B5E533700315E79 /* WebView.swift */; };
 		DED79D802B19552D007C257C /* SwiftUITutorialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED79D7F2B19552D007C257C /* SwiftUITutorialApp.swift */; };
@@ -109,6 +123,20 @@
 		DEBFD2B42B82D7D000F7FDA8 /* PasteButtonTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasteButtonTutorial.swift; sourceTree = "<group>"; };
 		DEBFD2B62B82EF7E00F7FDA8 /* RenameButtonTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenameButtonTutorial.swift; sourceTree = "<group>"; };
 		DEBFD2B82B82F28400F7FDA8 /* LinkTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkTutorial.swift; sourceTree = "<group>"; };
+		DEBFD2BA2B82F6EC00F7FDA8 /* SlideTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideTutorial.swift; sourceTree = "<group>"; };
+		DEBFD2BC2B82FC2500F7FDA8 /* StepperTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepperTutorial.swift; sourceTree = "<group>"; };
+		DEBFD2BE2B83673A00F7FDA8 /* ToggleTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleTutorial.swift; sourceTree = "<group>"; };
+		DEBFD2C02B84271D00F7FDA8 /* DatePickerTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerTutorial.swift; sourceTree = "<group>"; };
+		DEBFD2C22B843D3D00F7FDA8 /* ColorPickerTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerTutorial.swift; sourceTree = "<group>"; };
+		DEBFD2C42B84465D00F7FDA8 /* GaugeTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaugeTutorial.swift; sourceTree = "<group>"; };
+		DEBFD2C62B844BE500F7FDA8 /* ProgressViewTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewTutorial.swift; sourceTree = "<group>"; };
+		DEBFD2C82B8470FE00F7FDA8 /* ContentUnavailableViewTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentUnavailableViewTutorial.swift; sourceTree = "<group>"; };
+		DEBFD2CA2B84749100F7FDA8 /* SensoryFeedbackTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensoryFeedbackTutorial.swift; sourceTree = "<group>"; };
+		DEBFD2CC2B847C7D00F7FDA8 /* ControlSizeTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlSizeTutorial.swift; sourceTree = "<group>"; };
+		DEBFD2CE2B847E4700F7FDA8 /* PickerStyleTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerStyleTutorial.swift; sourceTree = "<group>"; };
+		DEBFD2D02B84813A00F7FDA8 /* MenuStyleTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuStyleTutorial.swift; sourceTree = "<group>"; };
+		DEBFD2D32B84835700F7FDA8 /* MenuAndCommandsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuAndCommandsPage.swift; sourceTree = "<group>"; };
+		DEBFD2D52B8483E000F7FDA8 /* MenuTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTutorial.swift; sourceTree = "<group>"; };
 		DED357E62B705E9B00FA7867 /* EnvironmentTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentTutorial.swift; sourceTree = "<group>"; };
 		DED734882B5E533700315E79 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		DED79D7C2B19552D007C257C /* SwiftUITutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUITutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -196,6 +224,8 @@
 			children = (
 				DEBFD2A82B8205B100F7FDA8 /* ViewStylesPage.swift */,
 				DEBFD2AA2B8206BE00F7FDA8 /* ButtonStyleTutorial.swift */,
+				DEBFD2CE2B847E4700F7FDA8 /* PickerStyleTutorial.swift */,
+				DEBFD2D02B84813A00F7FDA8 /* MenuStyleTutorial.swift */,
 			);
 			name = ViewStyles;
 			sourceTree = "<group>";
@@ -209,8 +239,28 @@
 				DEBFD2B42B82D7D000F7FDA8 /* PasteButtonTutorial.swift */,
 				DEBFD2B62B82EF7E00F7FDA8 /* RenameButtonTutorial.swift */,
 				DEBFD2B82B82F28400F7FDA8 /* LinkTutorial.swift */,
+				DEBFD2BA2B82F6EC00F7FDA8 /* SlideTutorial.swift */,
+				DEBFD2BC2B82FC2500F7FDA8 /* StepperTutorial.swift */,
+				DEBFD2BE2B83673A00F7FDA8 /* ToggleTutorial.swift */,
+				DEE81E982B1E1CD300D59ADE /* PickerTutorial.swift */,
+				DEBFD2C02B84271D00F7FDA8 /* DatePickerTutorial.swift */,
+				DEBFD2C22B843D3D00F7FDA8 /* ColorPickerTutorial.swift */,
+				DEBFD2C42B84465D00F7FDA8 /* GaugeTutorial.swift */,
+				DEBFD2C62B844BE500F7FDA8 /* ProgressViewTutorial.swift */,
+				DEBFD2C82B8470FE00F7FDA8 /* ContentUnavailableViewTutorial.swift */,
+				DEBFD2CA2B84749100F7FDA8 /* SensoryFeedbackTutorial.swift */,
+				DEBFD2CC2B847C7D00F7FDA8 /* ControlSizeTutorial.swift */,
 			);
 			name = ControlsAndIndicators;
+			sourceTree = "<group>";
+		};
+		DEBFD2D22B8482DF00F7FDA8 /* MenuAndCommands */ = {
+			isa = PBXGroup;
+			children = (
+				DEBFD2D32B84835700F7FDA8 /* MenuAndCommandsPage.swift */,
+				DEBFD2D52B8483E000F7FDA8 /* MenuTutorial.swift */,
+			);
+			name = MenuAndCommands;
 			sourceTree = "<group>";
 		};
 		DED734872B5E531500315E79 /* Components */ = {
@@ -340,7 +390,7 @@
 				DEBFD2A32B81A36700F7FDA8 /* ViewModifierTutorial.swift */,
 				DEBFD2A72B82059B00F7FDA8 /* ViewStyles */,
 				DEBFD2AD2B82D11500F7FDA8 /* ControlsAndIndicators */,
-				DEE81E982B1E1CD300D59ADE /* PickerTutorial.swift */,
+				DEBFD2D22B8482DF00F7FDA8 /* MenuAndCommands */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -600,7 +650,9 @@
 				DE759E0C2B5D649100300751 /* AppTutorial.swift in Sources */,
 				DE2CDB3E2B6333380032BB12 /* ModalPresentationsTutorial.swift in Sources */,
 				DE174F222B47809500039E92 /* CombineTutorail.swift in Sources */,
+				DEBFD2BD2B82FC2500F7FDA8 /* StepperTutorial.swift in Sources */,
 				DEBFD2B72B82EF7F00F7FDA8 /* RenameButtonTutorial.swift in Sources */,
+				DEBFD2C92B8470FF00F7FDA8 /* ContentUnavailableViewTutorial.swift in Sources */,
 				DEE9F8292B62829500C6E0CE /* TabViewTutorial.swift in Sources */,
 				DEBFD2A92B8205B100F7FDA8 /* ViewStylesPage.swift in Sources */,
 				DE539B952B2925C100F91DE2 /* ResultBuildTutorial.swift in Sources */,
@@ -609,28 +661,40 @@
 				DED357E72B705E9C00FA7867 /* EnvironmentTutorial.swift in Sources */,
 				DEE9F8272B61142400C6E0CE /* NavigationTutorial.swift in Sources */,
 				DEBFD2A42B81A36700F7FDA8 /* ViewModifierTutorial.swift in Sources */,
+				DEBFD2D62B8483E000F7FDA8 /* MenuTutorial.swift in Sources */,
 				DEDEE4A02B7231BE00D9AC40 /* DrawingAndGraphicsTutorial.swift in Sources */,
+				DEBFD2C72B844BE500F7FDA8 /* ProgressViewTutorial.swift in Sources */,
+				DEBFD2D12B84813A00F7FDA8 /* MenuStyleTutorial.swift in Sources */,
 				DE8251662B6E23A20094A0C9 /* ModelDataTutorial.swift in Sources */,
 				DE547D6A2B4EEC9500459CD2 /* RenderLoopTutorail.swift in Sources */,
 				DE759E0A2B5D5D6500300751 /* ObservationTutorial.swift in Sources */,
 				DED734892B5E533700315E79 /* WebView.swift in Sources */,
 				DEBFD2B32B82D5E500F7FDA8 /* EditButtonTutorial.swift in Sources */,
 				DEF0C11B2B68F984004E2BA0 /* SearchTutorial.swift in Sources */,
+				DEBFD2C32B843D3D00F7FDA8 /* ColorPickerTutorial.swift in Sources */,
 				DE539B972B2928F500F91DE2 /* PropertyWrapperTutorial.swift in Sources */,
 				DEE81E992B1E1CD300D59ADE /* PickerTutorial.swift in Sources */,
 				DEBFD2AF2B82D14D00F7FDA8 /* ControlsAndIndicatorsPage.swift in Sources */,
 				DE539B902B268CD100F91DE2 /* StateObjectTutorial.swift in Sources */,
 				DED79E032B195B69007C257C /* CorePage.swift in Sources */,
 				DEDEE49A2B72130400D9AC40 /* Model.xcdatamodeld in Sources */,
+				DEBFD2C52B84465D00F7FDA8 /* GaugeTutorial.swift in Sources */,
+				DEBFD2D42B84835700F7FDA8 /* MenuAndCommandsPage.swift in Sources */,
 				DE759E0E2B5D662100300751 /* SceneTutorail.swift in Sources */,
 				DEF59F392B70D7DE001CEC0D /* PreferenceToturial.swift in Sources */,
+				DEBFD2BF2B83673A00F7FDA8 /* ToggleTutorial.swift in Sources */,
 				DE3D05892B608ECD00930B69 /* AttributedStringTutorial.swift in Sources */,
 				DEE9F8232B6106C000C6E0CE /* WindowTutorial.swift in Sources */,
+				DEBFD2CF2B847E4700F7FDA8 /* PickerStyleTutorial.swift in Sources */,
 				DEE9F8252B61108900C6E0CE /* DocumentGroupToturial.swift in Sources */,
+				DEBFD2CD2B847C7D00F7FDA8 /* ControlSizeTutorial.swift in Sources */,
 				DEF0C11D2B69F4A1004E2BA0 /* ConcurrencyTutorial.swift in Sources */,
 				DEE449932B59452100EFBA84 /* SwiftMacroTutorail.swift in Sources */,
+				DEBFD2BB2B82F6EC00F7FDA8 /* SlideTutorial.swift in Sources */,
 				DEBFD2AB2B8206BE00F7FDA8 /* ButtonStyleTutorial.swift in Sources */,
+				DEBFD2CB2B84749100F7FDA8 /* SensoryFeedbackTutorial.swift in Sources */,
 				DED79DFE2B195A66007C257C /* TabBarView.swift in Sources */,
+				DEBFD2C12B84271D00F7FDA8 /* DatePickerTutorial.swift in Sources */,
 				DED79D802B19552D007C257C /* SwiftUITutorialApp.swift in Sources */,
 				DEBFD2B12B82D24C00F7FDA8 /* ButtonTutorial.swift in Sources */,
 				DEBFD2B52B82D7D000F7FDA8 /* PasteButtonTutorial.swift in Sources */,

@@ -10,7 +10,9 @@ import SwiftUI
 struct ViewStylesPage: View {
 
     private var contents = [
-        Content(title: "ButtonStyle", destination: .buttonStyle)
+        Content(title: "ButtonStyle", destination: .buttonStyle),
+        Content(title: "PickerStyle", destination: .pickerStyle),
+        Content(title: "MenuStyle", destination: .menuStyle)
     ]
 
     // MARK: - system
@@ -24,6 +26,10 @@ struct ViewStylesPage: View {
             switch des {
             case .buttonStyle:
                 ButtonStyleTutorial()
+            case .pickerStyle:
+                PickerStyleTutorial()
+            case .menuStyle:
+                MenuStyleTutorial()
             }
         }
         .toolbar(.hidden, for: .bottomBar)
@@ -42,6 +48,8 @@ extension ViewStylesPage {
 
     enum Destination {
         case buttonStyle
+        case pickerStyle
+        case menuStyle
     }
 }
 

@@ -23,7 +23,8 @@ struct UIPage: View {
         Content("DrawingAndGraphics", .drawingAndGraphics),
         Content("ViewModifierTutorial", .viewModifierTutorial),
         Content("ViewStyles", .viewStyles),
-        Content("ControlsAndIndicators", .controlsAndIndicators)
+        Content("ControlsAndIndicators", .controlsAndIndicators),
+        Content("MenuAndCommands", .menuAndCommands)
     ]
 
     @State private var isShowDetail = false
@@ -34,11 +35,6 @@ struct UIPage: View {
             List {
                 ForEach(contents) { content in
                     NavigationLink(content.title, value: content.destination)
-                }
-                Section {
-                    Button("Show Detail") {
-                        isShowDetail.toggle()
-                    }
                 }
             }
             .scrollContentBackground(.visible)
@@ -73,6 +69,8 @@ struct UIPage: View {
                     ViewStylesPage()
                 case .controlsAndIndicators:
                     ControlsAndIndicatorsPage()
+                case .menuAndCommands:
+                    MenuAndCommandsPage()
                 }
             }
             .navigationDestination(isPresented: $isShowDetail) {
@@ -101,6 +99,7 @@ extension UIPage {
         case viewModifierTutorial
         case viewStyles
         case controlsAndIndicators
+        case menuAndCommands
     }
 
     struct Content: Identifiable {

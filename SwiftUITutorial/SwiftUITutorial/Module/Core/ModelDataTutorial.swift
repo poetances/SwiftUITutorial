@@ -69,7 +69,7 @@ extension ModelDataTutorial {
 
      简单来说：
      1、不需要大量使用ObservableObject
-     2、ObservableObject如果试图没有读取@Published属性，但该属性发生变化，同样试图会更新。但是Observable不会
+     2、ObservableObject如果试图没有使用@Published属性，但该属性发生变化，同样试图会更新。但是Observable不会
 
      从下面可以看出来，Bindable一般修饰AnyObject，即class
      extension Bindable where Value : AnyObject, Value : Observable {
@@ -108,6 +108,13 @@ extension ModelDataTutorial {
      @Bindable var book: Book
      let bindingString = _book[keypath: \.title]
      比如这样获取到的Bindingable就是string
+
+     Bindable的作用属性包装器允许我们从对象中的任何属性获取绑定Observable，包括所有 SwiftData
+     模型对象。如果您Observable使用创建本地对象State，属性包装器将自动为您提供绑定State。但是，如果您传递了一个没有任何绑定的对象（您知道是一个对象Observable），
+     那么您可以使用它Bindable来为您创建绑定。
+
+     换句话来说，Observable修饰的类，我们可以直接使用：
+     var book = Book()  这种写法同样起作用，但是有个问题，是没法绑定。比如我想绑定book里面的一个属性，就没办法进行，所以我们可以使用Bindable来修饰
 
      */
     var bindable: some View {
