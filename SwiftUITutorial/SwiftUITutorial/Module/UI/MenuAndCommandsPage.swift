@@ -11,7 +11,8 @@ struct MenuAndCommandsPage: View {
 
 
     private var contents = [
-        Content(title: "Menu", destination: .menu)
+        Content(title: "Menu", destination: .menu),
+        Content(title: "ContextMenu", destination: .contextMenu)
     ]
 
     // MARK: - system
@@ -26,8 +27,11 @@ struct MenuAndCommandsPage: View {
             switch des {
             case .menu:
                 MenuTutorial()
+            case .contextMenu:
+                ContextMenuTutorial()
             }
         }
+        .toolbar(.hidden, for: .tabBar)
     }
 }
 
@@ -42,6 +46,7 @@ extension MenuAndCommandsPage {
 
     enum Destination {
         case menu
+        case contextMenu
     }
 }
 

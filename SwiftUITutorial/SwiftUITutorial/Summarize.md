@@ -281,3 +281,30 @@ AnyObject是一个协议。而AnyClass是元类型，即AnyObject.Type
 1、不透明类型some
     具有不透明返回类型的函数或方法会隐藏返回值的类型信息。函数不再提供具体的类型作为返回类型，而是根据它支持的协议来描述返回值。在处理模块和调用代码之间的关系时，隐藏类型信息非常有用，因为返回的底层数据类型仍然可以保持私有。而且不同于返回协议类型，不透明类型能保证类型一致性：编译器能获取到类型信息，同时模块使用者却不能获取到。
     
+在 Swift 中，当你看到错误信息 "Use of protocol 'View' as a type must be written 'any View'"，这是因为 Swift 语言从 Swift 5.5 和 Xcode 13 开始引入了一个新的类型推断规则，用于改进协议类型的使用和泛型的处理。这一变化特别影响到了 SwiftUI 编程。
+在这之前，你可以直接使用协议名（比如 View）来代表一个遵循该协议的类型。但是，Swift 5.5 引入的变化要求，当你想要表示一个“任意遵循某协议的类型”时，你需要使用 any 关键字来明确表达这一意图，以此来提高代码的清晰度和一致性。因此，当你尝试将 View 作为类型来使用时，Swift 要求你写成 any View。
+func contextMenu<M, P>(
+    @ViewBuilder menuItems: () -> M,
+    @ViewBuilder preview: () -> P
+) -> some View where M : View, P : View
+
+func contextMenu(
+    @ViewBuilder menuItems: () -> View,
+    @ViewBuilder preview: () -> View
+) -> some View 
+这就是为什么下面这种写法会报错的原因。
+
+any View 和 some View 都是 Swift 中用于处理协议和泛型相关的关键字，特别是在 SwiftUI 中，它们用于返回遵循 View 协议的类型。它们之间的主要区别在于类型的确定性和透明性。
+
+any View 是一个类型擦除的包装器，用于隐藏实际视图类型的具体细节。这意味着当你使用 any View 作为返回类型时，你可以返回任意遵循 View 协议的视图，无论它们的具体类型是什么。
+使用 any View 可以在不同的代码路径中返回不同类型的视图，但这种灵活性是有代价的。any View 会导致一定的性能开销，因为它需要进行类型擦除以隐藏具体的视图类型。
+some View 用于指定一个函数或属性将返回某种遵循 View 协议的具体类型，但不指定是哪一种类型。这被称为不透明类型。
+使用 some View时，编译器能够保留返回类型的具体信息，这意味着在编译时就确定了返回的具体类型，而这个具体类型对于调用者来说是不可见的。
+不透明类型（some View）提供了更好的性能和类型安全性，因为编译器知道确切的类型信息，但它要求每个使用 some View 的地方返回相同的视图类型。这对于条件语句不是很方便，因为所有的条件分支都必须返回相同类型的视图。
+何时使用哪个
+使用 some View：当你的函数或属性总是返回相同类型的视图，或者你希望保留关于返回类型的具体信息时。这是 SwiftUI 中的常见用法，因为它提供了更好的性能和类型安全性。
+使用 any
+    View：当你需要在不同的条件下返回不同类型的视图时，或者当函数需要返回多种不同类型的视图时。这提供了更高的灵活性，但以性能和一些类型安全性为代价。
+总的来说，some View 通常是首选，因为它提供了更好的编译时类型检查和性能。但在需要高度灵活性的情况下，any View 是一个有用的工具。
+
+let a: View.Protocol = View.self，也就是Protocol.self的类型是Protocol.Protocol，而并不是我们想的那样Protocol.Type

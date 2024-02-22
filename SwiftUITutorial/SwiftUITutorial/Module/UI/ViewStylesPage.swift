@@ -12,7 +12,13 @@ struct ViewStylesPage: View {
     private var contents = [
         Content(title: "ButtonStyle", destination: .buttonStyle),
         Content(title: "PickerStyle", destination: .pickerStyle),
-        Content(title: "MenuStyle", destination: .menuStyle)
+        Content(title: "MenuStyle", destination: .menuStyle),
+        Content(title: "ToggleStyle", destination: .toggleStyle),
+        Content(title: "GaugeStyle", destination: .gaugeStyle),
+        Content(title: "ProgressViewStyle", destination: .progressViewStyle),
+        Content(title: "LabelStyle", destination: .labelStyle),
+        Content(title: "TextFieldStyle", destination: .textFieldStyle)
+
     ]
 
     // MARK: - system
@@ -30,6 +36,16 @@ struct ViewStylesPage: View {
                 PickerStyleTutorial()
             case .menuStyle:
                 MenuStyleTutorial()
+            case .toggleStyle:
+                ToggleStyleTutorial()
+            case .gaugeStyle:
+                GaugeStyleTutorial()
+            case .progressViewStyle:
+                ProgressViewStyleTutorial()
+            case .labelStyle:
+                LabelStyleTutorial()
+            case .textFieldStyle:
+                TextFieldStyleTutorial()
             }
         }
         .toolbar(.hidden, for: .bottomBar)
@@ -50,6 +66,11 @@ extension ViewStylesPage {
         case buttonStyle
         case pickerStyle
         case menuStyle
+        case toggleStyle
+        case gaugeStyle
+        case progressViewStyle
+        case labelStyle
+        case textFieldStyle
     }
 }
 

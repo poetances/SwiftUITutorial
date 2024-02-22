@@ -48,6 +48,13 @@ struct PickerTutorial: View {
             }
             .tint(.red)
 
+            Picker("Picker", selection: $selection) {
+                Text("One").tag(0)
+                Text("Two").tag(1)
+            }
+            .tint(.red)
+            .menuIndicator(.hidden)
+
             Picker("Board Thickness", sources: $selectedObjectBorders, selection: \.thickness) {
                 ForEach(Thickness.allCases) { thickness in
                     Text(thickness.rawValue).tag(thickness)

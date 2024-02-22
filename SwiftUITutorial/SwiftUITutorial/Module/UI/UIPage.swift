@@ -24,7 +24,9 @@ struct UIPage: View {
         Content("ViewModifierTutorial", .viewModifierTutorial),
         Content("ViewStyles", .viewStyles),
         Content("ControlsAndIndicators", .controlsAndIndicators),
-        Content("MenuAndCommands", .menuAndCommands)
+        Content("MenuAndCommands", .menuAndCommands),
+        Content("TextInputAndOutput", .textInputAndOutput),
+        Content("Images", .images)
     ]
 
     @State private var isShowDetail = false
@@ -71,6 +73,10 @@ struct UIPage: View {
                     ControlsAndIndicatorsPage()
                 case .menuAndCommands:
                     MenuAndCommandsPage()
+                case .textInputAndOutput:
+                    TextInputAndOutputPage()
+                case .images:
+                    ImagesPage()
                 }
             }
             .navigationDestination(isPresented: $isShowDetail) {
@@ -100,6 +106,8 @@ extension UIPage {
         case viewStyles
         case controlsAndIndicators
         case menuAndCommands
+        case textInputAndOutput
+        case images
     }
 
     struct Content: Identifiable {

@@ -7,9 +7,48 @@
 
 import SwiftUI
 
+/*
+ BorderedButtonMenuStyle
+ BorderlessButtonMenuStyle
+ ButtonMenuStyle
+ DefaultMenuStyle
+
+ iOS上只能使用buttonMenu
+ */
 struct MenuStyleTutorial: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(spacing: 15, content: {
+            Menu("Menu") {
+                Button("copy") {
+
+                }
+
+                Button("past") {
+
+                }
+            }
+            .menuStyle(.automatic)
+
+            Menu("Menu2") {
+                Button("copy") {
+
+                }
+                Button("past") {
+
+                }
+
+                Menu("Other") {
+                    Button("Rename") {
+
+                    }
+                    Button("Create") {
+
+                    }
+                }
+                .menuStyle(.button)
+            }
+            .menuStyle(.automatic)
+        })
     }
 }
 
