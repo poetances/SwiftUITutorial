@@ -20,13 +20,16 @@ struct UIPage: View {
         Content("ToolBar", .toolbar),
         Content("Search", .search),
         Content("AppearanceModifiers", .appearanceModifiers),
-        Content("DrawingAndGraphics", .drawingAndGraphics),
         Content("ViewModifierTutorial", .viewModifierTutorial),
         Content("ViewStyles", .viewStyles),
+        Content("Animations", .animations),
+        Content("Images", .images),
+        Content("TextInputAndOutput", .textInputAndOutput),
         Content("ControlsAndIndicators", .controlsAndIndicators),
         Content("MenuAndCommands", .menuAndCommands),
-        Content("TextInputAndOutput", .textInputAndOutput),
-        Content("Images", .images)
+        Content("Shape", .shape),
+        Content("DrawingAndGraphics", .drawingAndGraphics),
+        Content("LayoutFundamentals", .layoutFundamentals),
     ]
 
     @State private var isShowDetail = false
@@ -63,20 +66,26 @@ struct UIPage: View {
                     SearchTutorial()
                 case .appearanceModifiers:
                     AppearanceModifiersTutorial()
-                case .drawingAndGraphics:
-                    DrawingAndGraphicsTutorial()
                 case .viewModifierTutorial:
                     ViewModifierTutorial()
                 case .viewStyles:
                     ViewStylesPage()
+                case .animations:
+                    AnimationsPage()
+                case .images:
+                    ImagesPage()
+                case .textInputAndOutput:
+                    TextInputAndOutputPage()
                 case .controlsAndIndicators:
                     ControlsAndIndicatorsPage()
                 case .menuAndCommands:
                     MenuAndCommandsPage()
-                case .textInputAndOutput:
-                    TextInputAndOutputPage()
-                case .images:
-                    ImagesPage()
+                case .shape:
+                    ShapesPage()
+                case .drawingAndGraphics:
+                    DrawingAndGraphicsTutorial()
+                case .layoutFundamentals:
+                    LayoutsFundamentalsPage()
                 }
             }
             .navigationDestination(isPresented: $isShowDetail) {
@@ -101,13 +110,16 @@ extension UIPage {
         case toolbar
         case search
         case appearanceModifiers
-        case drawingAndGraphics
         case viewModifierTutorial
         case viewStyles
+        case animations
         case controlsAndIndicators
         case menuAndCommands
         case textInputAndOutput
         case images
+        case shape
+        case drawingAndGraphics
+        case layoutFundamentals
     }
 
     struct Content: Identifiable {

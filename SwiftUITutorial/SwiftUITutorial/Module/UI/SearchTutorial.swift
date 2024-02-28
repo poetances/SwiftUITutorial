@@ -53,7 +53,7 @@ struct SearchTutorial: View {
     // MARK: - system
     var body: some View {
 
-        textEditor
+        searchable
     }
 }
 
@@ -93,7 +93,7 @@ extension SearchTutorial {
                 }
             }
         }
-        .searchable(text: $searchText, tokens: $model.tokens, placement: .sidebar) { token in
+        .searchable(text: $searchText, tokens: $model.tokens, placement: .navigationBarDrawer) { token in
             switch token {
             case .apple: Text("apple")
             case .banana: Text("banana")

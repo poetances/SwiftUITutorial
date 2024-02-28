@@ -32,7 +32,6 @@ struct ProgressViewTutorial: View {
             ProgressView()
                 .frame(width: 50, height: 50)
                 .border(.red)
-            
             ProgressView("ProgressView")
                 .border(.red)
                 .controlSize(.extraLarge)

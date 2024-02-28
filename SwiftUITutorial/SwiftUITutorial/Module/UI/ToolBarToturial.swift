@@ -7,6 +7,15 @@
 
 import SwiftUI
 
+/*
+ ToolBar两种初始化方式：
+ func toolbar<Content>(@ViewBuilder content: () -> Content) -> some View where Content : View
+ func toolbar<Content>(@ToolbarContentBuilder content: () -> Content) -> some View where Content : ToolbarContent
+ 也就是其Content可以是View，也可以是ToolBarContent
+
+ ToolBarContent协议
+ ToolBarItem、ToolBarItemGroup遵循了ToolBarContent协议
+ */
 struct ToolBarToturial: View {
 
     @State private var text = ""

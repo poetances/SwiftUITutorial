@@ -26,6 +26,8 @@ struct AddingAnimationActionTutorial: View {
     @State private var scaleAnimation = false
 
     @State private var trigger = true
+
+    @State private var scaless = 1.0
     // MARK: - system
     var body: some View {
         VStack(spacing: 15) {
