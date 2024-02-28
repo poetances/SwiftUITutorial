@@ -30,6 +30,7 @@ struct UIPage: View {
         Content("Shape", .shape),
         Content("DrawingAndGraphics", .drawingAndGraphics),
         Content("LayoutFundamentals", .layoutFundamentals),
+        Content("LayoutAdjustments", .layoutAdjustments),
     ]
 
     @State private var isShowDetail = false
@@ -86,6 +87,8 @@ struct UIPage: View {
                     DrawingAndGraphicsTutorial()
                 case .layoutFundamentals:
                     LayoutsFundamentalsPage()
+                case .layoutAdjustments:
+                    LayoutAdjustmentsPage()
                 }
             }
             .navigationDestination(isPresented: $isShowDetail) {
@@ -120,6 +123,7 @@ extension UIPage {
         case shape
         case drawingAndGraphics
         case layoutFundamentals
+        case layoutAdjustments
     }
 
     struct Content: Identifiable {

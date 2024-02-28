@@ -78,6 +78,12 @@
 		DED79E032B195B69007C257C /* CorePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED79E022B195B69007C257C /* CorePage.swift */; };
 		DED79E052B195C34007C257C /* UIPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED79E042B195C34007C257C /* UIPage.swift */; };
 		DEDA7D982B8EB6B30025FECA /* LayoutAdjustmentsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDA7D972B8EB6B30025FECA /* LayoutAdjustmentsPage.swift */; };
+		DEDA7DB82B8F33DF0025FECA /* PaddingTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDA7DB72B8F33DF0025FECA /* PaddingTutorial.swift */; };
+		DEDA7DBA2B8F33E70025FECA /* FrameTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDA7DB92B8F33E70025FECA /* FrameTutorial.swift */; };
+		DEDA7DBC2B8F33F10025FECA /* PositionTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDA7DBB2B8F33F10025FECA /* PositionTutorial.swift */; };
+		DEDA7DBE2B8F34D20025FECA /* AlignTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDA7DBD2B8F34D20025FECA /* AlignTutorial.swift */; };
+		DEDA7DC02B8F38F90025FECA /* MarginTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDA7DBF2B8F38F90025FECA /* MarginTutorial.swift */; };
+		DEDA7DC22B8F3E8E0025FECA /* SafeAreaTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDA7DC12B8F3E8E0025FECA /* SafeAreaTutorial.swift */; };
 		DEDEE49A2B72130400D9AC40 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DEDEE4982B72130400D9AC40 /* Model.xcdatamodeld */; };
 		DEDEE49C2B72161700D9AC40 /* CoreDataTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDEE49B2B72161700D9AC40 /* CoreDataTutorial.swift */; };
 		DEDEE49E2B72288000D9AC40 /* AppearanceModifiersTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDEE49D2B72288000D9AC40 /* AppearanceModifiersTutorial.swift */; };
@@ -198,6 +204,12 @@
 		DED79E022B195B69007C257C /* CorePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorePage.swift; sourceTree = "<group>"; };
 		DED79E042B195C34007C257C /* UIPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPage.swift; sourceTree = "<group>"; };
 		DEDA7D972B8EB6B30025FECA /* LayoutAdjustmentsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutAdjustmentsPage.swift; sourceTree = "<group>"; };
+		DEDA7DB72B8F33DF0025FECA /* PaddingTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingTutorial.swift; sourceTree = "<group>"; };
+		DEDA7DB92B8F33E70025FECA /* FrameTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameTutorial.swift; sourceTree = "<group>"; };
+		DEDA7DBB2B8F33F10025FECA /* PositionTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositionTutorial.swift; sourceTree = "<group>"; };
+		DEDA7DBD2B8F34D20025FECA /* AlignTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlignTutorial.swift; sourceTree = "<group>"; };
+		DEDA7DBF2B8F38F90025FECA /* MarginTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarginTutorial.swift; sourceTree = "<group>"; };
+		DEDA7DC12B8F3E8E0025FECA /* SafeAreaTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeAreaTutorial.swift; sourceTree = "<group>"; };
 		DEDEE4992B72130400D9AC40 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		DEDEE49B2B72161700D9AC40 /* CoreDataTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataTutorial.swift; sourceTree = "<group>"; };
 		DEDEE49D2B72288000D9AC40 /* AppearanceModifiersTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceModifiersTutorial.swift; sourceTree = "<group>"; };
@@ -519,6 +531,12 @@
 			isa = PBXGroup;
 			children = (
 				DEDA7D972B8EB6B30025FECA /* LayoutAdjustmentsPage.swift */,
+				DEDA7DB72B8F33DF0025FECA /* PaddingTutorial.swift */,
+				DEDA7DB92B8F33E70025FECA /* FrameTutorial.swift */,
+				DEDA7DBB2B8F33F10025FECA /* PositionTutorial.swift */,
+				DEDA7DBD2B8F34D20025FECA /* AlignTutorial.swift */,
+				DEDA7DBF2B8F38F90025FECA /* MarginTutorial.swift */,
+				DEDA7DC12B8F3E8E0025FECA /* SafeAreaTutorial.swift */,
 			);
 			name = LayoutAdjustments;
 			sourceTree = "<group>";
@@ -787,6 +805,7 @@
 				DE151D462B86CE5200785708 /* AnimationsPage.swift in Sources */,
 				DEBFD2A92B8205B100F7FDA8 /* ViewStylesPage.swift in Sources */,
 				DE151D3B2B860AD200785708 /* TextFieldTutorial.swift in Sources */,
+				DEDA7DC02B8F38F90025FECA /* MarginTutorial.swift in Sources */,
 				DE539B952B2925C100F91DE2 /* ResultBuildTutorial.swift in Sources */,
 				DE151D302B85D94800785708 /* ProgressViewStyleTutorial.swift in Sources */,
 				DED79E052B195C34007C257C /* UIPage.swift in Sources */,
@@ -798,6 +817,7 @@
 				DEBFD2A42B81A36700F7FDA8 /* ViewModifierTutorial.swift in Sources */,
 				DEBFD2D62B8483E000F7FDA8 /* MenuTutorial.swift in Sources */,
 				DEDEE4A02B7231BE00D9AC40 /* DrawingAndGraphicsTutorial.swift in Sources */,
+				DEDA7DBA2B8F33E70025FECA /* FrameTutorial.swift in Sources */,
 				DEBFD2C72B844BE500F7FDA8 /* ProgressViewTutorial.swift in Sources */,
 				DEBFD2D12B84813A00F7FDA8 /* MenuStyleTutorial.swift in Sources */,
 				DE8251662B6E23A20094A0C9 /* ModelDataTutorial.swift in Sources */,
@@ -811,6 +831,7 @@
 				DE539B972B2928F500F91DE2 /* PropertyWrapperTutorial.swift in Sources */,
 				DEE81E992B1E1CD300D59ADE /* PickerTutorial.swift in Sources */,
 				DEDA7D982B8EB6B30025FECA /* LayoutAdjustmentsPage.swift in Sources */,
+				DEDA7DBE2B8F34D20025FECA /* AlignTutorial.swift in Sources */,
 				DEBFD2AF2B82D14D00F7FDA8 /* ControlsAndIndicatorsPage.swift in Sources */,
 				DE151D432B86CB7400785708 /* TextEditorStyleTutorial.swift in Sources */,
 				DE539B902B268CD100F91DE2 /* StateObjectTutorial.swift in Sources */,
@@ -836,6 +857,7 @@
 				DEF0C11D2B69F4A1004E2BA0 /* ConcurrencyTutorial.swift in Sources */,
 				DEE449932B59452100EFBA84 /* SwiftMacroTutorail.swift in Sources */,
 				DEBFD2BB2B82F6EC00F7FDA8 /* SlideTutorial.swift in Sources */,
+				DEDA7DBC2B8F33F10025FECA /* PositionTutorial.swift in Sources */,
 				DEBFD2AB2B8206BE00F7FDA8 /* ButtonStyleTutorial.swift in Sources */,
 				DE151D662B88A74800785708 /* PathTutorial.swift in Sources */,
 				DEBFD2CB2B84749100F7FDA8 /* SensoryFeedbackTutorial.swift in Sources */,
@@ -846,9 +868,11 @@
 				DE151D3D2B86520C00785708 /* TextFieldStyleTutorial.swift in Sources */,
 				DEE53D672B85A57900772050 /* ContextMenuTutorial.swift in Sources */,
 				DED79D802B19552D007C257C /* SwiftUITutorialApp.swift in Sources */,
+				DEDA7DC22B8F3E8E0025FECA /* SafeAreaTutorial.swift in Sources */,
 				DE151D5A2B8728CE00785708 /* AddingAnimationActionTutorial.swift in Sources */,
 				DEBFD2B12B82D24C00F7FDA8 /* ButtonTutorial.swift in Sources */,
 				DEBFD2B52B82D7D000F7FDA8 /* PasteButtonTutorial.swift in Sources */,
+				DEDA7DB82B8F33DF0025FECA /* PaddingTutorial.swift in Sources */,
 				DEF0C11F2B69F578004E2BA0 /* FoundationPage.swift in Sources */,
 				DE151D352B85E29F00785708 /* TextInputAndOutputPage.swift in Sources */,
 				DEDEE49C2B72161700D9AC40 /* CoreDataTutorial.swift in Sources */,
