@@ -59,3 +59,13 @@ extension SafeAreaTutorial {
 #Preview {
     SafeAreaTutorial()
 }
+
+
+struct BoundaryKey: PreferenceKey {
+
+    static var defaultValue = ""
+
+    static func reduce(value: inout String, nextValue: () -> String) {
+        value = nextValue()
+    }
+}

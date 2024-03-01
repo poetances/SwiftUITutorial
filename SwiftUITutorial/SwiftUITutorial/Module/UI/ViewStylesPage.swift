@@ -17,7 +17,8 @@ struct ViewStylesPage: View {
         Content(title: "GaugeStyle", destination: .gaugeStyle),
         Content(title: "ProgressViewStyle", destination: .progressViewStyle),
         Content(title: "LabelStyle", destination: .labelStyle),
-        Content(title: "TextFieldStyle", destination: .textFieldStyle)
+        Content(title: "TextFieldStyle", destination: .textFieldStyle),
+        Content(title: "ListStyle", destination: .listStyle)
 
     ]
 
@@ -46,6 +47,8 @@ struct ViewStylesPage: View {
                 LabelStyleTutorial()
             case .textFieldStyle:
                 TextFieldStyleTutorial()
+            case .listStyle:
+                ListStyleTutorial()
             }
         }
         .toolbar(.hidden, for: .bottomBar)
@@ -71,6 +74,7 @@ extension ViewStylesPage {
         case progressViewStyle
         case labelStyle
         case textFieldStyle
+        case listStyle
     }
 }
 

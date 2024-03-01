@@ -31,6 +31,8 @@ struct UIPage: View {
         Content("DrawingAndGraphics", .drawingAndGraphics),
         Content("LayoutFundamentals", .layoutFundamentals),
         Content("LayoutAdjustments", .layoutAdjustments),
+        Content("CustomLayout", .customLayout),
+        Content("List", .list),
     ]
 
     @State private var isShowDetail = false
@@ -89,6 +91,10 @@ struct UIPage: View {
                     LayoutsFundamentalsPage()
                 case .layoutAdjustments:
                     LayoutAdjustmentsPage()
+                case .customLayout:
+                    CustomLayoutPage()
+                case .list:
+                    ListPage()
                 }
             }
             .navigationDestination(isPresented: $isShowDetail) {
@@ -124,6 +130,8 @@ extension UIPage {
         case drawingAndGraphics
         case layoutFundamentals
         case layoutAdjustments
+        case customLayout
+        case list
     }
 
     struct Content: Identifiable {

@@ -31,6 +31,14 @@
 		DE151D682B88B8F600785708 /* ShapeTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE151D672B88B8F600785708 /* ShapeTutorial.swift */; };
 		DE151D6C2B8AE38B00785708 /* LayoutsFundamentalsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE151D6B2B8AE38B00785708 /* LayoutsFundamentalsPage.swift */; };
 		DE174F222B47809500039E92 /* CombineTutorail.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE174F212B47809500039E92 /* CombineTutorail.swift */; };
+		DE1B1FF52B91B47A00813B57 /* ListStyleTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1B1FF42B91B47A00813B57 /* ListStyleTutorial.swift */; };
+		DE1B1FF72B91C16B00813B57 /* ForEachTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1B1FF62B91C16B00813B57 /* ForEachTutorial.swift */; };
+		DE1B1FF92B91CA2A00813B57 /* OutlineGroupTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1B1FF82B91CA2A00813B57 /* OutlineGroupTutorial.swift */; };
+		DE1B1FFB2B91CC7000813B57 /* DisclosureGroupTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1B1FFA2B91CC7000813B57 /* DisclosureGroupTutorial.swift */; };
+		DE1B1FFD2B91CFCE00813B57 /* ConfiguringRowsTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1B1FFC2B91CFCE00813B57 /* ConfiguringRowsTutorial.swift */; };
+		DE1B1FFF2B91D54500813B57 /* ConfiguringSeperatorsTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1B1FFE2B91D54500813B57 /* ConfiguringSeperatorsTutorial.swift */; };
+		DE1B20012B91DBC500813B57 /* ConfiguringHeadersTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1B20002B91DBC500813B57 /* ConfiguringHeadersTutorial.swift */; };
+		DE1B20032B91DD0A00813B57 /* ConfiguringSpacingTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1B20022B91DD0A00813B57 /* ConfiguringSpacingTutorial.swift */; };
 		DE2CDB3E2B6333380032BB12 /* ModalPresentationsTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2CDB3D2B6333380032BB12 /* ModalPresentationsTutorial.swift */; };
 		DE3D05892B608ECD00930B69 /* AttributedStringTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3D05882B608ECD00930B69 /* AttributedStringTutorial.swift */; };
 		DE539B902B268CD100F91DE2 /* StateObjectTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE539B8F2B268CD100F91DE2 /* StateObjectTutorial.swift */; };
@@ -84,6 +92,11 @@
 		DEDA7DBE2B8F34D20025FECA /* AlignTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDA7DBD2B8F34D20025FECA /* AlignTutorial.swift */; };
 		DEDA7DC02B8F38F90025FECA /* MarginTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDA7DBF2B8F38F90025FECA /* MarginTutorial.swift */; };
 		DEDA7DC22B8F3E8E0025FECA /* SafeAreaTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDA7DC12B8F3E8E0025FECA /* SafeAreaTutorial.swift */; };
+		DEDA7DC52B8F4FDE0025FECA /* CustomLayoutPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDA7DC42B8F4FDE0025FECA /* CustomLayoutPage.swift */; };
+		DEDA7DC72B9008780025FECA /* CreateCustomLayoutTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDA7DC62B9008780025FECA /* CreateCustomLayoutTutorial.swift */; };
+		DEDA7DCA2B9020DF0025FECA /* ListPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDA7DC92B9020DF0025FECA /* ListPage.swift */; };
+		DEDA7DCC2B9061B10025FECA /* ListTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDA7DCB2B9061B10025FECA /* ListTutorial.swift */; };
+		DEDA7DCE2B909A9D0025FECA /* SectionTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDA7DCD2B909A9D0025FECA /* SectionTutorial.swift */; };
 		DEDEE49A2B72130400D9AC40 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DEDEE4982B72130400D9AC40 /* Model.xcdatamodeld */; };
 		DEDEE49C2B72161700D9AC40 /* CoreDataTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDEE49B2B72161700D9AC40 /* CoreDataTutorial.swift */; };
 		DEDEE49E2B72288000D9AC40 /* AppearanceModifiersTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDEE49D2B72288000D9AC40 /* AppearanceModifiersTutorial.swift */; };
@@ -152,6 +165,14 @@
 		DE151D672B88B8F600785708 /* ShapeTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeTutorial.swift; sourceTree = "<group>"; };
 		DE151D6B2B8AE38B00785708 /* LayoutsFundamentalsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutsFundamentalsPage.swift; sourceTree = "<group>"; };
 		DE174F212B47809500039E92 /* CombineTutorail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineTutorail.swift; sourceTree = "<group>"; };
+		DE1B1FF42B91B47A00813B57 /* ListStyleTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListStyleTutorial.swift; sourceTree = "<group>"; };
+		DE1B1FF62B91C16B00813B57 /* ForEachTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForEachTutorial.swift; sourceTree = "<group>"; };
+		DE1B1FF82B91CA2A00813B57 /* OutlineGroupTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlineGroupTutorial.swift; sourceTree = "<group>"; };
+		DE1B1FFA2B91CC7000813B57 /* DisclosureGroupTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisclosureGroupTutorial.swift; sourceTree = "<group>"; };
+		DE1B1FFC2B91CFCE00813B57 /* ConfiguringRowsTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfiguringRowsTutorial.swift; sourceTree = "<group>"; };
+		DE1B1FFE2B91D54500813B57 /* ConfiguringSeperatorsTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfiguringSeperatorsTutorial.swift; sourceTree = "<group>"; };
+		DE1B20002B91DBC500813B57 /* ConfiguringHeadersTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfiguringHeadersTutorial.swift; sourceTree = "<group>"; };
+		DE1B20022B91DD0A00813B57 /* ConfiguringSpacingTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfiguringSpacingTutorial.swift; sourceTree = "<group>"; };
 		DE2CDB3D2B6333380032BB12 /* ModalPresentationsTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalPresentationsTutorial.swift; sourceTree = "<group>"; };
 		DE3928E72B560165003E290B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		DE3D05882B608ECD00930B69 /* AttributedStringTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributedStringTutorial.swift; sourceTree = "<group>"; };
@@ -210,6 +231,11 @@
 		DEDA7DBD2B8F34D20025FECA /* AlignTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlignTutorial.swift; sourceTree = "<group>"; };
 		DEDA7DBF2B8F38F90025FECA /* MarginTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarginTutorial.swift; sourceTree = "<group>"; };
 		DEDA7DC12B8F3E8E0025FECA /* SafeAreaTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeAreaTutorial.swift; sourceTree = "<group>"; };
+		DEDA7DC42B8F4FDE0025FECA /* CustomLayoutPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLayoutPage.swift; sourceTree = "<group>"; };
+		DEDA7DC62B9008780025FECA /* CreateCustomLayoutTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCustomLayoutTutorial.swift; sourceTree = "<group>"; };
+		DEDA7DC92B9020DF0025FECA /* ListPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPage.swift; sourceTree = "<group>"; };
+		DEDA7DCB2B9061B10025FECA /* ListTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTutorial.swift; sourceTree = "<group>"; };
+		DEDA7DCD2B909A9D0025FECA /* SectionTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionTutorial.swift; sourceTree = "<group>"; };
 		DEDEE4992B72130400D9AC40 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		DEDEE49B2B72161700D9AC40 /* CoreDataTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataTutorial.swift; sourceTree = "<group>"; };
 		DEDEE49D2B72288000D9AC40 /* AppearanceModifiersTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceModifiersTutorial.swift; sourceTree = "<group>"; };
@@ -350,6 +376,7 @@
 				DE151D312B85DA5D00785708 /* LabelStyleTutorial.swift */,
 				DE151D3C2B86520C00785708 /* TextFieldStyleTutorial.swift */,
 				DE151D422B86CB7400785708 /* TextEditorStyleTutorial.swift */,
+				DE1B1FF42B91B47A00813B57 /* ListStyleTutorial.swift */,
 			);
 			name = ViewStyles;
 			sourceTree = "<group>";
@@ -523,6 +550,8 @@
 				DE151D692B8AE2CE00785708 /* DrawingAndGraphics */,
 				DE151D6A2B8AE35F00785708 /* LayoutsFundamentals */,
 				DEDA7D962B8EB6870025FECA /* LayoutAdjustments */,
+				DEDA7DC32B8F4FCD0025FECA /* CustomLayout */,
+				DEDA7DC82B9020CF0025FECA /* List */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -539,6 +568,32 @@
 				DEDA7DC12B8F3E8E0025FECA /* SafeAreaTutorial.swift */,
 			);
 			name = LayoutAdjustments;
+			sourceTree = "<group>";
+		};
+		DEDA7DC32B8F4FCD0025FECA /* CustomLayout */ = {
+			isa = PBXGroup;
+			children = (
+				DEDA7DC42B8F4FDE0025FECA /* CustomLayoutPage.swift */,
+				DEDA7DC62B9008780025FECA /* CreateCustomLayoutTutorial.swift */,
+			);
+			name = CustomLayout;
+			sourceTree = "<group>";
+		};
+		DEDA7DC82B9020CF0025FECA /* List */ = {
+			isa = PBXGroup;
+			children = (
+				DEDA7DC92B9020DF0025FECA /* ListPage.swift */,
+				DEDA7DCB2B9061B10025FECA /* ListTutorial.swift */,
+				DEDA7DCD2B909A9D0025FECA /* SectionTutorial.swift */,
+				DE1B1FF62B91C16B00813B57 /* ForEachTutorial.swift */,
+				DE1B1FF82B91CA2A00813B57 /* OutlineGroupTutorial.swift */,
+				DE1B1FFA2B91CC7000813B57 /* DisclosureGroupTutorial.swift */,
+				DE1B1FFC2B91CFCE00813B57 /* ConfiguringRowsTutorial.swift */,
+				DE1B1FFE2B91D54500813B57 /* ConfiguringSeperatorsTutorial.swift */,
+				DE1B20002B91DBC500813B57 /* ConfiguringHeadersTutorial.swift */,
+				DE1B20022B91DD0A00813B57 /* ConfiguringSpacingTutorial.swift */,
+			);
+			name = List;
 			sourceTree = "<group>";
 		};
 		F1CF98B2EE2BD6D5B526C33E /* Pods */ = {
@@ -796,6 +851,7 @@
 				DE759E0C2B5D649100300751 /* AppTutorial.swift in Sources */,
 				DE151D2E2B85D64F00785708 /* GaugeStyleTutorial.swift in Sources */,
 				DE2CDB3E2B6333380032BB12 /* ModalPresentationsTutorial.swift in Sources */,
+				DE1B1FFF2B91D54500813B57 /* ConfiguringSeperatorsTutorial.swift in Sources */,
 				DE174F222B47809500039E92 /* CombineTutorail.swift in Sources */,
 				DE151D3F2B86534E00785708 /* SecureTextFieldTutorial.swift in Sources */,
 				DEBFD2BD2B82FC2500F7FDA8 /* StepperTutorial.swift in Sources */,
@@ -804,9 +860,11 @@
 				DEE9F8292B62829500C6E0CE /* TabViewTutorial.swift in Sources */,
 				DE151D462B86CE5200785708 /* AnimationsPage.swift in Sources */,
 				DEBFD2A92B8205B100F7FDA8 /* ViewStylesPage.swift in Sources */,
+				DEDA7DCC2B9061B10025FECA /* ListTutorial.swift in Sources */,
 				DE151D3B2B860AD200785708 /* TextFieldTutorial.swift in Sources */,
 				DEDA7DC02B8F38F90025FECA /* MarginTutorial.swift in Sources */,
 				DE539B952B2925C100F91DE2 /* ResultBuildTutorial.swift in Sources */,
+				DE1B1FF52B91B47A00813B57 /* ListStyleTutorial.swift in Sources */,
 				DE151D302B85D94800785708 /* ProgressViewStyleTutorial.swift in Sources */,
 				DED79E052B195C34007C257C /* UIPage.swift in Sources */,
 				DEDEE49E2B72288000D9AC40 /* AppearanceModifiersTutorial.swift in Sources */,
@@ -818,6 +876,7 @@
 				DEBFD2D62B8483E000F7FDA8 /* MenuTutorial.swift in Sources */,
 				DEDEE4A02B7231BE00D9AC40 /* DrawingAndGraphicsTutorial.swift in Sources */,
 				DEDA7DBA2B8F33E70025FECA /* FrameTutorial.swift in Sources */,
+				DEDA7DCA2B9020DF0025FECA /* ListPage.swift in Sources */,
 				DEBFD2C72B844BE500F7FDA8 /* ProgressViewTutorial.swift in Sources */,
 				DEBFD2D12B84813A00F7FDA8 /* MenuStyleTutorial.swift in Sources */,
 				DE8251662B6E23A20094A0C9 /* ModelDataTutorial.swift in Sources */,
@@ -828,10 +887,12 @@
 				DEBFD2B32B82D5E500F7FDA8 /* EditButtonTutorial.swift in Sources */,
 				DEF0C11B2B68F984004E2BA0 /* SearchTutorial.swift in Sources */,
 				DEBFD2C32B843D3D00F7FDA8 /* ColorPickerTutorial.swift in Sources */,
+				DEDA7DCE2B909A9D0025FECA /* SectionTutorial.swift in Sources */,
 				DE539B972B2928F500F91DE2 /* PropertyWrapperTutorial.swift in Sources */,
 				DEE81E992B1E1CD300D59ADE /* PickerTutorial.swift in Sources */,
 				DEDA7D982B8EB6B30025FECA /* LayoutAdjustmentsPage.swift in Sources */,
 				DEDA7DBE2B8F34D20025FECA /* AlignTutorial.swift in Sources */,
+				DE1B20012B91DBC500813B57 /* ConfiguringHeadersTutorial.swift in Sources */,
 				DEBFD2AF2B82D14D00F7FDA8 /* ControlsAndIndicatorsPage.swift in Sources */,
 				DE151D432B86CB7400785708 /* TextEditorStyleTutorial.swift in Sources */,
 				DE539B902B268CD100F91DE2 /* StateObjectTutorial.swift in Sources */,
@@ -839,9 +900,12 @@
 				DEDEE49A2B72130400D9AC40 /* Model.xcdatamodeld in Sources */,
 				DEBFD2C52B84465D00F7FDA8 /* GaugeTutorial.swift in Sources */,
 				DEBFD2D42B84835700F7FDA8 /* MenuAndCommandsPage.swift in Sources */,
+				DE1B1FFD2B91CFCE00813B57 /* ConfiguringRowsTutorial.swift in Sources */,
+				DEDA7DC72B9008780025FECA /* CreateCustomLayoutTutorial.swift in Sources */,
 				DE759E0E2B5D662100300751 /* SceneTutorail.swift in Sources */,
 				DEF59F392B70D7DE001CEC0D /* PreferenceToturial.swift in Sources */,
 				DE151D372B85E2E800785708 /* TextTutorial.swift in Sources */,
+				DE1B1FF92B91CA2A00813B57 /* OutlineGroupTutorial.swift in Sources */,
 				DEBFD2BF2B83673A00F7FDA8 /* ToggleTutorial.swift in Sources */,
 				DE151D682B88B8F600785708 /* ShapeTutorial.swift in Sources */,
 				DE3D05892B608ECD00930B69 /* AttributedStringTutorial.swift in Sources */,
@@ -852,6 +916,7 @@
 				DEBFD2CF2B847E4700F7FDA8 /* PickerStyleTutorial.swift in Sources */,
 				DEE53D692B85CB1300772050 /* CommandsTutorial.swift in Sources */,
 				DEE9F8252B61108900C6E0CE /* DocumentGroupToturial.swift in Sources */,
+				DE1B1FFB2B91CC7000813B57 /* DisclosureGroupTutorial.swift in Sources */,
 				DEBFD2CD2B847C7D00F7FDA8 /* ControlSizeTutorial.swift in Sources */,
 				DE151D412B8653ED00785708 /* TextEditorTutorial.swift in Sources */,
 				DEF0C11D2B69F4A1004E2BA0 /* ConcurrencyTutorial.swift in Sources */,
@@ -861,6 +926,7 @@
 				DEBFD2AB2B8206BE00F7FDA8 /* ButtonStyleTutorial.swift in Sources */,
 				DE151D662B88A74800785708 /* PathTutorial.swift in Sources */,
 				DEBFD2CB2B84749100F7FDA8 /* SensoryFeedbackTutorial.swift in Sources */,
+				DEDA7DC52B8F4FDE0025FECA /* CustomLayoutPage.swift in Sources */,
 				DE151D622B87A68E00785708 /* RectangularTutorial.swift in Sources */,
 				DE151D642B88A42D00785708 /* CircleTutorial.swift in Sources */,
 				DED79DFE2B195A66007C257C /* TabBarView.swift in Sources */,
@@ -872,6 +938,8 @@
 				DE151D5A2B8728CE00785708 /* AddingAnimationActionTutorial.swift in Sources */,
 				DEBFD2B12B82D24C00F7FDA8 /* ButtonTutorial.swift in Sources */,
 				DEBFD2B52B82D7D000F7FDA8 /* PasteButtonTutorial.swift in Sources */,
+				DE1B20032B91DD0A00813B57 /* ConfiguringSpacingTutorial.swift in Sources */,
+				DE1B1FF72B91C16B00813B57 /* ForEachTutorial.swift in Sources */,
 				DEDA7DB82B8F33DF0025FECA /* PaddingTutorial.swift in Sources */,
 				DEF0C11F2B69F578004E2BA0 /* FoundationPage.swift in Sources */,
 				DE151D352B85E29F00785708 /* TextInputAndOutputPage.swift in Sources */,
