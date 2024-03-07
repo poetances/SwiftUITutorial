@@ -46,6 +46,18 @@ extension ConcurrencyTutorial {
             print("on cancel")
         }
     }
+
+    func yield() async {
+        for i in 0..<10 {
+            print("Task iteration \(i)")
+
+            // 在每次迭代中调用 Task.yield()，让出执行权
+            await Task.yield()
+
+            // 假设这里有一些耗时的操作
+            try? await Task.sleep(nanoseconds: 100_000_000) // 等待0.1秒
+        }
+    }
 }
 
 // MARK: - TaskGroup

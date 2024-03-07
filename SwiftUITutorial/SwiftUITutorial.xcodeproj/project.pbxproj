@@ -39,6 +39,11 @@
 		DE1B1FFF2B91D54500813B57 /* ConfiguringSeperatorsTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1B1FFE2B91D54500813B57 /* ConfiguringSeperatorsTutorial.swift */; };
 		DE1B20012B91DBC500813B57 /* ConfiguringHeadersTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1B20002B91DBC500813B57 /* ConfiguringHeadersTutorial.swift */; };
 		DE1B20032B91DD0A00813B57 /* ConfiguringSpacingTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1B20022B91DD0A00813B57 /* ConfiguringSpacingTutorial.swift */; };
+		DE1B20062B9565C600813B57 /* ConcurrencyPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1B20052B9565C600813B57 /* ConcurrencyPage.swift */; };
+		DE1B20082B9567EF00813B57 /* TasksTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1B20072B9567EF00813B57 /* TasksTutorial.swift */; };
+		DE1B200A2B95681700813B57 /* AsyncSequencesTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1B20092B95681700813B57 /* AsyncSequencesTutorial.swift */; };
+		DE1B200C2B95682600813B57 /* ContinuationsTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1B200B2B95682600813B57 /* ContinuationsTutorial.swift */; };
+		DE1B200E2B95683400813B57 /* ActorsTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1B200D2B95683400813B57 /* ActorsTutorial.swift */; };
 		DE2CDB3E2B6333380032BB12 /* ModalPresentationsTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2CDB3D2B6333380032BB12 /* ModalPresentationsTutorial.swift */; };
 		DE3D05892B608ECD00930B69 /* AttributedStringTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3D05882B608ECD00930B69 /* AttributedStringTutorial.swift */; };
 		DE539B902B268CD100F91DE2 /* StateObjectTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE539B8F2B268CD100F91DE2 /* StateObjectTutorial.swift */; };
@@ -173,6 +178,11 @@
 		DE1B1FFE2B91D54500813B57 /* ConfiguringSeperatorsTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfiguringSeperatorsTutorial.swift; sourceTree = "<group>"; };
 		DE1B20002B91DBC500813B57 /* ConfiguringHeadersTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfiguringHeadersTutorial.swift; sourceTree = "<group>"; };
 		DE1B20022B91DD0A00813B57 /* ConfiguringSpacingTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfiguringSpacingTutorial.swift; sourceTree = "<group>"; };
+		DE1B20052B9565C600813B57 /* ConcurrencyPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcurrencyPage.swift; sourceTree = "<group>"; };
+		DE1B20072B9567EF00813B57 /* TasksTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksTutorial.swift; sourceTree = "<group>"; };
+		DE1B20092B95681700813B57 /* AsyncSequencesTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncSequencesTutorial.swift; sourceTree = "<group>"; };
+		DE1B200B2B95682600813B57 /* ContinuationsTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinuationsTutorial.swift; sourceTree = "<group>"; };
+		DE1B200D2B95683400813B57 /* ActorsTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorsTutorial.swift; sourceTree = "<group>"; };
 		DE2CDB3D2B6333380032BB12 /* ModalPresentationsTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalPresentationsTutorial.swift; sourceTree = "<group>"; };
 		DE3928E72B560165003E290B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		DE3D05882B608ECD00930B69 /* AttributedStringTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributedStringTutorial.swift; sourceTree = "<group>"; };
@@ -358,9 +368,22 @@
 				DEF0C11E2B69F578004E2BA0 /* FoundationPage.swift */,
 				DE174F212B47809500039E92 /* CombineTutorail.swift */,
 				DE759E092B5D5D6500300751 /* ObservationTutorial.swift */,
-				DEF0C11C2B69F4A1004E2BA0 /* ConcurrencyTutorial.swift */,
+				DE1B20042B9565A200813B57 /* Concurrency */,
 			);
 			path = Foundation;
+			sourceTree = "<group>";
+		};
+		DE1B20042B9565A200813B57 /* Concurrency */ = {
+			isa = PBXGroup;
+			children = (
+				DE1B20052B9565C600813B57 /* ConcurrencyPage.swift */,
+				DE1B20072B9567EF00813B57 /* TasksTutorial.swift */,
+				DE1B20092B95681700813B57 /* AsyncSequencesTutorial.swift */,
+				DE1B200B2B95682600813B57 /* ContinuationsTutorial.swift */,
+				DE1B200D2B95683400813B57 /* ActorsTutorial.swift */,
+				DEF0C11C2B69F4A1004E2BA0 /* ConcurrencyTutorial.swift */,
+			);
+			path = Concurrency;
 			sourceTree = "<group>";
 		};
 		DEBFD2A72B82059B00F7FDA8 /* ViewStyles */ = {
@@ -855,6 +878,8 @@
 				DE174F222B47809500039E92 /* CombineTutorail.swift in Sources */,
 				DE151D3F2B86534E00785708 /* SecureTextFieldTutorial.swift in Sources */,
 				DEBFD2BD2B82FC2500F7FDA8 /* StepperTutorial.swift in Sources */,
+				DE1B200E2B95683400813B57 /* ActorsTutorial.swift in Sources */,
+				DE1B200A2B95681700813B57 /* AsyncSequencesTutorial.swift in Sources */,
 				DEBFD2B72B82EF7F00F7FDA8 /* RenameButtonTutorial.swift in Sources */,
 				DEBFD2C92B8470FF00F7FDA8 /* ContentUnavailableViewTutorial.swift in Sources */,
 				DEE9F8292B62829500C6E0CE /* TabViewTutorial.swift in Sources */,
@@ -880,6 +905,7 @@
 				DEBFD2C72B844BE500F7FDA8 /* ProgressViewTutorial.swift in Sources */,
 				DEBFD2D12B84813A00F7FDA8 /* MenuStyleTutorial.swift in Sources */,
 				DE8251662B6E23A20094A0C9 /* ModelDataTutorial.swift in Sources */,
+				DE1B20062B9565C600813B57 /* ConcurrencyPage.swift in Sources */,
 				DE547D6A2B4EEC9500459CD2 /* RenderLoopTutorail.swift in Sources */,
 				DE759E0A2B5D5D6500300751 /* ObservationTutorial.swift in Sources */,
 				DED734892B5E533700315E79 /* WebView.swift in Sources */,
@@ -907,6 +933,7 @@
 				DE151D372B85E2E800785708 /* TextTutorial.swift in Sources */,
 				DE1B1FF92B91CA2A00813B57 /* OutlineGroupTutorial.swift in Sources */,
 				DEBFD2BF2B83673A00F7FDA8 /* ToggleTutorial.swift in Sources */,
+				DE1B20082B9567EF00813B57 /* TasksTutorial.swift in Sources */,
 				DE151D682B88B8F600785708 /* ShapeTutorial.swift in Sources */,
 				DE3D05892B608ECD00930B69 /* AttributedStringTutorial.swift in Sources */,
 				DE151D2C2B85D22A00785708 /* ToggleStyleTutorial.swift in Sources */,
@@ -933,6 +960,7 @@
 				DEBFD2C12B84271D00F7FDA8 /* DatePickerTutorial.swift in Sources */,
 				DE151D3D2B86520C00785708 /* TextFieldStyleTutorial.swift in Sources */,
 				DEE53D672B85A57900772050 /* ContextMenuTutorial.swift in Sources */,
+				DE1B200C2B95682600813B57 /* ContinuationsTutorial.swift in Sources */,
 				DED79D802B19552D007C257C /* SwiftUITutorialApp.swift in Sources */,
 				DEDA7DC22B8F3E8E0025FECA /* SafeAreaTutorial.swift in Sources */,
 				DE151D5A2B8728CE00785708 /* AddingAnimationActionTutorial.swift in Sources */,
