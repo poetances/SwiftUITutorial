@@ -54,6 +54,7 @@
 		DE759E0C2B5D649100300751 /* AppTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE759E0B2B5D649100300751 /* AppTutorial.swift */; };
 		DE759E0E2B5D662100300751 /* SceneTutorail.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE759E0D2B5D662100300751 /* SceneTutorail.swift */; };
 		DE8251662B6E23A20094A0C9 /* ModelDataTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8251652B6E23A20094A0C9 /* ModelDataTutorial.swift */; };
+		DEA5F1252BA1284B005E9551 /* TaskLocalTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA5F1242BA1284B005E9551 /* TaskLocalTutorial.swift */; };
 		DEA9CAEF2B65FD8B00A0114C /* ToolBarToturial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA9CAEE2B65FD8B00A0114C /* ToolBarToturial.swift */; };
 		DEBFD2A42B81A36700F7FDA8 /* ViewModifierTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFD2A32B81A36700F7FDA8 /* ViewModifierTutorial.swift */; };
 		DEBFD2A92B8205B100F7FDA8 /* ViewStylesPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFD2A82B8205B100F7FDA8 /* ViewStylesPage.swift */; };
@@ -115,7 +116,6 @@
 		DEE9F8272B61142400C6E0CE /* NavigationTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE9F8262B61142400C6E0CE /* NavigationTutorial.swift */; };
 		DEE9F8292B62829500C6E0CE /* TabViewTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE9F8282B62829500C6E0CE /* TabViewTutorial.swift */; };
 		DEF0C11B2B68F984004E2BA0 /* SearchTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF0C11A2B68F984004E2BA0 /* SearchTutorial.swift */; };
-		DEF0C11D2B69F4A1004E2BA0 /* ConcurrencyTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF0C11C2B69F4A1004E2BA0 /* ConcurrencyTutorial.swift */; };
 		DEF0C11F2B69F578004E2BA0 /* FoundationPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF0C11E2B69F578004E2BA0 /* FoundationPage.swift */; };
 		DEF59F392B70D7DE001CEC0D /* PreferenceToturial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF59F382B70D7DE001CEC0D /* PreferenceToturial.swift */; };
 		DEF59F3B2B71FE42001CEC0D /* StorageTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF59F3A2B71FE42001CEC0D /* StorageTutorial.swift */; };
@@ -194,6 +194,7 @@
 		DE759E0B2B5D649100300751 /* AppTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTutorial.swift; sourceTree = "<group>"; };
 		DE759E0D2B5D662100300751 /* SceneTutorail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneTutorail.swift; sourceTree = "<group>"; };
 		DE8251652B6E23A20094A0C9 /* ModelDataTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelDataTutorial.swift; sourceTree = "<group>"; };
+		DEA5F1242BA1284B005E9551 /* TaskLocalTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskLocalTutorial.swift; sourceTree = "<group>"; };
 		DEA9CAEE2B65FD8B00A0114C /* ToolBarToturial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolBarToturial.swift; sourceTree = "<group>"; };
 		DEBFD2A32B81A36700F7FDA8 /* ViewModifierTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifierTutorial.swift; sourceTree = "<group>"; };
 		DEBFD2A82B8205B100F7FDA8 /* ViewStylesPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewStylesPage.swift; sourceTree = "<group>"; };
@@ -259,7 +260,6 @@
 		DEE9F8262B61142400C6E0CE /* NavigationTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTutorial.swift; sourceTree = "<group>"; };
 		DEE9F8282B62829500C6E0CE /* TabViewTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewTutorial.swift; sourceTree = "<group>"; };
 		DEF0C11A2B68F984004E2BA0 /* SearchTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTutorial.swift; sourceTree = "<group>"; };
-		DEF0C11C2B69F4A1004E2BA0 /* ConcurrencyTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcurrencyTutorial.swift; sourceTree = "<group>"; };
 		DEF0C11E2B69F578004E2BA0 /* FoundationPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundationPage.swift; sourceTree = "<group>"; };
 		DEF59F382B70D7DE001CEC0D /* PreferenceToturial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceToturial.swift; sourceTree = "<group>"; };
 		DEF59F3A2B71FE42001CEC0D /* StorageTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageTutorial.swift; sourceTree = "<group>"; };
@@ -366,8 +366,8 @@
 			isa = PBXGroup;
 			children = (
 				DEF0C11E2B69F578004E2BA0 /* FoundationPage.swift */,
-				DE174F212B47809500039E92 /* CombineTutorail.swift */,
-				DE759E092B5D5D6500300751 /* ObservationTutorial.swift */,
+				DEA5F10A2B9E8730005E9551 /* Combine */,
+				DEA5F1092B9E8720005E9551 /* Observation */,
 				DE1B20042B9565A200813B57 /* Concurrency */,
 			);
 			path = Foundation;
@@ -381,9 +381,25 @@
 				DE1B20092B95681700813B57 /* AsyncSequencesTutorial.swift */,
 				DE1B200B2B95682600813B57 /* ContinuationsTutorial.swift */,
 				DE1B200D2B95683400813B57 /* ActorsTutorial.swift */,
-				DEF0C11C2B69F4A1004E2BA0 /* ConcurrencyTutorial.swift */,
+				DEA5F1242BA1284B005E9551 /* TaskLocalTutorial.swift */,
 			);
 			path = Concurrency;
+			sourceTree = "<group>";
+		};
+		DEA5F1092B9E8720005E9551 /* Observation */ = {
+			isa = PBXGroup;
+			children = (
+				DE759E092B5D5D6500300751 /* ObservationTutorial.swift */,
+			);
+			path = Observation;
+			sourceTree = "<group>";
+		};
+		DEA5F10A2B9E8730005E9551 /* Combine */ = {
+			isa = PBXGroup;
+			children = (
+				DE174F212B47809500039E92 /* CombineTutorail.swift */,
+			);
+			path = Combine;
 			sourceTree = "<group>";
 		};
 		DEBFD2A72B82059B00F7FDA8 /* ViewStyles */ = {
@@ -899,6 +915,7 @@
 				DEE9F8272B61142400C6E0CE /* NavigationTutorial.swift in Sources */,
 				DEBFD2A42B81A36700F7FDA8 /* ViewModifierTutorial.swift in Sources */,
 				DEBFD2D62B8483E000F7FDA8 /* MenuTutorial.swift in Sources */,
+				DEA5F1252BA1284B005E9551 /* TaskLocalTutorial.swift in Sources */,
 				DEDEE4A02B7231BE00D9AC40 /* DrawingAndGraphicsTutorial.swift in Sources */,
 				DEDA7DBA2B8F33E70025FECA /* FrameTutorial.swift in Sources */,
 				DEDA7DCA2B9020DF0025FECA /* ListPage.swift in Sources */,
@@ -946,7 +963,6 @@
 				DE1B1FFB2B91CC7000813B57 /* DisclosureGroupTutorial.swift in Sources */,
 				DEBFD2CD2B847C7D00F7FDA8 /* ControlSizeTutorial.swift in Sources */,
 				DE151D412B8653ED00785708 /* TextEditorTutorial.swift in Sources */,
-				DEF0C11D2B69F4A1004E2BA0 /* ConcurrencyTutorial.swift in Sources */,
 				DEE449932B59452100EFBA84 /* SwiftMacroTutorail.swift in Sources */,
 				DEBFD2BB2B82F6EC00F7FDA8 /* SlideTutorial.swift in Sources */,
 				DEDA7DBC2B8F33F10025FECA /* PositionTutorial.swift in Sources */,

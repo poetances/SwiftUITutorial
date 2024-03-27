@@ -29,7 +29,7 @@ struct FoundationPage: View {
                 case .observation:
                     ObservationTutorial()
                 case .concurrency:
-                    ConcurrencyTutorial()
+                    ConcurrencyPage()
                 }
             }
         }

@@ -25,8 +25,11 @@ struct ConcurrencyPage: View {
                 ContinuationsTutorial()
             case .actors:
                 ActorsTutorial()
+            case .taskLocal:
+                TaskLocalTutorial()
             }
         }
+        .toolbar(.hidden, for: .tabBar)
     }
 }
 
@@ -37,6 +40,7 @@ extension ConcurrencyPage {
         case asyncSequences
         case continuations
         case actors
+        case taskLocal
     }
 }
 
