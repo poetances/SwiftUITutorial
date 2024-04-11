@@ -73,9 +73,10 @@ struct CorePage: View {
             .navigationDestination(for: String.self) { _ in
                 AttributedStringTutorial()
             }
-            .toolbarBackground(Color.blue, for: .navigationBar, .tabBar)
-            .toolbarRole(.browser)
         }
+        .toolbarBackground(Color.pink, for: .navigationBar, .tabBar)
+        .toolbarBackground(.visible, for: .tabBar)
+        .toolbarColorScheme(.dark, for: .tabBar)
         .environment(book)
     }
 }

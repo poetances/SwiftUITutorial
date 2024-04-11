@@ -253,8 +253,10 @@ extension ModalPresentationsTutorial {
             print("show---")
         }
         .sheet(isPresented: $isShowDetents2) {
-            Button("Hide Detents") {
-                isShowDetents2.toggle()
+            ScrollView {
+                Button("Hide Detents") {
+                    isShowDetents2.toggle()
+                }
             }
             .presentationDetents([.bar, .medium, .large], selection: $detent)
             .presentationContentInteraction(.scrolls)
@@ -338,6 +340,8 @@ extension ModalPresentationsTutorial {
     /*
      titleVisibility是否显示标题
      The visibility of the dialog’s title. The default value is Visibility.automatic.
+
+     可以通过Button, role来改变角色。
      */
     var confirmation_dialog: some View {
         Button("Confirmation Dialog") {
@@ -346,10 +350,10 @@ extension ModalPresentationsTutorial {
         .confirmationDialog("Dialog", 
                             isPresented: $isShowConfirmationDialog,
                             titleVisibility: .visible) {
-            Button("One") {
+            Button("One", role: .cancel) {
                 isShowConfirmationDialog.toggle()
             }
-            Button("Two") {
+            Button("Two", role: .destructive) {
                 isShowConfirmationDialog.toggle()
             }
             Button("Three") {

@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+// @main属于App中static func main函数。
 @main
 struct SwiftUITutorialApp: App {
     @Environment(\.scenePhase) private var scenePhase

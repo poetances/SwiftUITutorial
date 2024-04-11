@@ -56,6 +56,9 @@
 		DE8251662B6E23A20094A0C9 /* ModelDataTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8251652B6E23A20094A0C9 /* ModelDataTutorial.swift */; };
 		DEA5F1252BA1284B005E9551 /* TaskLocalTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA5F1242BA1284B005E9551 /* TaskLocalTutorial.swift */; };
 		DEA9CAEF2B65FD8B00A0114C /* ToolBarToturial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA9CAEE2B65FD8B00A0114C /* ToolBarToturial.swift */; };
+		DEAAC02A2BB5844400257C35 /* LeetCodePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAAC0292BB5844400257C35 /* LeetCodePage.swift */; };
+		DEAAC02F2BB5867E00257C35 /* LeetcodeArrayTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAAC02E2BB5867E00257C35 /* LeetcodeArrayTutorial.swift */; };
+		DEAAC0322BB6CD6700257C35 /* LeetCodeLinkTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAAC0312BB6CD6700257C35 /* LeetCodeLinkTutorial.swift */; };
 		DEBFD2A42B81A36700F7FDA8 /* ViewModifierTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFD2A32B81A36700F7FDA8 /* ViewModifierTutorial.swift */; };
 		DEBFD2A92B8205B100F7FDA8 /* ViewStylesPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFD2A82B8205B100F7FDA8 /* ViewStylesPage.swift */; };
 		DEBFD2AB2B8206BE00F7FDA8 /* ButtonStyleTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFD2AA2B8206BE00F7FDA8 /* ButtonStyleTutorial.swift */; };
@@ -196,6 +199,9 @@
 		DE8251652B6E23A20094A0C9 /* ModelDataTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelDataTutorial.swift; sourceTree = "<group>"; };
 		DEA5F1242BA1284B005E9551 /* TaskLocalTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskLocalTutorial.swift; sourceTree = "<group>"; };
 		DEA9CAEE2B65FD8B00A0114C /* ToolBarToturial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolBarToturial.swift; sourceTree = "<group>"; };
+		DEAAC0292BB5844400257C35 /* LeetCodePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeetCodePage.swift; sourceTree = "<group>"; };
+		DEAAC02E2BB5867E00257C35 /* LeetcodeArrayTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeetcodeArrayTutorial.swift; sourceTree = "<group>"; };
+		DEAAC0312BB6CD6700257C35 /* LeetCodeLinkTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeetCodeLinkTutorial.swift; sourceTree = "<group>"; };
 		DEBFD2A32B81A36700F7FDA8 /* ViewModifierTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifierTutorial.swift; sourceTree = "<group>"; };
 		DEBFD2A82B8205B100F7FDA8 /* ViewStylesPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewStylesPage.swift; sourceTree = "<group>"; };
 		DEBFD2AA2B8206BE00F7FDA8 /* ButtonStyleTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyleTutorial.swift; sourceTree = "<group>"; };
@@ -402,6 +408,32 @@
 			path = Combine;
 			sourceTree = "<group>";
 		};
+		DEAAC0282BB5840D00257C35 /* LeetCode */ = {
+			isa = PBXGroup;
+			children = (
+				DEAAC0292BB5844400257C35 /* LeetCodePage.swift */,
+				DEAAC02B2BB584E900257C35 /* Array */,
+				DEAAC0302BB6CD4F00257C35 /* Link */,
+			);
+			path = LeetCode;
+			sourceTree = "<group>";
+		};
+		DEAAC02B2BB584E900257C35 /* Array */ = {
+			isa = PBXGroup;
+			children = (
+				DEAAC02E2BB5867E00257C35 /* LeetcodeArrayTutorial.swift */,
+			);
+			path = Array;
+			sourceTree = "<group>";
+		};
+		DEAAC0302BB6CD4F00257C35 /* Link */ = {
+			isa = PBXGroup;
+			children = (
+				DEAAC0312BB6CD6700257C35 /* LeetCodeLinkTutorial.swift */,
+			);
+			path = Link;
+			sourceTree = "<group>";
+		};
 		DEBFD2A72B82059B00F7FDA8 /* ViewStyles */ = {
 			isa = PBXGroup;
 			children = (
@@ -541,6 +573,7 @@
 				DED79E002B195B48007C257C /* Core */,
 				DED79E012B195B4F007C257C /* UI */,
 				DE174F202B47806F00039E92 /* Foundation */,
+				DEAAC0282BB5840D00257C35 /* LeetCode */,
 			);
 			path = Module;
 			sourceTree = "<group>";
@@ -893,12 +926,14 @@
 				DE1B1FFF2B91D54500813B57 /* ConfiguringSeperatorsTutorial.swift in Sources */,
 				DE174F222B47809500039E92 /* CombineTutorail.swift in Sources */,
 				DE151D3F2B86534E00785708 /* SecureTextFieldTutorial.swift in Sources */,
+				DEAAC0322BB6CD6700257C35 /* LeetCodeLinkTutorial.swift in Sources */,
 				DEBFD2BD2B82FC2500F7FDA8 /* StepperTutorial.swift in Sources */,
 				DE1B200E2B95683400813B57 /* ActorsTutorial.swift in Sources */,
 				DE1B200A2B95681700813B57 /* AsyncSequencesTutorial.swift in Sources */,
 				DEBFD2B72B82EF7F00F7FDA8 /* RenameButtonTutorial.swift in Sources */,
 				DEBFD2C92B8470FF00F7FDA8 /* ContentUnavailableViewTutorial.swift in Sources */,
 				DEE9F8292B62829500C6E0CE /* TabViewTutorial.swift in Sources */,
+				DEAAC02A2BB5844400257C35 /* LeetCodePage.swift in Sources */,
 				DE151D462B86CE5200785708 /* AnimationsPage.swift in Sources */,
 				DEBFD2A92B8205B100F7FDA8 /* ViewStylesPage.swift in Sources */,
 				DEDA7DCC2B9061B10025FECA /* ListTutorial.swift in Sources */,
@@ -944,6 +979,7 @@
 				DEBFD2C52B84465D00F7FDA8 /* GaugeTutorial.swift in Sources */,
 				DEBFD2D42B84835700F7FDA8 /* MenuAndCommandsPage.swift in Sources */,
 				DE1B1FFD2B91CFCE00813B57 /* ConfiguringRowsTutorial.swift in Sources */,
+				DEAAC02F2BB5867E00257C35 /* LeetcodeArrayTutorial.swift in Sources */,
 				DEDA7DC72B9008780025FECA /* CreateCustomLayoutTutorial.swift in Sources */,
 				DE759E0E2B5D662100300751 /* SceneTutorail.swift in Sources */,
 				DEF59F392B70D7DE001CEC0D /* PreferenceToturial.swift in Sources */,

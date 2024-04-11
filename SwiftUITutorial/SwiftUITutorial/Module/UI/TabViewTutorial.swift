@@ -16,16 +16,18 @@ struct TabViewTutorial: View {
 
     // MARK: - system
     var body: some View {
+        Label("Label", systemImage: "list.dash")
 
         tabview_normal
         List {
-           Text("Recents")
+            Text("Recents")
                .badge(index)
             Text("Selection Index \(index)")
         }
         tabview_selection
         Divider()
         tabview_style
+            .toolbar(.hidden, for: .tabBar)
     }
 }
 
@@ -46,6 +48,7 @@ extension TabViewTutorial {
                     Label("Two", systemImage: "tray.and.arrow.up.fill")
                 }
         }
+        .tabViewStyle(.page(indexDisplayMode: .always))
     }
 }
 
@@ -55,23 +58,25 @@ extension TabViewTutorial {
     var tabview_selection: some View {
         TabView(selection: $index) {
             Text("scribble")
-                .tag(0)
                 .tabItem {
                     Label("scribble", systemImage: "scribble")
                 }
+                .tag(0)
+
 
             Text("eraser")
-                .tag(1)
                 .tabItem {
                     Label("eraser", systemImage: "eraser.fill")
                 }
+                .tag(1)
+
 
             Text("paperplane")
-                .tag(2)
-                .badge(2)
                 .tabItem {
                     Label("paperplane", systemImage: "paperplane")
                 }
+                .tag(2)
+                .badge(2)
         }
     }
 }
@@ -96,7 +101,7 @@ extension TabViewTutorial {
                     Label("xmark", systemImage: "xmark.bin")
                 }
         }
-        .tabViewStyle(.page)
+        .tabViewStyle(.page(indexDisplayMode: .automatic))
     }
 }
 

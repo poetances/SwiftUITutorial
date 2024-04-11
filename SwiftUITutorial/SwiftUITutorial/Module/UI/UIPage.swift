@@ -37,6 +37,8 @@ struct UIPage: View {
 
     @State private var isShowDetail = false
 
+    @State private var searchText = ""
+
     // MARK: - system
     var body: some View {
         NavigationStack {
@@ -102,8 +104,8 @@ struct UIPage: View {
             }
             .navigationBarTitleDisplayMode(.inline)
             .navigationTitle("UI")
-
         }
+        .toolbarBackground(.white, for: .tabBar)
     }
 }
 

@@ -28,9 +28,15 @@ struct TabBarView: View {
 
                 FoundationPage()
                     .tabItem {
-                        TabBarItem(title: "Combine", image: "arrow.3.trianglepath")
+                        TabBarItem(title: "Foundation", image: "arrow.3.trianglepath")
                     }
-                    .tag(Index.combine)
+                    .tag(Index.foundation)
+
+                LeetCodePage()
+                    .tabItem {
+                        TabBarItem(title: "LeeCode", image: "globe.americas.fill")
+                    }
+                    .tag(Index.leeCode)
             }
             // .toolbarBackground(Color.blue, for: .tabBar)
             // .toolbar(.visible, for: .tabBar)
@@ -41,7 +47,7 @@ struct TabBarView: View {
 extension TabBarView {
 
     enum Index: Int {
-        case core, ui, combine
+        case core, ui, foundation, leeCode
     }
 }
 

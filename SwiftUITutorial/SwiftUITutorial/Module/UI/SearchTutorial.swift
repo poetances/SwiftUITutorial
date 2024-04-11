@@ -16,26 +16,82 @@ struct Meal: Codable, Hashable, Identifiable {
     let rating: Double
     var tags: [String]
 
-    static func preview() -> Meal {
-        Meal(imageURL: "europian.jpg",
-             id: "3",
-             name: "food name",
-             location: "Africa",
-             rating: 4,
-             tags: ["Fast Food"])
+    static func preview() -> [Meal] {
+        [
+            Meal(imageURL: "europian.jpg",
+                 id: "3",
+                 name: "Apple",
+                 location: "Africa",
+                 rating: 4,
+                 tags: ["Fast Food"]),
+            Meal(imageURL: "europian.jpg",
+                 id: "3",
+                 name: "Orange",
+                 location: "Africa",
+                 rating: 4,
+                 tags: ["Fast Food"]),
+            Meal(imageURL: "europian.jpg",
+                 id: "3",
+                 name: "Banana",
+                 location: "Africa",
+                 rating: 4,
+                 tags: ["Fast Food"]),
+            Meal(imageURL: "europian.jpg",
+                 id: "3",
+                 name: "Pear",
+                 location: "Africa",
+                 rating: 4,
+                 tags: ["Fast Food"])
+        ]
+    }
+}
+
+enum MealSearchToken: String, Hashable, CaseIterable, Identifiable {
+    case fourStarReview = "4+ star review"
+    case onSale = "On sale"
+    case toGo = "To go"
+    case coupon = "coupon"
+    var id: String { rawValue }
+    func icon() -> String {
+        switch self {
+            case .fourStarReview:
+               return "star"
+            case .onSale:
+               return "paperplane"
+            case .toGo:
+               return "figure.walk"
+            case .coupon:
+               return "tag"
+        }
     }
 }
 
 class MealListViewModel: ObservableObject {
     @Published var meals = [Meal]()
-    @Published var searchText = ""
-
+    @Published var searchText: String = ""
+    @Published var selectedTokens = [MealSearchToken]()
+    @Published var suggestedTokens = MealSearchToken.allCases
     var filteredMeals: [Meal] {
-        guard !searchText.isEmpty else { return meals }
-        return meals.filter { meal in
-            meal.name.lowercased().contains(searchText.lowercased())
+        var meals = self.meals
+        if searchText.count > 0 {
+            meals = meals.filter { $0.name.localizedCaseInsensitiveContains(searchText) }
         }
+        for token in selectedTokens {
+            switch token {
+                case .fourStarReview:
+                    meals = meals.filter({ $0.rating >= 4 })
+                case .onSale, .coupon, .toGo:
+                meals = meals.filter({ $0.tags.contains(token.rawValue)})
+            }
+        }
+        return meals
     }
+}
+
+// Holds one token that we want the user to filter by. This *must* conform to Identifiable.
+struct Token: Identifiable {
+    var id: String { name }
+    var name: String
 }
 
 struct SearchTutorial: View {
@@ -50,10 +106,20 @@ struct SearchTutorial: View {
     @StateObject private var vm = MealListViewModel()
 
     @StateObject private var model = SearchModel()
+
+    let names = ["Holly", "Josh", "Rhonda", "Ted"]
+
+
     // MARK: - system
     var body: some View {
 
-        searchable
+//        searchable
+//        textEditor
+//        searchVm
+//        searchSuggestion
+//        searchTokens
+        searchTokens2
+            .toolbar(.hidden, for: .tabBar)
     }
 }
 
@@ -88,12 +154,12 @@ extension SearchTutorial {
 
             Section {
                 Button("dismiss") {
-                    // dismissSearch()
-                    isShow = false
+                     dismissSearch()
+//                    isShow = false
                 }
             }
         }
-        .searchable(text: $searchText, tokens: $model.tokens, placement: .navigationBarDrawer) { token in
+        .searchable(text: $searchText, tokens: $model.tokens, placement: .navigationBarDrawer, prompt: Text("prompt")) { token in
             switch token {
             case .apple: Text("apple")
             case .banana: Text("banana")
@@ -113,7 +179,7 @@ extension SearchTutorial {
     var searchVm: some View {
         List {
             ForEach(vm.filteredMeals) { meal in
-
+                Text(meal.name)
             }
             .listRowSeparator(.hidden, edges: .all)
         }
@@ -122,6 +188,81 @@ extension SearchTutorial {
         .searchable(text: $vm.searchText)
         .onSubmit(of: .search) {
             // 点击完成
+        }
+    }
+
+    var searchSuggestion: some View {
+        List {
+            ForEach(searchResults, id: \.self) { name in
+                NavigationLink {
+                    Text(name)
+                } label: {
+                    Text(name)
+                }
+            }
+        }
+        .navigationTitle("Contacts")
+        .searchable(text: $searchText) {
+            ForEach(searchResults, id: \.self) { result in
+                Text("Are you looking for \(result)?").searchCompletion(result)
+            }
+        }
+    }
+
+    var searchResults: [String] {
+        if searchText.isEmpty {
+            return names
+        } else {
+            return names.filter { $0.contains(searchText) }
+        }
+    }
+}
+
+extension SearchTutorial {
+
+    /// 通过建议令牌来实现
+    /// searchable(text: Binding<String>, tokens: Binding<C>, suggestedTokens: Binding<C>, @ViewBuilder token: @escaping (C.Element)
+
+    var searchTokens: some View {
+        List {
+            ForEach(vm.filteredMeals) { meal in
+                Text(meal.name)
+            }
+            .listRowSeparator(.hidden, edges: .all)
+        }
+        .listStyle(.plain)
+        .navigationTitle("Find Your Next Meal")
+        .searchable(text: $vm.searchText,
+                    tokens: $vm.selectedTokens,
+                    suggestedTokens: $vm.suggestedTokens,
+                    token: { token in
+            Label(token.rawValue, systemImage: token.icon())
+        })
+    }
+
+    /// searchable(text: Binding<String>, tokens: Binding<C>, @ViewBuilder token: @escaping (C.Element) -> T)
+    var searchTokens2: some View {
+        List {
+            ForEach(vm.filteredMeals) { meal in
+                Text(meal.name)
+            }
+            .listRowSeparator(.hidden, edges: .all)
+        }
+        .listStyle(.plain)
+        .navigationTitle("Find Your Next Meal")
+        .searchable(text: $vm.searchText,
+                    tokens: $vm.selectedTokens,
+                    token: { token in
+            Label(token.rawValue, systemImage: token.icon())
+        })
+        .searchSuggestions {
+            ForEach(vm.suggestedTokens) { token in
+                Button {
+                    vm.selectedTokens.append(token)
+                } label: {
+                    Label(token.rawValue, systemImage:  token.icon())
+                }
+            }
         }
     }
 }

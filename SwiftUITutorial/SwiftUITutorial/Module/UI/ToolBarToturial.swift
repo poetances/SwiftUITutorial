@@ -15,6 +15,13 @@ import SwiftUI
 
  ToolBarContent协议
  ToolBarItem、ToolBarItemGroup遵循了ToolBarContent协议
+
+ ToolBarItem用Label修饰，不会显示Text
+
+
+ // 修饰标题
+ toolbarTitleMenu
+ toolbarTitleDisplayMode
  */
 struct ToolBarToturial: View {
 
@@ -23,14 +30,29 @@ struct ToolBarToturial: View {
     @State private var isShowSheet = false
 
     @State private var bold = false
+
+    @Environment(\.dismiss) var dismiss
+    
     // MARK: - system
     var body: some View {
         List {
-//            toolbar
+            toolbar
 //            toolbar2
 //            modal
-            custom
+//            custom
         }
+        .toolbar(.hidden, for: .tabBar)
+        .toolbarColorScheme(.dark, for: .navigationBar)
+        .toolbarTitleMenu {
+            ForEach(0 ..< 5) { index in
+                Button(action: {
+                    dismiss()
+                }, label: {
+                    Text("\(index)")
+                })
+            }
+        }
+        .toolbarTitleDisplayMode(.inline)
     }
 }
 
@@ -44,7 +66,24 @@ extension ToolBarToturial {
         Text("Tool bar")
             .toolbar {
                 ToolbarItem(placement: .bottomBar) {
-                    Label("One", systemImage: "pencil.tip.crop.circle.fill")
+                    VStack {
+                        Image(systemName: "pencil.tip.crop.circle.fill")
+                        Text("Text")
+                    }
+                }
+
+                ToolbarItem(placement: .bottomBar) {
+                    VStack {
+                        Image(systemName: "pencil.tip.crop.circle.fill")
+                        Text("Text")
+                    }
+                }
+
+                ToolbarItem(placement: .bottomBar) {
+                    VStack {
+                        Image(systemName: "pencil.tip.crop.circle.fill")
+                        Text("Text")
+                    }
                 }
 
                 ToolbarItem(placement: .topBarTrailing) {
@@ -151,8 +190,14 @@ extension ToolBarToturial {
                         }
                     }
 
-                    ToolbarItem(placement: .confirmationAction) {
-                        Button("ConfirmationAction") {
+                    ToolbarItem(placement: .destructiveAction) {
+                        Button("DestructiveAction") {
+                            isShowSheet.toggle()
+                        }
+                    }
+
+                    ToolbarItem(placement: .navigation) {
+                        Button("Navigation") {
                             isShowSheet.toggle()
                         }
                     }
