@@ -9,12 +9,10 @@ import SwiftUI
 
 struct CorePage: View {
     @EnvironmentObject private var appDelegate: SwiftUIAppDelegate
-    @State private var book = EnvironmentBook()
 
     @State private var paths = [Destination]()
 
     private var contents = [
-        Content("StateObject", .stateObject),
         Content("PropertyWrapper", .propertyWrapper),
         Content("ResultBuilder", .resultBuilder),
         Content("RenderLoop", .renderLoop),
@@ -46,8 +44,6 @@ struct CorePage: View {
             .navigationTitle("Core")
             .navigationDestination(for: Destination.self) { des in
                 switch des {
-                case .stateObject:
-                    StateObjectTutorial()
                 case .propertyWrapper:
                     PropertyWrapperTutorial()
                 case .resultBuilder:
@@ -59,13 +55,13 @@ struct CorePage: View {
                 case .attibutedString:
                     AttributedStringTutorial()
                 case .modelData:
-                    ModelDataTutorial()
+                    ModelDataPage()
                 case .environment:
-                    EnvironmentTutorial()
+                    EnvironmentPage()
                 case .preference:
-                    PreferenceToturial()
+                    PreferencePage()
                 case .storage:
-                    StorageTutorial()
+                    StoragePage()
                 case .coreData:
                     CoreDataTutorial()
                 }
@@ -77,13 +73,11 @@ struct CorePage: View {
         .toolbarBackground(Color.pink, for: .navigationBar, .tabBar)
         .toolbarBackground(.visible, for: .tabBar)
         .toolbarColorScheme(.dark, for: .tabBar)
-        .environment(book)
     }
 }
 
 extension CorePage {
     enum Destination {
-        case stateObject
         case propertyWrapper
         case resultBuilder
         case renderLoop

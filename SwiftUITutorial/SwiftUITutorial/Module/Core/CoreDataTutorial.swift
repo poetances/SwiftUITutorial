@@ -8,6 +8,11 @@
 import SwiftUI
 import CoreData
 
+struct KeyPathModel {
+
+    var age = 12
+}
+
 
 struct CoreDataTutorial: View {
     var body: some View {

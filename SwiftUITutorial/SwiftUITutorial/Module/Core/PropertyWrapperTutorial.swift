@@ -7,12 +7,42 @@
 
 import SwiftUI
 
+
+extension Sequence {
+
+    func map<T>(_ keyPath: KeyPath<Element, T>) -> [T] {
+        map { $0[keyPath: keyPath] }
+    }
+
+    func sorted<T: Comparable>(_ keyPath: KeyPath<Element, T>) -> [Element] {
+        sorted { $0[keyPath: keyPath] < $1[keyPath: keyPath] }
+    }
+}
+
+
+// 属性包装器一定要有wrappedValue
+@propertyWrapper
+struct Wrapper<T> {
+    var wrappedValue: T
+}
+
 /// swift中常见的属性包装器包括：@State、@Binding、@StateObjce、@ObservaObject、@Published、
 /// @Environment、@EnvironmentObject、@AppStore、@SceneStore
 struct PropertyWrapperTutorial: View {
 
+    // 两种属性包装器的赋值是一样的。
+    @State private var age = 12
+    @State(wrappedValue: 12) private var age2
+
+    @Wrapper private var name = "Wrapper"
+    @Wrapper(wrappedValue: "Wrapper") private var name2
+
     var body: some View {
-        Text("Hello, World!")
+        VStack(spacing: 10) {
+            Button("Wrapper") {
+
+            }
+        }
     }
 }
 

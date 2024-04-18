@@ -22,6 +22,8 @@ import SwiftUI
 struct StateObjectTutorial: View {
     @StateObject var model = AppModel()
 
+    var so: StateObject = StateObject(wrappedValue: AppModel())
+
     var body: some View {
 
         ScrollView {
@@ -35,6 +37,10 @@ struct StateObjectTutorial: View {
             NavigationLink("ChildView") {
                 ChildView(model: model)
             }
+            
+        }
+        .onChange(of: model.count) { oldValue, newValue in
+            print(oldValue, newValue)
         }
     }
 }
@@ -49,6 +55,7 @@ struct ChildView: View {
 }
 
 class AppModel: ObservableObject {
+
 
     @Published var count = 0
 
