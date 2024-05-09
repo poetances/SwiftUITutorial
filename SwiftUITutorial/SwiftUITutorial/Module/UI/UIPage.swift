@@ -20,7 +20,6 @@ struct UIPage: View {
         Content("ToolBar", .toolbar),
         Content("Search", .search),
         Content("AppearanceModifiers", .appearanceModifiers),
-        Content("ViewModifierTutorial", .viewModifierTutorial),
         Content("ViewStyles", .viewStyles),
         Content("Animations", .animations),
         Content("Images", .images),
@@ -71,8 +70,6 @@ struct UIPage: View {
                     SearchTutorial()
                 case .appearanceModifiers:
                     AppearanceModifiersTutorial()
-                case .viewModifierTutorial:
-                    ViewModifierTutorial()
                 case .viewStyles:
                     ViewStylesPage()
                 case .animations:
@@ -121,7 +118,6 @@ extension UIPage {
         case toolbar
         case search
         case appearanceModifiers
-        case viewModifierTutorial
         case viewStyles
         case animations
         case controlsAndIndicators

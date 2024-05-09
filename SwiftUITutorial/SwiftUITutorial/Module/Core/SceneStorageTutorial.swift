@@ -42,6 +42,7 @@ import SwiftUI
  */
 struct SceneStorageTutorial: View {
 
+    
     @SceneStorage("count") private var count = 0
     @SceneStorage("text") private var text = ""
 

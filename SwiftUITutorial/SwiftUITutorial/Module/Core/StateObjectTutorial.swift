@@ -18,6 +18,10 @@ import SwiftUI
  对象所有权：视图拥有 @StateObject 标记的对象，对象的生命周期由视图控制。
  生命周期：当视图首次初始化时，对象会被创建。即使视图因状态变化而重建，对象也不会被销毁和重新创建，它会一直存在直到视图从内存中被彻底移除。
 
+ @State
+ public var wrappedValue: Value { get nonmutating set }
+ 使用结构体，我们可以声明mutating的方法，但不能声明mutating的计算属性(如body)，也不能在其中调用mutating的方法。
+
  */
 struct StateObjectTutorial: View {
     @StateObject var model = AppModel()
@@ -49,10 +53,29 @@ struct ChildView: View {
 
     @ObservedObject var model: AppModel
 
+    init(model: AppModel) {
+        self.model = model
+    }
+
     var body: some View {
         Text("子视图 count: \(model.count)")
     }
 }
+
+struct ChildView2: View {
+
+    @Binding var count: Int
+
+    init(count: Binding<Int>) {
+        _count = count
+    }
+
+    var body: some View {
+        Text("子视图 count: \(count)")
+    }
+}
+
+
 
 class AppModel: ObservableObject {
 
@@ -65,5 +88,38 @@ class AppModel: ObservableObject {
 
     deinit {
         print("AppModel 销毁。当前 count 值为 \(count)")
+    }
+}
+
+// MARK: - 内部实现原理
+final class Box<V>: ObservableObject {
+
+    var value: V {
+        willSet {
+            objectWillChange.send()
+        }
+    }
+
+    init(_ value: V) {
+        self.value = value
+    }
+}
+@propertyWrapper struct MState<V>: DynamicProperty {
+
+    @StateObject private var box: Box<V>
+
+    var wrappedValue: V {
+        get {
+            print("get::", box.value)
+            return box.value
+        }
+        nonmutating set {
+            box.value = newValue
+            print("set::", newValue)
+        }
+    }
+
+    init(wrappedValue value: V) {
+        self._box = StateObject(wrappedValue: Box(value))
     }
 }

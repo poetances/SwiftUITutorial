@@ -10,6 +10,8 @@
 		B8A5BE399A253C875D0E5616 /* Pods_SwiftUITutorial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 501C68E55187A4B1A48FB8E7 /* Pods_SwiftUITutorial.framework */; };
 		DDD6DE44B9B803309C9AFEC5 /* Pods_SwiftUITutorialTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C474B16181EA3D9D8D5CB1D8 /* Pods_SwiftUITutorialTests.framework */; };
 		DE02E3CE2BD103B300983F9F /* ViewFundamentalsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE02E3CD2BD103B300983F9F /* ViewFundamentalsPage.swift */; };
+		DE02E3D02BD11FCD00983F9F /* CreatingViewTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE02E3CF2BD11FCD00983F9F /* CreatingViewTutorial.swift */; };
+		DE02E3D22BD11FD900983F9F /* ModifyViewTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE02E3D12BD11FD900983F9F /* ModifyViewTutorial.swift */; };
 		DE151D2C2B85D22A00785708 /* ToggleStyleTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE151D2B2B85D22A00785708 /* ToggleStyleTutorial.swift */; };
 		DE151D2E2B85D64F00785708 /* GaugeStyleTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE151D2D2B85D64F00785708 /* GaugeStyleTutorial.swift */; };
 		DE151D302B85D94800785708 /* ProgressViewStyleTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE151D2F2B85D94700785708 /* ProgressViewStyleTutorial.swift */; };
@@ -31,7 +33,6 @@
 		DE151D662B88A74800785708 /* PathTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE151D652B88A74800785708 /* PathTutorial.swift */; };
 		DE151D682B88B8F600785708 /* ShapeTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE151D672B88B8F600785708 /* ShapeTutorial.swift */; };
 		DE151D6C2B8AE38B00785708 /* LayoutsFundamentalsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE151D6B2B8AE38B00785708 /* LayoutsFundamentalsPage.swift */; };
-		DE174F222B47809500039E92 /* CombineTutorail.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE174F212B47809500039E92 /* CombineTutorail.swift */; };
 		DE1B1FF52B91B47A00813B57 /* ListStyleTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1B1FF42B91B47A00813B57 /* ListStyleTutorial.swift */; };
 		DE1B1FF72B91C16B00813B57 /* ForEachTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1B1FF62B91C16B00813B57 /* ForEachTutorial.swift */; };
 		DE1B1FF92B91CA2A00813B57 /* OutlineGroupTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1B1FF82B91CA2A00813B57 /* OutlineGroupTutorial.swift */; };
@@ -64,6 +65,11 @@
 		DE1E3AC62BCE11EC00C1D1C3 /* SceneStorageTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1E3AC52BCE11EC00C1D1C3 /* SceneStorageTutorial.swift */; };
 		DE28B3DC2BCFE39000B81470 /* BindingTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE28B3DB2BCFE39000B81470 /* BindingTutorial.swift */; };
 		DE2CDB3E2B6333380032BB12 /* ModalPresentationsTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2CDB3D2B6333380032BB12 /* ModalPresentationsTutorial.swift */; };
+		DE3867702BEA474C003DE856 /* CombinePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE38676F2BEA474C003DE856 /* CombinePage.swift */; };
+		DE3867792BEB7160003DE856 /* PublisherPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3867782BEB7160003DE856 /* PublisherPage.swift */; };
+		DE38677C2BEB7209003DE856 /* MappingTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE38677B2BEB7209003DE856 /* MappingTutorial.swift */; };
+		DE38677F2BEC655A003DE856 /* FilteringTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE38677E2BEC655A003DE856 /* FilteringTutorial.swift */; };
+		DE3867822BEC666F003DE856 /* PublishedTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3867812BEC666F003DE856 /* PublishedTutorial.swift */; };
 		DE3D05892B608ECD00930B69 /* AttributedStringTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3D05882B608ECD00930B69 /* AttributedStringTutorial.swift */; };
 		DE539B902B268CD100F91DE2 /* StateObjectTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE539B8F2B268CD100F91DE2 /* StateObjectTutorial.swift */; };
 		DE539B952B2925C100F91DE2 /* ResultBuildTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE539B942B2925C100F91DE2 /* ResultBuildTutorial.swift */; };
@@ -78,7 +84,6 @@
 		DEAAC02A2BB5844400257C35 /* LeetCodePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAAC0292BB5844400257C35 /* LeetCodePage.swift */; };
 		DEAAC02F2BB5867E00257C35 /* LeetcodeArrayTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAAC02E2BB5867E00257C35 /* LeetcodeArrayTutorial.swift */; };
 		DEAAC0322BB6CD6700257C35 /* LeetCodeLinkTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAAC0312BB6CD6700257C35 /* LeetCodeLinkTutorial.swift */; };
-		DEBFD2A42B81A36700F7FDA8 /* ViewModifierTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFD2A32B81A36700F7FDA8 /* ViewModifierTutorial.swift */; };
 		DEBFD2A92B8205B100F7FDA8 /* ViewStylesPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFD2A82B8205B100F7FDA8 /* ViewStylesPage.swift */; };
 		DEBFD2AB2B8206BE00F7FDA8 /* ButtonStyleTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFD2AA2B8206BE00F7FDA8 /* ButtonStyleTutorial.swift */; };
 		DEBFD2AF2B82D14D00F7FDA8 /* ControlsAndIndicatorsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFD2AE2B82D14D00F7FDA8 /* ControlsAndIndicatorsPage.swift */; };
@@ -101,6 +106,7 @@
 		DEBFD2D12B84813A00F7FDA8 /* MenuStyleTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFD2D02B84813A00F7FDA8 /* MenuStyleTutorial.swift */; };
 		DEBFD2D42B84835700F7FDA8 /* MenuAndCommandsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFD2D32B84835700F7FDA8 /* MenuAndCommandsPage.swift */; };
 		DEBFD2D62B8483E000F7FDA8 /* MenuTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFD2D52B8483E000F7FDA8 /* MenuTutorial.swift */; };
+		DEC0FE032BE8F54C00485BAC /* PreviewInXcodeTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC0FE022BE8F54C00485BAC /* PreviewInXcodeTutorial.swift */; };
 		DED734892B5E533700315E79 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED734882B5E533700315E79 /* WebView.swift */; };
 		DED79D802B19552D007C257C /* SwiftUITutorialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED79D7F2B19552D007C257C /* SwiftUITutorialApp.swift */; };
 		DED79D842B19552F007C257C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DED79D832B19552F007C257C /* Assets.xcassets */; };
@@ -168,6 +174,8 @@
 		C474B16181EA3D9D8D5CB1D8 /* Pods_SwiftUITutorialTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftUITutorialTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA147CE32B3DCF8694968B1F /* Pods-SwiftUITutorial-SwiftUITutorialUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUITutorial-SwiftUITutorialUITests.release.xcconfig"; path = "Target Support Files/Pods-SwiftUITutorial-SwiftUITutorialUITests/Pods-SwiftUITutorial-SwiftUITutorialUITests.release.xcconfig"; sourceTree = "<group>"; };
 		DE02E3CD2BD103B300983F9F /* ViewFundamentalsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewFundamentalsPage.swift; sourceTree = "<group>"; };
+		DE02E3CF2BD11FCD00983F9F /* CreatingViewTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatingViewTutorial.swift; sourceTree = "<group>"; };
+		DE02E3D12BD11FD900983F9F /* ModifyViewTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyViewTutorial.swift; sourceTree = "<group>"; };
 		DE151D2B2B85D22A00785708 /* ToggleStyleTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleStyleTutorial.swift; sourceTree = "<group>"; };
 		DE151D2D2B85D64F00785708 /* GaugeStyleTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaugeStyleTutorial.swift; sourceTree = "<group>"; };
 		DE151D2F2B85D94700785708 /* ProgressViewStyleTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewStyleTutorial.swift; sourceTree = "<group>"; };
@@ -189,7 +197,6 @@
 		DE151D652B88A74800785708 /* PathTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathTutorial.swift; sourceTree = "<group>"; };
 		DE151D672B88B8F600785708 /* ShapeTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeTutorial.swift; sourceTree = "<group>"; };
 		DE151D6B2B8AE38B00785708 /* LayoutsFundamentalsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutsFundamentalsPage.swift; sourceTree = "<group>"; };
-		DE174F212B47809500039E92 /* CombineTutorail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineTutorail.swift; sourceTree = "<group>"; };
 		DE1B1FF42B91B47A00813B57 /* ListStyleTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListStyleTutorial.swift; sourceTree = "<group>"; };
 		DE1B1FF62B91C16B00813B57 /* ForEachTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForEachTutorial.swift; sourceTree = "<group>"; };
 		DE1B1FF82B91CA2A00813B57 /* OutlineGroupTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlineGroupTutorial.swift; sourceTree = "<group>"; };
@@ -222,6 +229,11 @@
 		DE1E3AC52BCE11EC00C1D1C3 /* SceneStorageTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneStorageTutorial.swift; sourceTree = "<group>"; };
 		DE28B3DB2BCFE39000B81470 /* BindingTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingTutorial.swift; sourceTree = "<group>"; };
 		DE2CDB3D2B6333380032BB12 /* ModalPresentationsTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalPresentationsTutorial.swift; sourceTree = "<group>"; };
+		DE38676F2BEA474C003DE856 /* CombinePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombinePage.swift; sourceTree = "<group>"; };
+		DE3867782BEB7160003DE856 /* PublisherPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublisherPage.swift; sourceTree = "<group>"; };
+		DE38677B2BEB7209003DE856 /* MappingTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MappingTutorial.swift; sourceTree = "<group>"; };
+		DE38677E2BEC655A003DE856 /* FilteringTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilteringTutorial.swift; sourceTree = "<group>"; };
+		DE3867812BEC666F003DE856 /* PublishedTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishedTutorial.swift; sourceTree = "<group>"; };
 		DE3928E72B560165003E290B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		DE3D05882B608ECD00930B69 /* AttributedStringTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributedStringTutorial.swift; sourceTree = "<group>"; };
 		DE539B8F2B268CD100F91DE2 /* StateObjectTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateObjectTutorial.swift; sourceTree = "<group>"; };
@@ -237,7 +249,6 @@
 		DEAAC0292BB5844400257C35 /* LeetCodePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeetCodePage.swift; sourceTree = "<group>"; };
 		DEAAC02E2BB5867E00257C35 /* LeetcodeArrayTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeetcodeArrayTutorial.swift; sourceTree = "<group>"; };
 		DEAAC0312BB6CD6700257C35 /* LeetCodeLinkTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeetCodeLinkTutorial.swift; sourceTree = "<group>"; };
-		DEBFD2A32B81A36700F7FDA8 /* ViewModifierTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifierTutorial.swift; sourceTree = "<group>"; };
 		DEBFD2A82B8205B100F7FDA8 /* ViewStylesPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewStylesPage.swift; sourceTree = "<group>"; };
 		DEBFD2AA2B8206BE00F7FDA8 /* ButtonStyleTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyleTutorial.swift; sourceTree = "<group>"; };
 		DEBFD2AC2B820E3A00F7FDA8 /* SwiftUITutorial.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftUITutorial.entitlements; sourceTree = "<group>"; };
@@ -261,6 +272,7 @@
 		DEBFD2D02B84813A00F7FDA8 /* MenuStyleTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuStyleTutorial.swift; sourceTree = "<group>"; };
 		DEBFD2D32B84835700F7FDA8 /* MenuAndCommandsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuAndCommandsPage.swift; sourceTree = "<group>"; };
 		DEBFD2D52B8483E000F7FDA8 /* MenuTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTutorial.swift; sourceTree = "<group>"; };
+		DEC0FE022BE8F54C00485BAC /* PreviewInXcodeTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewInXcodeTutorial.swift; sourceTree = "<group>"; };
 		DED734882B5E533700315E79 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		DED79D7C2B19552D007C257C /* SwiftUITutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUITutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DED79D7F2B19552D007C257C /* SwiftUITutorialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUITutorialApp.swift; sourceTree = "<group>"; };
@@ -346,8 +358,27 @@
 			isa = PBXGroup;
 			children = (
 				DE02E3CD2BD103B300983F9F /* ViewFundamentalsPage.swift */,
+				DE02E3D32BD1213400983F9F /* CreatingView */,
+				DE02E3D42BD1238100983F9F /* ModifyView */,
+				DEC0FE012BE8F4E900485BAC /* PreviewInXcode */,
 			);
 			name = ViewFundamentals;
+			sourceTree = "<group>";
+		};
+		DE02E3D32BD1213400983F9F /* CreatingView */ = {
+			isa = PBXGroup;
+			children = (
+				DE02E3CF2BD11FCD00983F9F /* CreatingViewTutorial.swift */,
+			);
+			name = CreatingView;
+			sourceTree = "<group>";
+		};
+		DE02E3D42BD1238100983F9F /* ModifyView */ = {
+			isa = PBXGroup;
+			children = (
+				DE02E3D12BD11FD900983F9F /* ModifyViewTutorial.swift */,
+			);
+			name = ModifyView;
 			sourceTree = "<group>";
 		};
 		DE151D332B85E25F00785708 /* TextInputAndOutput */ = {
@@ -412,7 +443,7 @@
 			isa = PBXGroup;
 			children = (
 				DEF0C11E2B69F578004E2BA0 /* FoundationPage.swift */,
-				DEA5F10A2B9E8730005E9551 /* Combine */,
+				DE3867762BEB7133003DE856 /* Combine */,
 				DEA5F1092B9E8720005E9551 /* Observation */,
 				DE1B20042B9565A200813B57 /* Concurrency */,
 			);
@@ -436,8 +467,8 @@
 			isa = PBXGroup;
 			children = (
 				DE1E3AA12BC9027D00C1D1C3 /* ModelDataPage.swift */,
-				DE8251652B6E23A20094A0C9 /* ModelDataTutorial.swift */,
 				DE539B8F2B268CD100F91DE2 /* StateObjectTutorial.swift */,
+				DE8251652B6E23A20094A0C9 /* ModelDataTutorial.swift */,
 				DE28B3DB2BCFE39000B81470 /* BindingTutorial.swift */,
 			);
 			name = ModelData;
@@ -480,20 +511,56 @@
 			name = Storage;
 			sourceTree = "<group>";
 		};
+		DE3867762BEB7133003DE856 /* Combine */ = {
+			isa = PBXGroup;
+			children = (
+				DE38676F2BEA474C003DE856 /* CombinePage.swift */,
+				DE3867772BEB7146003DE856 /* Publisher */,
+				DE3867802BEC6658003DE856 /* Published */,
+			);
+			path = Combine;
+			sourceTree = "<group>";
+		};
+		DE3867772BEB7146003DE856 /* Publisher */ = {
+			isa = PBXGroup;
+			children = (
+				DE3867782BEB7160003DE856 /* PublisherPage.swift */,
+				DE38677A2BEB7194003DE856 /* Mapping */,
+				DE38677D2BEC653E003DE856 /* Filtering */,
+			);
+			name = Publisher;
+			sourceTree = "<group>";
+		};
+		DE38677A2BEB7194003DE856 /* Mapping */ = {
+			isa = PBXGroup;
+			children = (
+				DE38677B2BEB7209003DE856 /* MappingTutorial.swift */,
+			);
+			name = Mapping;
+			sourceTree = "<group>";
+		};
+		DE38677D2BEC653E003DE856 /* Filtering */ = {
+			isa = PBXGroup;
+			children = (
+				DE38677E2BEC655A003DE856 /* FilteringTutorial.swift */,
+			);
+			name = Filtering;
+			sourceTree = "<group>";
+		};
+		DE3867802BEC6658003DE856 /* Published */ = {
+			isa = PBXGroup;
+			children = (
+				DE3867812BEC666F003DE856 /* PublishedTutorial.swift */,
+			);
+			name = Published;
+			sourceTree = "<group>";
+		};
 		DEA5F1092B9E8720005E9551 /* Observation */ = {
 			isa = PBXGroup;
 			children = (
 				DE759E092B5D5D6500300751 /* ObservationTutorial.swift */,
 			);
 			path = Observation;
-			sourceTree = "<group>";
-		};
-		DEA5F10A2B9E8730005E9551 /* Combine */ = {
-			isa = PBXGroup;
-			children = (
-				DE174F212B47809500039E92 /* CombineTutorail.swift */,
-			);
-			path = Combine;
 			sourceTree = "<group>";
 		};
 		DEAAC0282BB5840D00257C35 /* LeetCode */ = {
@@ -573,6 +640,14 @@
 				DEE53D682B85CB1300772050 /* CommandsTutorial.swift */,
 			);
 			name = MenuAndCommands;
+			sourceTree = "<group>";
+		};
+		DEC0FE012BE8F4E900485BAC /* PreviewInXcode */ = {
+			isa = PBXGroup;
+			children = (
+				DEC0FE022BE8F54C00485BAC /* PreviewInXcodeTutorial.swift */,
+			);
+			name = PreviewInXcode;
 			sourceTree = "<group>";
 		};
 		DED734872B5E531500315E79 /* Components */ = {
@@ -698,7 +773,6 @@
 				DEA9CAEE2B65FD8B00A0114C /* ToolBarToturial.swift */,
 				DEF0C11A2B68F984004E2BA0 /* SearchTutorial.swift */,
 				DEDEE49D2B72288000D9AC40 /* AppearanceModifiersTutorial.swift */,
-				DEBFD2A32B81A36700F7FDA8 /* ViewModifierTutorial.swift */,
 				DE02E3CC2BD1033C00983F9F /* ViewFundamentals */,
 				DEBFD2A72B82059B00F7FDA8 /* ViewStyles */,
 				DE151D442B86CE2B00785708 /* Animations */,
@@ -1012,7 +1086,7 @@
 				DE151D2E2B85D64F00785708 /* GaugeStyleTutorial.swift in Sources */,
 				DE2CDB3E2B6333380032BB12 /* ModalPresentationsTutorial.swift in Sources */,
 				DE1B1FFF2B91D54500813B57 /* ConfiguringSeperatorsTutorial.swift in Sources */,
-				DE174F222B47809500039E92 /* CombineTutorail.swift in Sources */,
+				DE02E3D02BD11FCD00983F9F /* CreatingViewTutorial.swift in Sources */,
 				DE151D3F2B86534E00785708 /* SecureTextFieldTutorial.swift in Sources */,
 				DEAAC0322BB6CD6700257C35 /* LeetCodeLinkTutorial.swift in Sources */,
 				DEBFD2BD2B82FC2500F7FDA8 /* StepperTutorial.swift in Sources */,
@@ -1023,6 +1097,7 @@
 				DEE9F8292B62829500C6E0CE /* TabViewTutorial.swift in Sources */,
 				DEAAC02A2BB5844400257C35 /* LeetCodePage.swift in Sources */,
 				DE151D462B86CE5200785708 /* AnimationsPage.swift in Sources */,
+				DE38677C2BEB7209003DE856 /* MappingTutorial.swift in Sources */,
 				DEBFD2A92B8205B100F7FDA8 /* ViewStylesPage.swift in Sources */,
 				DEDA7DCC2B9061B10025FECA /* ListTutorial.swift in Sources */,
 				DE151D3B2B860AD200785708 /* TextFieldTutorial.swift in Sources */,
@@ -1031,11 +1106,11 @@
 				DE1B1FF52B91B47A00813B57 /* ListStyleTutorial.swift in Sources */,
 				DE151D302B85D94800785708 /* ProgressViewStyleTutorial.swift in Sources */,
 				DED79E052B195C34007C257C /* UIPage.swift in Sources */,
+				DE3867792BEB7160003DE856 /* PublisherPage.swift in Sources */,
 				DEDEE49E2B72288000D9AC40 /* AppearanceModifiersTutorial.swift in Sources */,
 				DE151D5D2B8740F800785708 /* ImagesPage.swift in Sources */,
 				DE151D322B85DA5D00785708 /* LabelStyleTutorial.swift in Sources */,
 				DEE9F8272B61142400C6E0CE /* NavigationTutorial.swift in Sources */,
-				DEBFD2A42B81A36700F7FDA8 /* ViewModifierTutorial.swift in Sources */,
 				DEBFD2D62B8483E000F7FDA8 /* MenuTutorial.swift in Sources */,
 				DE1E3ABB2BCCC6BC00C1D1C3 /* PreferencePage.swift in Sources */,
 				DEA5F1252BA1284B005E9551 /* TaskLocalTutorial.swift in Sources */,
@@ -1075,6 +1150,8 @@
 				DE1E3AA62BC9045700C1D1C3 /* EnvironmentPage.swift in Sources */,
 				DEDA7DC72B9008780025FECA /* CreateCustomLayoutTutorial.swift in Sources */,
 				DE759E0E2B5D662100300751 /* SceneTutorail.swift in Sources */,
+				DE02E3D22BD11FD900983F9F /* ModifyViewTutorial.swift in Sources */,
+				DEC0FE032BE8F54C00485BAC /* PreviewInXcodeTutorial.swift in Sources */,
 				DE151D372B85E2E800785708 /* TextTutorial.swift in Sources */,
 				DE1B1FF92B91CA2A00813B57 /* OutlineGroupTutorial.swift in Sources */,
 				DEBFD2BF2B83673A00F7FDA8 /* ToggleTutorial.swift in Sources */,
@@ -1087,6 +1164,7 @@
 				DE1E3AA22BC9027D00C1D1C3 /* ModelDataPage.swift in Sources */,
 				DE151D392B86061300785708 /* LabelTutorial.swift in Sources */,
 				DE151D602B87A5BE00785708 /* ShapesPage.swift in Sources */,
+				DE3867822BEC666F003DE856 /* PublishedTutorial.swift in Sources */,
 				DEE9F8232B6106C000C6E0CE /* WindowTutorial.swift in Sources */,
 				DEBFD2CF2B847E4700F7FDA8 /* PickerStyleTutorial.swift in Sources */,
 				DEE53D692B85CB1300772050 /* CommandsTutorial.swift in Sources */,
@@ -1096,6 +1174,7 @@
 				DE151D412B8653ED00785708 /* TextEditorTutorial.swift in Sources */,
 				DEE449932B59452100EFBA84 /* SwiftMacroTutorail.swift in Sources */,
 				DEBFD2BB2B82F6EC00F7FDA8 /* SlideTutorial.swift in Sources */,
+				DE3867702BEA474C003DE856 /* CombinePage.swift in Sources */,
 				DE1E3AC22BCE10C900C1D1C3 /* StoragePage.swift in Sources */,
 				DEDA7DBC2B8F33F10025FECA /* PositionTutorial.swift in Sources */,
 				DEBFD2AB2B8206BE00F7FDA8 /* ButtonStyleTutorial.swift in Sources */,
@@ -1110,6 +1189,7 @@
 				DE151D642B88A42D00785708 /* CircleTutorial.swift in Sources */,
 				DED79DFE2B195A66007C257C /* TabBarView.swift in Sources */,
 				DEBFD2C12B84271D00F7FDA8 /* DatePickerTutorial.swift in Sources */,
+				DE38677F2BEC655A003DE856 /* FilteringTutorial.swift in Sources */,
 				DE151D3D2B86520C00785708 /* TextFieldStyleTutorial.swift in Sources */,
 				DEE53D672B85A57900772050 /* ContextMenuTutorial.swift in Sources */,
 				DE1B200C2B95682600813B57 /* ContinuationsTutorial.swift in Sources */,

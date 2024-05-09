@@ -67,6 +67,7 @@ struct BindingContentView: View {
         let _ = print("Binding content", count)
         VStack(spacing: 15) {
             Text("\(count)")
+            
 
             Button {
                 count += 1

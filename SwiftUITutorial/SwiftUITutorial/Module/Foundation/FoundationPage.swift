@@ -25,7 +25,7 @@ struct FoundationPage: View {
             .navigationDestination(for: Destination.self) { des in
                 switch des {
                 case .combine:
-                    CombineTutorail()
+                    CombinePage()
                 case .observation:
                     ObservationTutorial()
                 case .concurrency:

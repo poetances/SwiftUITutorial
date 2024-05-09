@@ -1,38 +1,38 @@
 //
-//  ViewFundamentalsPage.swift
+//  CombinePage.swift
 //  SwiftUITutorial
 //
-//  Created by zcj on 2024/4/18.
+//  Created by zcj on 2024/5/7.
 //
 
 import SwiftUI
 
-struct ViewFundamentalsPage: View {
+struct CombinePage: View {
     var body: some View {
         List(Destination.allCases, id: \.rawValue) { des in
             NavigationLink(des.rawValue.capitalized, value: des)
         }
         .toolbar(.hidden, for: .tabBar)
-        .navigationTitle("ViewFundamentals")
+        .navigationTitle("CombinePage")
         .navigationDestination(for: Destination.self) { des in
             switch des {
-            case .creatingView:
-                CreatingViewTutorial()
-            case .modifyView:
-                ModifyViewTutorial()
+            case .publisher:
+                PublisherPage()
+            case .published:
+                PublishedTutorial()
             }
         }
     }
 }
 
-extension ViewFundamentalsPage {
- 
+extension CombinePage {
+
     enum Destination: String, CaseIterable {
-        case creatingView
-        case modifyView
+        case publisher
+        case published
     }
 }
 
 #Preview {
-    ViewFundamentalsPage()
+    CombinePage()
 }
