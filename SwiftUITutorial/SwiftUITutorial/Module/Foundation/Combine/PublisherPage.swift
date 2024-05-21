@@ -6,6 +6,18 @@
 //
 
 import SwiftUI
+import Combine
+
+extension Combine.Publisher {
+
+    func sinkAutoPrint() -> AnyCancellable {
+        return self.sink { cp in
+            Swift.print("completion", cp)
+        } receiveValue: { value in
+            Swift.print("receive value", value)
+        }
+    }
+}
 
 /*
  protocol Publisher<Output, Failure>
@@ -27,8 +39,24 @@ struct PublisherPage: View {
         .navigationTitle("Publisher")
         .navigationDestination(for: Destination.self) { des in
             switch des {
+            case .custom:
+                CustomPubliserTutorial()
             case .mapping:
                 MappingTutorial()
+            case .filtering:
+                FilteringTutorial()
+            case .reducing:
+                ReducingTutorial()
+            case .mathematic:
+                MathematicOperatorTutorial()
+            case .matching:
+                MatchingTutorial()
+            case .sequenceOperator:
+                SequenceOperatorTutorial()
+            case .specificElement:
+                SpecificElementTutorial()
+            case .multiplePublisher:
+                MultiplePublisherTutorial()
             }
         }
     }
@@ -37,9 +65,18 @@ struct PublisherPage: View {
 extension PublisherPage {
 
     enum Destination: String, CaseIterable {
+        case custom
         case mapping
+        case filtering
+        case reducing
+        case mathematic
+        case matching
+        case sequenceOperator
+        case specificElement
+        case multiplePublisher
     }
 }
+
 
 #Preview {
     PublisherPage()

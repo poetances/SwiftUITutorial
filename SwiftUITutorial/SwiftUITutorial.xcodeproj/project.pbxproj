@@ -12,6 +12,8 @@
 		DE02E3CE2BD103B300983F9F /* ViewFundamentalsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE02E3CD2BD103B300983F9F /* ViewFundamentalsPage.swift */; };
 		DE02E3D02BD11FCD00983F9F /* CreatingViewTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE02E3CF2BD11FCD00983F9F /* CreatingViewTutorial.swift */; };
 		DE02E3D22BD11FD900983F9F /* ModifyViewTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE02E3D12BD11FD900983F9F /* ModifyViewTutorial.swift */; };
+		DE02F9112BEE2BAA00CB7ECD /* CustomPubliserTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE02F9102BEE2BAA00CB7ECD /* CustomPubliserTutorial.swift */; };
+		DE02F93C2BF22F9C00CB7ECD /* SubscriptionsTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE02F93B2BF22F9C00CB7ECD /* SubscriptionsTutorial.swift */; };
 		DE151D2C2B85D22A00785708 /* ToggleStyleTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE151D2B2B85D22A00785708 /* ToggleStyleTutorial.swift */; };
 		DE151D2E2B85D64F00785708 /* GaugeStyleTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE151D2D2B85D64F00785708 /* GaugeStyleTutorial.swift */; };
 		DE151D302B85D94800785708 /* ProgressViewStyleTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE151D2F2B85D94700785708 /* ProgressViewStyleTutorial.swift */; };
@@ -70,6 +72,8 @@
 		DE38677C2BEB7209003DE856 /* MappingTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE38677B2BEB7209003DE856 /* MappingTutorial.swift */; };
 		DE38677F2BEC655A003DE856 /* FilteringTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE38677E2BEC655A003DE856 /* FilteringTutorial.swift */; };
 		DE3867822BEC666F003DE856 /* PublishedTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3867812BEC666F003DE856 /* PublishedTutorial.swift */; };
+		DE3867852BECD037003DE856 /* CancelableTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3867842BECD037003DE856 /* CancelableTutorial.swift */; };
+		DE3867882BECD938003DE856 /* SubscribersTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3867872BECD938003DE856 /* SubscribersTutorial.swift */; };
 		DE3D05892B608ECD00930B69 /* AttributedStringTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3D05882B608ECD00930B69 /* AttributedStringTutorial.swift */; };
 		DE539B902B268CD100F91DE2 /* StateObjectTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE539B8F2B268CD100F91DE2 /* StateObjectTutorial.swift */; };
 		DE539B952B2925C100F91DE2 /* ResultBuildTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE539B942B2925C100F91DE2 /* ResultBuildTutorial.swift */; };
@@ -107,6 +111,12 @@
 		DEBFD2D42B84835700F7FDA8 /* MenuAndCommandsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFD2D32B84835700F7FDA8 /* MenuAndCommandsPage.swift */; };
 		DEBFD2D62B8483E000F7FDA8 /* MenuTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFD2D52B8483E000F7FDA8 /* MenuTutorial.swift */; };
 		DEC0FE032BE8F54C00485BAC /* PreviewInXcodeTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC0FE022BE8F54C00485BAC /* PreviewInXcodeTutorial.swift */; };
+		DED495622BF6160C005CEEE4 /* ReducingTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED495612BF6160C005CEEE4 /* ReducingTutorial.swift */; };
+		DED495652BF6F5A1005CEEE4 /* MathematicOperatorTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED495642BF6F5A1005CEEE4 /* MathematicOperatorTutorial.swift */; };
+		DED495682BF6FD0E005CEEE4 /* MatchingTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED495672BF6FD0E005CEEE4 /* MatchingTutorial.swift */; };
+		DED4956B2BF70DEF005CEEE4 /* SequenceOperatorTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED4956A2BF70DEF005CEEE4 /* SequenceOperatorTutorial.swift */; };
+		DED495702BFAEB49005CEEE4 /* SpecificElementTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED4956F2BFAEB49005CEEE4 /* SpecificElementTutorial.swift */; };
+		DED495732BFB374B005CEEE4 /* MultiplePublisherTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED495722BFB374B005CEEE4 /* MultiplePublisherTutorial.swift */; };
 		DED734892B5E533700315E79 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED734882B5E533700315E79 /* WebView.swift */; };
 		DED79D802B19552D007C257C /* SwiftUITutorialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED79D7F2B19552D007C257C /* SwiftUITutorialApp.swift */; };
 		DED79D842B19552F007C257C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DED79D832B19552F007C257C /* Assets.xcassets */; };
@@ -176,6 +186,8 @@
 		DE02E3CD2BD103B300983F9F /* ViewFundamentalsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewFundamentalsPage.swift; sourceTree = "<group>"; };
 		DE02E3CF2BD11FCD00983F9F /* CreatingViewTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatingViewTutorial.swift; sourceTree = "<group>"; };
 		DE02E3D12BD11FD900983F9F /* ModifyViewTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyViewTutorial.swift; sourceTree = "<group>"; };
+		DE02F9102BEE2BAA00CB7ECD /* CustomPubliserTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPubliserTutorial.swift; sourceTree = "<group>"; };
+		DE02F93B2BF22F9C00CB7ECD /* SubscriptionsTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionsTutorial.swift; sourceTree = "<group>"; };
 		DE151D2B2B85D22A00785708 /* ToggleStyleTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleStyleTutorial.swift; sourceTree = "<group>"; };
 		DE151D2D2B85D64F00785708 /* GaugeStyleTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaugeStyleTutorial.swift; sourceTree = "<group>"; };
 		DE151D2F2B85D94700785708 /* ProgressViewStyleTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewStyleTutorial.swift; sourceTree = "<group>"; };
@@ -234,6 +246,8 @@
 		DE38677B2BEB7209003DE856 /* MappingTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MappingTutorial.swift; sourceTree = "<group>"; };
 		DE38677E2BEC655A003DE856 /* FilteringTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilteringTutorial.swift; sourceTree = "<group>"; };
 		DE3867812BEC666F003DE856 /* PublishedTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishedTutorial.swift; sourceTree = "<group>"; };
+		DE3867842BECD037003DE856 /* CancelableTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelableTutorial.swift; sourceTree = "<group>"; };
+		DE3867872BECD938003DE856 /* SubscribersTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribersTutorial.swift; sourceTree = "<group>"; };
 		DE3928E72B560165003E290B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		DE3D05882B608ECD00930B69 /* AttributedStringTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributedStringTutorial.swift; sourceTree = "<group>"; };
 		DE539B8F2B268CD100F91DE2 /* StateObjectTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateObjectTutorial.swift; sourceTree = "<group>"; };
@@ -273,6 +287,12 @@
 		DEBFD2D32B84835700F7FDA8 /* MenuAndCommandsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuAndCommandsPage.swift; sourceTree = "<group>"; };
 		DEBFD2D52B8483E000F7FDA8 /* MenuTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTutorial.swift; sourceTree = "<group>"; };
 		DEC0FE022BE8F54C00485BAC /* PreviewInXcodeTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewInXcodeTutorial.swift; sourceTree = "<group>"; };
+		DED495612BF6160C005CEEE4 /* ReducingTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReducingTutorial.swift; sourceTree = "<group>"; };
+		DED495642BF6F5A1005CEEE4 /* MathematicOperatorTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathematicOperatorTutorial.swift; sourceTree = "<group>"; };
+		DED495672BF6FD0E005CEEE4 /* MatchingTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchingTutorial.swift; sourceTree = "<group>"; };
+		DED4956A2BF70DEF005CEEE4 /* SequenceOperatorTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequenceOperatorTutorial.swift; sourceTree = "<group>"; };
+		DED4956F2BFAEB49005CEEE4 /* SpecificElementTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecificElementTutorial.swift; sourceTree = "<group>"; };
+		DED495722BFB374B005CEEE4 /* MultiplePublisherTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplePublisherTutorial.swift; sourceTree = "<group>"; };
 		DED734882B5E533700315E79 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		DED79D7C2B19552D007C257C /* SwiftUITutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUITutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DED79D7F2B19552D007C257C /* SwiftUITutorialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUITutorialApp.swift; sourceTree = "<group>"; };
@@ -379,6 +399,22 @@
 				DE02E3D12BD11FD900983F9F /* ModifyViewTutorial.swift */,
 			);
 			name = ModifyView;
+			sourceTree = "<group>";
+		};
+		DE02F90F2BEE2B8A00CB7ECD /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				DE02F9102BEE2BAA00CB7ECD /* CustomPubliserTutorial.swift */,
+			);
+			name = Custom;
+			sourceTree = "<group>";
+		};
+		DE02F93A2BF22F5D00CB7ECD /* Subscriptions */ = {
+			isa = PBXGroup;
+			children = (
+				DE02F93B2BF22F9C00CB7ECD /* SubscriptionsTutorial.swift */,
+			);
+			name = Subscriptions;
 			sourceTree = "<group>";
 		};
 		DE151D332B85E25F00785708 /* TextInputAndOutput */ = {
@@ -517,6 +553,9 @@
 				DE38676F2BEA474C003DE856 /* CombinePage.swift */,
 				DE3867772BEB7146003DE856 /* Publisher */,
 				DE3867802BEC6658003DE856 /* Published */,
+				DE3867832BECD024003DE856 /* Cancelable */,
+				DE3867862BECD542003DE856 /* Subscribers */,
+				DE02F93A2BF22F5D00CB7ECD /* Subscriptions */,
 			);
 			path = Combine;
 			sourceTree = "<group>";
@@ -525,8 +564,15 @@
 			isa = PBXGroup;
 			children = (
 				DE3867782BEB7160003DE856 /* PublisherPage.swift */,
+				DE02F90F2BEE2B8A00CB7ECD /* Custom */,
 				DE38677A2BEB7194003DE856 /* Mapping */,
 				DE38677D2BEC653E003DE856 /* Filtering */,
+				DED495602BF615A0005CEEE4 /* Reducing */,
+				DED495632BF6F56D005CEEE4 /* MathematicOperator */,
+				DED495662BF6FCF6005CEEE4 /* Matching */,
+				DED495692BF70DC5005CEEE4 /* SequenceOperator */,
+				DED4956E2BFAEB19005CEEE4 /* SpecificElement */,
+				DED495712BFAF21C005CEEE4 /* MultiplePublisher */,
 			);
 			name = Publisher;
 			sourceTree = "<group>";
@@ -553,6 +599,22 @@
 				DE3867812BEC666F003DE856 /* PublishedTutorial.swift */,
 			);
 			name = Published;
+			sourceTree = "<group>";
+		};
+		DE3867832BECD024003DE856 /* Cancelable */ = {
+			isa = PBXGroup;
+			children = (
+				DE3867842BECD037003DE856 /* CancelableTutorial.swift */,
+			);
+			name = Cancelable;
+			sourceTree = "<group>";
+		};
+		DE3867862BECD542003DE856 /* Subscribers */ = {
+			isa = PBXGroup;
+			children = (
+				DE3867872BECD938003DE856 /* SubscribersTutorial.swift */,
+			);
+			name = Subscribers;
 			sourceTree = "<group>";
 		};
 		DEA5F1092B9E8720005E9551 /* Observation */ = {
@@ -648,6 +710,54 @@
 				DEC0FE022BE8F54C00485BAC /* PreviewInXcodeTutorial.swift */,
 			);
 			name = PreviewInXcode;
+			sourceTree = "<group>";
+		};
+		DED495602BF615A0005CEEE4 /* Reducing */ = {
+			isa = PBXGroup;
+			children = (
+				DED495612BF6160C005CEEE4 /* ReducingTutorial.swift */,
+			);
+			name = Reducing;
+			sourceTree = "<group>";
+		};
+		DED495632BF6F56D005CEEE4 /* MathematicOperator */ = {
+			isa = PBXGroup;
+			children = (
+				DED495642BF6F5A1005CEEE4 /* MathematicOperatorTutorial.swift */,
+			);
+			name = MathematicOperator;
+			sourceTree = "<group>";
+		};
+		DED495662BF6FCF6005CEEE4 /* Matching */ = {
+			isa = PBXGroup;
+			children = (
+				DED495672BF6FD0E005CEEE4 /* MatchingTutorial.swift */,
+			);
+			name = Matching;
+			sourceTree = "<group>";
+		};
+		DED495692BF70DC5005CEEE4 /* SequenceOperator */ = {
+			isa = PBXGroup;
+			children = (
+				DED4956A2BF70DEF005CEEE4 /* SequenceOperatorTutorial.swift */,
+			);
+			name = SequenceOperator;
+			sourceTree = "<group>";
+		};
+		DED4956E2BFAEB19005CEEE4 /* SpecificElement */ = {
+			isa = PBXGroup;
+			children = (
+				DED4956F2BFAEB49005CEEE4 /* SpecificElementTutorial.swift */,
+			);
+			name = SpecificElement;
+			sourceTree = "<group>";
+		};
+		DED495712BFAF21C005CEEE4 /* MultiplePublisher */ = {
+			isa = PBXGroup;
+			children = (
+				DED495722BFB374B005CEEE4 /* MultiplePublisherTutorial.swift */,
+			);
+			name = MultiplePublisher;
 			sourceTree = "<group>";
 		};
 		DED734872B5E531500315E79 /* Components */ = {
@@ -1082,6 +1192,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DED495682BF6FD0E005CEEE4 /* MatchingTutorial.swift in Sources */,
 				DE759E0C2B5D649100300751 /* AppTutorial.swift in Sources */,
 				DE151D2E2B85D64F00785708 /* GaugeStyleTutorial.swift in Sources */,
 				DE2CDB3E2B6333380032BB12 /* ModalPresentationsTutorial.swift in Sources */,
@@ -1091,8 +1202,10 @@
 				DEAAC0322BB6CD6700257C35 /* LeetCodeLinkTutorial.swift in Sources */,
 				DEBFD2BD2B82FC2500F7FDA8 /* StepperTutorial.swift in Sources */,
 				DE1B200E2B95683400813B57 /* ActorsTutorial.swift in Sources */,
+				DE3867852BECD037003DE856 /* CancelableTutorial.swift in Sources */,
 				DE1B200A2B95681700813B57 /* AsyncSequencesTutorial.swift in Sources */,
 				DEBFD2B72B82EF7F00F7FDA8 /* RenameButtonTutorial.swift in Sources */,
+				DE02F9112BEE2BAA00CB7ECD /* CustomPubliserTutorial.swift in Sources */,
 				DEBFD2C92B8470FF00F7FDA8 /* ContentUnavailableViewTutorial.swift in Sources */,
 				DEE9F8292B62829500C6E0CE /* TabViewTutorial.swift in Sources */,
 				DEAAC02A2BB5844400257C35 /* LeetCodePage.swift in Sources */,
@@ -1113,6 +1226,7 @@
 				DEE9F8272B61142400C6E0CE /* NavigationTutorial.swift in Sources */,
 				DEBFD2D62B8483E000F7FDA8 /* MenuTutorial.swift in Sources */,
 				DE1E3ABB2BCCC6BC00C1D1C3 /* PreferencePage.swift in Sources */,
+				DED495652BF6F5A1005CEEE4 /* MathematicOperatorTutorial.swift in Sources */,
 				DEA5F1252BA1284B005E9551 /* TaskLocalTutorial.swift in Sources */,
 				DEDEE4A02B7231BE00D9AC40 /* DrawingAndGraphicsTutorial.swift in Sources */,
 				DEDA7DBA2B8F33E70025FECA /* FrameTutorial.swift in Sources */,
@@ -1122,6 +1236,7 @@
 				DE8251662B6E23A20094A0C9 /* ModelDataTutorial.swift in Sources */,
 				DE1B20062B9565C600813B57 /* ConcurrencyPage.swift in Sources */,
 				DE547D6A2B4EEC9500459CD2 /* RenderLoopTutorail.swift in Sources */,
+				DED495702BFAEB49005CEEE4 /* SpecificElementTutorial.swift in Sources */,
 				DE759E0A2B5D5D6500300751 /* ObservationTutorial.swift in Sources */,
 				DED734892B5E533700315E79 /* WebView.swift in Sources */,
 				DE151D6C2B8AE38B00785708 /* LayoutsFundamentalsPage.swift in Sources */,
@@ -1146,6 +1261,7 @@
 				DEBFD2C52B84465D00F7FDA8 /* GaugeTutorial.swift in Sources */,
 				DEBFD2D42B84835700F7FDA8 /* MenuAndCommandsPage.swift in Sources */,
 				DE1B1FFD2B91CFCE00813B57 /* ConfiguringRowsTutorial.swift in Sources */,
+				DED4956B2BF70DEF005CEEE4 /* SequenceOperatorTutorial.swift in Sources */,
 				DEAAC02F2BB5867E00257C35 /* LeetcodeArrayTutorial.swift in Sources */,
 				DE1E3AA62BC9045700C1D1C3 /* EnvironmentPage.swift in Sources */,
 				DEDA7DC72B9008780025FECA /* CreateCustomLayoutTutorial.swift in Sources */,
@@ -1162,6 +1278,7 @@
 				DE151D2C2B85D22A00785708 /* ToggleStyleTutorial.swift in Sources */,
 				DE1E3ABF2BCCD81B00C1D1C3 /* PreferencesGeometryTutorial.swift in Sources */,
 				DE1E3AA22BC9027D00C1D1C3 /* ModelDataPage.swift in Sources */,
+				DED495622BF6160C005CEEE4 /* ReducingTutorial.swift in Sources */,
 				DE151D392B86061300785708 /* LabelTutorial.swift in Sources */,
 				DE151D602B87A5BE00785708 /* ShapesPage.swift in Sources */,
 				DE3867822BEC666F003DE856 /* PublishedTutorial.swift in Sources */,
@@ -1176,6 +1293,7 @@
 				DEBFD2BB2B82F6EC00F7FDA8 /* SlideTutorial.swift in Sources */,
 				DE3867702BEA474C003DE856 /* CombinePage.swift in Sources */,
 				DE1E3AC22BCE10C900C1D1C3 /* StoragePage.swift in Sources */,
+				DE02F93C2BF22F9C00CB7ECD /* SubscriptionsTutorial.swift in Sources */,
 				DEDA7DBC2B8F33F10025FECA /* PositionTutorial.swift in Sources */,
 				DEBFD2AB2B8206BE00F7FDA8 /* ButtonStyleTutorial.swift in Sources */,
 				DE151D662B88A74800785708 /* PathTutorial.swift in Sources */,
@@ -1195,9 +1313,11 @@
 				DE1B200C2B95682600813B57 /* ContinuationsTutorial.swift in Sources */,
 				DED79D802B19552D007C257C /* SwiftUITutorialApp.swift in Sources */,
 				DEDA7DC22B8F3E8E0025FECA /* SafeAreaTutorial.swift in Sources */,
+				DED495732BFB374B005CEEE4 /* MultiplePublisherTutorial.swift in Sources */,
 				DE151D5A2B8728CE00785708 /* AddingAnimationActionTutorial.swift in Sources */,
 				DE28B3DC2BCFE39000B81470 /* BindingTutorial.swift in Sources */,
 				DEBFD2B12B82D24C00F7FDA8 /* ButtonTutorial.swift in Sources */,
+				DE3867882BECD938003DE856 /* SubscribersTutorial.swift in Sources */,
 				DEBFD2B52B82D7D000F7FDA8 /* PasteButtonTutorial.swift in Sources */,
 				DE1B20032B91DD0A00813B57 /* ConfiguringSpacingTutorial.swift in Sources */,
 				DE1E3AC62BCE11EC00C1D1C3 /* SceneStorageTutorial.swift in Sources */,
