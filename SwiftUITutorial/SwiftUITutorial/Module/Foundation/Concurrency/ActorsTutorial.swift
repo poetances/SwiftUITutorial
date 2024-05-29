@@ -100,3 +100,10 @@ actor BankAccount {
         return balance
     }
 }
+
+
+@globalActor
+actor MyMainActor {
+
+    static let shared = MyMainActor()
+}

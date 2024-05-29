@@ -79,15 +79,21 @@
 		DE539B952B2925C100F91DE2 /* ResultBuildTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE539B942B2925C100F91DE2 /* ResultBuildTutorial.swift */; };
 		DE539B972B2928F500F91DE2 /* PropertyWrapperTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE539B962B2928F500F91DE2 /* PropertyWrapperTutorial.swift */; };
 		DE547D6A2B4EEC9500459CD2 /* RenderLoopTutorail.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE547D692B4EEC9500459CD2 /* RenderLoopTutorail.swift */; };
+		DE6149C72C04A05E00303709 /* ConvincePublisherTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6149C62C04A05E00303709 /* ConvincePublisherTutorial.swift */; };
+		DE6C35C82BFCAE720075CD14 /* HandingErrorTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6C35C72BFCAE720075CD14 /* HandingErrorTutorial.swift */; };
+		DE7476342BFF5E4B00D1DB27 /* CodingTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7476332BFF5E4B00D1DB27 /* CodingTutorial.swift */; };
 		DE759E0A2B5D5D6500300751 /* ObservationTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE759E092B5D5D6500300751 /* ObservationTutorial.swift */; };
 		DE759E0C2B5D649100300751 /* AppTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE759E0B2B5D649100300751 /* AppTutorial.swift */; };
 		DE759E0E2B5D662100300751 /* SceneTutorail.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE759E0D2B5D662100300751 /* SceneTutorail.swift */; };
+		DE78B0622BFDE90200417F7E /* ControllingTimingTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE78B0612BFDE90200417F7E /* ControllingTimingTutorial.swift */; };
 		DE8251662B6E23A20094A0C9 /* ModelDataTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8251652B6E23A20094A0C9 /* ModelDataTutorial.swift */; };
 		DEA5F1252BA1284B005E9551 /* TaskLocalTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA5F1242BA1284B005E9551 /* TaskLocalTutorial.swift */; };
 		DEA9CAEF2B65FD8B00A0114C /* ToolBarToturial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA9CAEE2B65FD8B00A0114C /* ToolBarToturial.swift */; };
 		DEAAC02A2BB5844400257C35 /* LeetCodePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAAC0292BB5844400257C35 /* LeetCodePage.swift */; };
 		DEAAC02F2BB5867E00257C35 /* LeetcodeArrayTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAAC02E2BB5867E00257C35 /* LeetcodeArrayTutorial.swift */; };
 		DEAAC0322BB6CD6700257C35 /* LeetCodeLinkTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAAC0312BB6CD6700257C35 /* LeetCodeLinkTutorial.swift */; };
+		DEAD57322C00385900D94E76 /* MultipleSubscriberTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAD57312C00385900D94E76 /* MultipleSubscriberTutorial.swift */; };
+		DEB1CAA82C06CB0900004E4E /* SubjectsTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB1CAA72C06CB0900004E4E /* SubjectsTutorial.swift */; };
 		DEBFD2A92B8205B100F7FDA8 /* ViewStylesPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFD2A82B8205B100F7FDA8 /* ViewStylesPage.swift */; };
 		DEBFD2AB2B8206BE00F7FDA8 /* ButtonStyleTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFD2AA2B8206BE00F7FDA8 /* ButtonStyleTutorial.swift */; };
 		DEBFD2AF2B82D14D00F7FDA8 /* ControlsAndIndicatorsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFD2AE2B82D14D00F7FDA8 /* ControlsAndIndicatorsPage.swift */; };
@@ -254,15 +260,21 @@
 		DE539B942B2925C100F91DE2 /* ResultBuildTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultBuildTutorial.swift; sourceTree = "<group>"; };
 		DE539B962B2928F500F91DE2 /* PropertyWrapperTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyWrapperTutorial.swift; sourceTree = "<group>"; };
 		DE547D692B4EEC9500459CD2 /* RenderLoopTutorail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderLoopTutorail.swift; sourceTree = "<group>"; };
+		DE6149C62C04A05E00303709 /* ConvincePublisherTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvincePublisherTutorial.swift; sourceTree = "<group>"; };
+		DE6C35C72BFCAE720075CD14 /* HandingErrorTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandingErrorTutorial.swift; sourceTree = "<group>"; };
+		DE7476332BFF5E4B00D1DB27 /* CodingTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodingTutorial.swift; sourceTree = "<group>"; };
 		DE759E092B5D5D6500300751 /* ObservationTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservationTutorial.swift; sourceTree = "<group>"; };
 		DE759E0B2B5D649100300751 /* AppTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTutorial.swift; sourceTree = "<group>"; };
 		DE759E0D2B5D662100300751 /* SceneTutorail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneTutorail.swift; sourceTree = "<group>"; };
+		DE78B0612BFDE90200417F7E /* ControllingTimingTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllingTimingTutorial.swift; sourceTree = "<group>"; };
 		DE8251652B6E23A20094A0C9 /* ModelDataTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelDataTutorial.swift; sourceTree = "<group>"; };
 		DEA5F1242BA1284B005E9551 /* TaskLocalTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskLocalTutorial.swift; sourceTree = "<group>"; };
 		DEA9CAEE2B65FD8B00A0114C /* ToolBarToturial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolBarToturial.swift; sourceTree = "<group>"; };
 		DEAAC0292BB5844400257C35 /* LeetCodePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeetCodePage.swift; sourceTree = "<group>"; };
 		DEAAC02E2BB5867E00257C35 /* LeetcodeArrayTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeetcodeArrayTutorial.swift; sourceTree = "<group>"; };
 		DEAAC0312BB6CD6700257C35 /* LeetCodeLinkTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeetCodeLinkTutorial.swift; sourceTree = "<group>"; };
+		DEAD57312C00385900D94E76 /* MultipleSubscriberTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleSubscriberTutorial.swift; sourceTree = "<group>"; };
+		DEB1CAA72C06CB0900004E4E /* SubjectsTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectsTutorial.swift; sourceTree = "<group>"; };
 		DEBFD2A82B8205B100F7FDA8 /* ViewStylesPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewStylesPage.swift; sourceTree = "<group>"; };
 		DEBFD2AA2B8206BE00F7FDA8 /* ButtonStyleTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyleTutorial.swift; sourceTree = "<group>"; };
 		DEBFD2AC2B820E3A00F7FDA8 /* SwiftUITutorial.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftUITutorial.entitlements; sourceTree = "<group>"; };
@@ -556,6 +568,8 @@
 				DE3867832BECD024003DE856 /* Cancelable */,
 				DE3867862BECD542003DE856 /* Subscribers */,
 				DE02F93A2BF22F5D00CB7ECD /* Subscriptions */,
+				DE6149C52C04A03400303709 /* ConvincePublisher */,
+				DEB1CAA62C06CAF400004E4E /* Subjects */,
 			);
 			path = Combine;
 			sourceTree = "<group>";
@@ -573,6 +587,10 @@
 				DED495692BF70DC5005CEEE4 /* SequenceOperator */,
 				DED4956E2BFAEB19005CEEE4 /* SpecificElement */,
 				DED495712BFAF21C005CEEE4 /* MultiplePublisher */,
+				DE6C35C62BFCAE4A0075CD14 /* HandingError */,
+				DE78B0602BFDE86900417F7E /* ControllingTiming */,
+				DE7476322BFF5E3500D1DB27 /* Coding */,
+				DEAD57302C00380200D94E76 /* MultipleSubscriber */,
 			);
 			name = Publisher;
 			sourceTree = "<group>";
@@ -617,6 +635,38 @@
 			name = Subscribers;
 			sourceTree = "<group>";
 		};
+		DE6149C52C04A03400303709 /* ConvincePublisher */ = {
+			isa = PBXGroup;
+			children = (
+				DE6149C62C04A05E00303709 /* ConvincePublisherTutorial.swift */,
+			);
+			name = ConvincePublisher;
+			sourceTree = "<group>";
+		};
+		DE6C35C62BFCAE4A0075CD14 /* HandingError */ = {
+			isa = PBXGroup;
+			children = (
+				DE6C35C72BFCAE720075CD14 /* HandingErrorTutorial.swift */,
+			);
+			name = HandingError;
+			sourceTree = "<group>";
+		};
+		DE7476322BFF5E3500D1DB27 /* Coding */ = {
+			isa = PBXGroup;
+			children = (
+				DE7476332BFF5E4B00D1DB27 /* CodingTutorial.swift */,
+			);
+			name = Coding;
+			sourceTree = "<group>";
+		};
+		DE78B0602BFDE86900417F7E /* ControllingTiming */ = {
+			isa = PBXGroup;
+			children = (
+				DE78B0612BFDE90200417F7E /* ControllingTimingTutorial.swift */,
+			);
+			name = ControllingTiming;
+			sourceTree = "<group>";
+		};
 		DEA5F1092B9E8720005E9551 /* Observation */ = {
 			isa = PBXGroup;
 			children = (
@@ -649,6 +699,22 @@
 				DEAAC0312BB6CD6700257C35 /* LeetCodeLinkTutorial.swift */,
 			);
 			path = Link;
+			sourceTree = "<group>";
+		};
+		DEAD57302C00380200D94E76 /* MultipleSubscriber */ = {
+			isa = PBXGroup;
+			children = (
+				DEAD57312C00385900D94E76 /* MultipleSubscriberTutorial.swift */,
+			);
+			name = MultipleSubscriber;
+			sourceTree = "<group>";
+		};
+		DEB1CAA62C06CAF400004E4E /* Subjects */ = {
+			isa = PBXGroup;
+			children = (
+				DEB1CAA72C06CB0900004E4E /* SubjectsTutorial.swift */,
+			);
+			name = Subjects;
 			sourceTree = "<group>";
 		};
 		DEBFD2A72B82059B00F7FDA8 /* ViewStyles */ = {
@@ -1196,11 +1262,13 @@
 				DE759E0C2B5D649100300751 /* AppTutorial.swift in Sources */,
 				DE151D2E2B85D64F00785708 /* GaugeStyleTutorial.swift in Sources */,
 				DE2CDB3E2B6333380032BB12 /* ModalPresentationsTutorial.swift in Sources */,
+				DE6C35C82BFCAE720075CD14 /* HandingErrorTutorial.swift in Sources */,
 				DE1B1FFF2B91D54500813B57 /* ConfiguringSeperatorsTutorial.swift in Sources */,
 				DE02E3D02BD11FCD00983F9F /* CreatingViewTutorial.swift in Sources */,
 				DE151D3F2B86534E00785708 /* SecureTextFieldTutorial.swift in Sources */,
 				DEAAC0322BB6CD6700257C35 /* LeetCodeLinkTutorial.swift in Sources */,
 				DEBFD2BD2B82FC2500F7FDA8 /* StepperTutorial.swift in Sources */,
+				DEB1CAA82C06CB0900004E4E /* SubjectsTutorial.swift in Sources */,
 				DE1B200E2B95683400813B57 /* ActorsTutorial.swift in Sources */,
 				DE3867852BECD037003DE856 /* CancelableTutorial.swift in Sources */,
 				DE1B200A2B95681700813B57 /* AsyncSequencesTutorial.swift in Sources */,
@@ -1216,6 +1284,7 @@
 				DE151D3B2B860AD200785708 /* TextFieldTutorial.swift in Sources */,
 				DEDA7DC02B8F38F90025FECA /* MarginTutorial.swift in Sources */,
 				DE539B952B2925C100F91DE2 /* ResultBuildTutorial.swift in Sources */,
+				DE7476342BFF5E4B00D1DB27 /* CodingTutorial.swift in Sources */,
 				DE1B1FF52B91B47A00813B57 /* ListStyleTutorial.swift in Sources */,
 				DE151D302B85D94800785708 /* ProgressViewStyleTutorial.swift in Sources */,
 				DED79E052B195C34007C257C /* UIPage.swift in Sources */,
@@ -1269,6 +1338,7 @@
 				DE02E3D22BD11FD900983F9F /* ModifyViewTutorial.swift in Sources */,
 				DEC0FE032BE8F54C00485BAC /* PreviewInXcodeTutorial.swift in Sources */,
 				DE151D372B85E2E800785708 /* TextTutorial.swift in Sources */,
+				DEAD57322C00385900D94E76 /* MultipleSubscriberTutorial.swift in Sources */,
 				DE1B1FF92B91CA2A00813B57 /* OutlineGroupTutorial.swift in Sources */,
 				DEBFD2BF2B83673A00F7FDA8 /* ToggleTutorial.swift in Sources */,
 				DE1B20082B9567EF00813B57 /* TasksTutorial.swift in Sources */,
@@ -1302,6 +1372,7 @@
 				DEBFD2CB2B84749100F7FDA8 /* SensoryFeedbackTutorial.swift in Sources */,
 				DE1E3ABD2BCCCA2300C1D1C3 /* SettingPreferencesTutorial.swift in Sources */,
 				DE1E3AB62BC9078F00C1D1C3 /* EnvironmentTextStyleTutorial.swift in Sources */,
+				DE6149C72C04A05E00303709 /* ConvincePublisherTutorial.swift in Sources */,
 				DEDA7DC52B8F4FDE0025FECA /* CustomLayoutPage.swift in Sources */,
 				DE151D622B87A68E00785708 /* RectangularTutorial.swift in Sources */,
 				DE151D642B88A42D00785708 /* CircleTutorial.swift in Sources */,
@@ -1316,6 +1387,7 @@
 				DED495732BFB374B005CEEE4 /* MultiplePublisherTutorial.swift in Sources */,
 				DE151D5A2B8728CE00785708 /* AddingAnimationActionTutorial.swift in Sources */,
 				DE28B3DC2BCFE39000B81470 /* BindingTutorial.swift in Sources */,
+				DE78B0622BFDE90200417F7E /* ControllingTimingTutorial.swift in Sources */,
 				DEBFD2B12B82D24C00F7FDA8 /* ButtonTutorial.swift in Sources */,
 				DE3867882BECD938003DE856 /* SubscribersTutorial.swift in Sources */,
 				DEBFD2B52B82D7D000F7FDA8 /* PasteButtonTutorial.swift in Sources */,

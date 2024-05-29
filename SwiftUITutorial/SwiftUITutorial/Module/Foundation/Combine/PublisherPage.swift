@@ -57,6 +57,14 @@ struct PublisherPage: View {
                 SpecificElementTutorial()
             case .multiplePublisher:
                 MultiplePublisherTutorial()
+            case .handingError:
+                HandingErrorTutorial()
+            case .controllingTiming:
+                ControllingTimingTutorial()
+            case .coding:
+                CodingTutorial()
+            case .multipleSubscriber:
+                MultipleSubscriberTutorial()
             }
         }
     }
@@ -74,6 +82,10 @@ extension PublisherPage {
         case sequenceOperator
         case specificElement
         case multiplePublisher
+        case handingError
+        case controllingTiming
+        case coding
+        case multipleSubscriber
     }
 }
 

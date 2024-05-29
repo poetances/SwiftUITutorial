@@ -20,6 +20,16 @@ struct CombinePage: View {
                 PublisherPage()
             case .published:
                 PublishedTutorial()
+            case .cancelable:
+                CancelableTutorial()
+            case .subscribers:
+                SubscribersTutorial()
+            case .subscriptions:
+                SubscriptionsTutorial()
+            case .convincePublisher:
+                ConvincePublisherTutorial()
+            case .subject:
+                SubjectsTutorial()
             }
         }
     }
@@ -30,6 +40,11 @@ extension CombinePage {
     enum Destination: String, CaseIterable {
         case publisher
         case published
+        case cancelable
+        case subscribers
+        case subscriptions
+        case convincePublisher
+        case subject
     }
 }
 

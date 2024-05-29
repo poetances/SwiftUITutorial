@@ -19,6 +19,8 @@ struct MultiplePublisherTutorial: View {
             merge
             zip
             flatMap
+            switchToLatest
+            switchToLatest2
         }
         .navigationTitle("MultiplePublisher")
     }
@@ -174,6 +176,79 @@ extension MultiplePublisherTutorial {
                         print("Received value: \(value)")
                     }
                 ).store(in: &bags)
+        }
+    }
+
+    // MARK: - func switchToLatest() -> Publishers.SwitchToLatest<Self.Output, Self>
+    /// This operator works with an upstream publisher of publishers, flattening the stream of elements to appear as if they were coming from a single stream of elements. It switches the inner publisher as new ones arrive but keeps the outer publisher constant for downstream subscribers.
+    /// switchToLatest操作符用于在多个Publisher之间进行切换。当一个新的Publisher发出时，它会取消订阅之前的Publisher，并订阅新的Publisher。这样可以确保每次只处理最新的Publisher发出的事件，而忽略之前的Publisher。
+    var switchToLatest: some View {
+        Button("SwitchToLatest") {
+            func search(query: String) -> AnyPublisher<String, Never> {
+                print("search", query)
+                return Just("Results for query \(query)")
+                    .delay(for: .seconds(2), scheduler: DispatchQueue.main)
+                    .eraseToAnyPublisher()
+            }
+
+            let userInput = PassthroughSubject<String, Never>()
+            userInput.map { search(query: $0) }
+                .switchToLatest()
+                .sinkAutoPrint()
+                .store(in: &bags)
+
+            userInput.send("Swift")
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                userInput.send("Combine")
+            }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                userInput.send("iOS")
+            }
+        }
+    }
+
+    /// 验证取消
+    var switchToLatest2: some View {
+        Button("SwitchToLatest2") {
+
+            class URLSessionDelegate: NSObject, URLSessionDataDelegate {
+                func urlSession(_ session: URLSession, task: URLSessionTask, didCompleteWithError error: Error?) {
+                    if let error = error as NSError?, error.domain == NSURLErrorDomain && error.code == NSURLErrorCancelled {
+                        print("Request cancelled: \(task.originalRequest?.url?.absoluteString ?? ""))")
+                    }
+                }
+
+                func urlSession(_ session: URLSession, dataTask: URLSessionDataTask, didReceive response: URLResponse) async -> URLSession.ResponseDisposition {
+                    print("Request didReceive: \(response.url?.absoluteString ?? ""))")
+                    return .allow
+                }
+
+                func urlSession(_ session: URLSession, didCreateTask task: URLSessionTask) {
+
+                }
+            }
+
+            let sessionDelegate = URLSessionDelegate()
+
+            let session = URLSession(configuration: .default, delegate: sessionDelegate, delegateQueue: nil)
+
+            let subject = PassthroughSubject<Int, Never>()
+
+            subject
+                .setFailureType(to: URLError.self)
+                .map { index -> URLSession.DataTaskPublisher in
+                    let url = URL(string: "https://reqres.in/api/users?page=\(index)")!
+                    return session.dataTaskPublisher(for: url)
+                }
+                .switchToLatest()
+                .sinkAutoPrint()
+                .store(in: &bags)
+
+            for index in 1...5 {
+                DispatchQueue.main.asyncAfter(deadline: .now() + TimeInterval(index) / 10) {
+                    subject.send(index)
+                }
+            }
         }
     }
 }
