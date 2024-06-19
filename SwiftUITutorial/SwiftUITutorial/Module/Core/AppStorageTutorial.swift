@@ -28,6 +28,7 @@ import SwiftUI
  */
 struct AppStorageTutorial: View {
     // 注意这两个写法等价，这也是PropertyValue的核心思想
+    // 主要原因是AppStore提供了两种初始化的方式
     @AppStorage("count") private var count = 0
     @AppStorage(wrappedValue: 0, "count2") private var count2
 

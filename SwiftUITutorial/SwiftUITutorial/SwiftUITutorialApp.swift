@@ -14,6 +14,8 @@ struct SwiftUITutorialApp: App {
     @UIApplicationDelegateAdaptor private var appDelegate: SwiftUIAppDelegate
     @AppStorage("isDarkMode") var isDarkMode = false
 
+    @State private var path: NavigationPath = NavigationPath()
+
     var body: some Scene {
         WindowGroup {
             TabBarView()
@@ -28,6 +30,7 @@ struct SwiftUITutorialApp: App {
         // iphone os是不支持多场景的
         WindowGroup(id: "mail-viewer") {
             Text("MailViewwer")
+           
         }
     }
 }

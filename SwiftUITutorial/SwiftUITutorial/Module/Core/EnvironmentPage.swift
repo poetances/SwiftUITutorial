@@ -7,6 +7,13 @@
 
 import SwiftUI
 
+/*
+ Environment
+ 修饰符.environment的两种方式keypath、observation
+
+ 通过KeyPath<EnvironmentValues, Value>
+ EnvironmentValues只提供了Subscribe[T.Type]  T: EnvironmentKey
+ */
 struct EnvironmentPage: View {
     var body: some View {
         List(Destination.allCases, id: \.rawValue) { des in

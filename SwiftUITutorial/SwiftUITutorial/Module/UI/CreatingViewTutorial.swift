@@ -14,8 +14,24 @@ import SwiftUI
  */
 struct CreatingViewTutorial: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-        
+        List(Destination.allCases, id: \.rawValue) { destination in
+            NavigationLink(destination.rawValue.lowercased(), value: destination)
+        }
+        .navigationTitle("CreatingView")
+        .navigationDestination(for: Destination.self) { des in
+            switch des {
+            case .appearanceModifiers:
+                AppearanceModifiersTutorail()
+            }
+        }
+
+    }
+}
+
+extension CreatingViewTutorial {
+
+    enum Destination: String, CaseIterable {
+        case appearanceModifiers
     }
 }
 

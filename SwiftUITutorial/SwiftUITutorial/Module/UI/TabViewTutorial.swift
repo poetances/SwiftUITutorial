@@ -101,7 +101,7 @@ extension TabViewTutorial {
                     Label("xmark", systemImage: "xmark.bin")
                 }
         }
-        .tabViewStyle(.page(indexDisplayMode: .automatic))
+        .tabViewStyle(.page(indexDisplayMode: .never))
     }
 }
 
@@ -113,7 +113,6 @@ extension TabViewTutorial {
      tag<V>(_ tag: V)
      tabItem(_:)
      tabViewStyle(_:)
-
      */
 }
 

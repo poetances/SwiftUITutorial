@@ -321,10 +321,10 @@ extension ModalPresentationsTutorial {
             isShowAlterMessage.toggle()
         }
         .alert("Alert Message", isPresented: $isShowAlterMessage) {
-            Button("Ok") {
+            Button("Ok", role: .cancel) {
                 isShowAlterMessage.toggle()
             }
-            Button("Cancel") {
+            Button("Alter", role: .destructive) {
                 isShowAlterMessage.toggle()
             }
         } message: {
@@ -375,6 +375,10 @@ extension ModalPresentationsTutorial {
                 isShowConfirmationDialog.toggle()
             }
             Button("Three") {
+                isShowConfirmationDialog.toggle()
+            }
+
+            Button("取消", role: .cancel) {
                 isShowConfirmationDialog.toggle()
             }
         } message: {

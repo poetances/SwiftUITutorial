@@ -86,6 +86,8 @@
 		DE759E0C2B5D649100300751 /* AppTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE759E0B2B5D649100300751 /* AppTutorial.swift */; };
 		DE759E0E2B5D662100300751 /* SceneTutorail.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE759E0D2B5D662100300751 /* SceneTutorail.swift */; };
 		DE78B0622BFDE90200417F7E /* ControllingTimingTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE78B0612BFDE90200417F7E /* ControllingTimingTutorial.swift */; };
+		DE78F7022C1B0012007B90CB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DE78F7042C1B0012007B90CB /* Localizable.strings */; };
+		DE78F7082C1B0138007B90CB /* Error.strings in Resources */ = {isa = PBXBuildFile; fileRef = DE78F70A2C1B0138007B90CB /* Error.strings */; };
 		DE8251662B6E23A20094A0C9 /* ModelDataTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8251652B6E23A20094A0C9 /* ModelDataTutorial.swift */; };
 		DEA5F1252BA1284B005E9551 /* TaskLocalTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA5F1242BA1284B005E9551 /* TaskLocalTutorial.swift */; };
 		DEA9CAEF2B65FD8B00A0114C /* ToolBarToturial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA9CAEE2B65FD8B00A0114C /* ToolBarToturial.swift */; };
@@ -117,6 +119,9 @@
 		DEBFD2D42B84835700F7FDA8 /* MenuAndCommandsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFD2D32B84835700F7FDA8 /* MenuAndCommandsPage.swift */; };
 		DEBFD2D62B8483E000F7FDA8 /* MenuTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFD2D52B8483E000F7FDA8 /* MenuTutorial.swift */; };
 		DEC0FE032BE8F54C00485BAC /* PreviewInXcodeTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC0FE022BE8F54C00485BAC /* PreviewInXcodeTutorial.swift */; };
+		DED0612F2C22B9E5001ED842 /* AppearanceModifiersTutorail.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED0612E2C22B9E5001ED842 /* AppearanceModifiersTutorail.swift */; };
+		DED061332C22E013001ED842 /* ShapeViewTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED061322C22E013001ED842 /* ShapeViewTutorial.swift */; };
+		DED061352C22E17C001ED842 /* AnyShapeTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED061342C22E17C001ED842 /* AnyShapeTutorial.swift */; };
 		DED495622BF6160C005CEEE4 /* ReducingTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED495612BF6160C005CEEE4 /* ReducingTutorial.swift */; };
 		DED495652BF6F5A1005CEEE4 /* MathematicOperatorTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED495642BF6F5A1005CEEE4 /* MathematicOperatorTutorial.swift */; };
 		DED495682BF6FD0E005CEEE4 /* MatchingTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED495672BF6FD0E005CEEE4 /* MatchingTutorial.swift */; };
@@ -267,6 +272,10 @@
 		DE759E0B2B5D649100300751 /* AppTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTutorial.swift; sourceTree = "<group>"; };
 		DE759E0D2B5D662100300751 /* SceneTutorail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneTutorail.swift; sourceTree = "<group>"; };
 		DE78B0612BFDE90200417F7E /* ControllingTimingTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllingTimingTutorial.swift; sourceTree = "<group>"; };
+		DE78F7032C1B0012007B90CB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DE78F7052C1B0014007B90CB /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DE78F7092C1B0138007B90CB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Error.strings; sourceTree = "<group>"; };
+		DE78F70B2C1B0139007B90CB /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Error.strings; sourceTree = "<group>"; };
 		DE8251652B6E23A20094A0C9 /* ModelDataTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelDataTutorial.swift; sourceTree = "<group>"; };
 		DEA5F1242BA1284B005E9551 /* TaskLocalTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskLocalTutorial.swift; sourceTree = "<group>"; };
 		DEA9CAEE2B65FD8B00A0114C /* ToolBarToturial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolBarToturial.swift; sourceTree = "<group>"; };
@@ -299,6 +308,9 @@
 		DEBFD2D32B84835700F7FDA8 /* MenuAndCommandsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuAndCommandsPage.swift; sourceTree = "<group>"; };
 		DEBFD2D52B8483E000F7FDA8 /* MenuTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTutorial.swift; sourceTree = "<group>"; };
 		DEC0FE022BE8F54C00485BAC /* PreviewInXcodeTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewInXcodeTutorial.swift; sourceTree = "<group>"; };
+		DED0612E2C22B9E5001ED842 /* AppearanceModifiersTutorail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceModifiersTutorail.swift; sourceTree = "<group>"; };
+		DED061322C22E013001ED842 /* ShapeViewTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeViewTutorial.swift; sourceTree = "<group>"; };
+		DED061342C22E17C001ED842 /* AnyShapeTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyShapeTutorial.swift; sourceTree = "<group>"; };
 		DED495612BF6160C005CEEE4 /* ReducingTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReducingTutorial.swift; sourceTree = "<group>"; };
 		DED495642BF6F5A1005CEEE4 /* MathematicOperatorTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathematicOperatorTutorial.swift; sourceTree = "<group>"; };
 		DED495672BF6FD0E005CEEE4 /* MatchingTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchingTutorial.swift; sourceTree = "<group>"; };
@@ -401,6 +413,7 @@
 			isa = PBXGroup;
 			children = (
 				DE02E3CF2BD11FCD00983F9F /* CreatingViewTutorial.swift */,
+				DED0612D2C22B9B9001ED842 /* AppearanceModifiers */,
 			);
 			name = CreatingView;
 			sourceTree = "<group>";
@@ -467,6 +480,8 @@
 				DE151D632B88A42D00785708 /* CircleTutorial.swift */,
 				DE151D652B88A74800785708 /* PathTutorial.swift */,
 				DE151D672B88B8F600785708 /* ShapeTutorial.swift */,
+				DED061322C22E013001ED842 /* ShapeViewTutorial.swift */,
+				DED061342C22E17C001ED842 /* AnyShapeTutorial.swift */,
 			);
 			name = Shapes;
 			sourceTree = "<group>";
@@ -667,6 +682,16 @@
 			name = ControllingTiming;
 			sourceTree = "<group>";
 		};
+		DE78F70C2C1B014E007B90CB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DED79D832B19552F007C257C /* Assets.xcassets */,
+				DE78F70A2C1B0138007B90CB /* Error.strings */,
+				DE78F7042C1B0012007B90CB /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		DEA5F1092B9E8720005E9551 /* Observation */ = {
 			isa = PBXGroup;
 			children = (
@@ -778,6 +803,14 @@
 			name = PreviewInXcode;
 			sourceTree = "<group>";
 		};
+		DED0612D2C22B9B9001ED842 /* AppearanceModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				DED0612E2C22B9E5001ED842 /* AppearanceModifiersTutorail.swift */,
+			);
+			name = AppearanceModifiers;
+			sourceTree = "<group>";
+		};
 		DED495602BF615A0005CEEE4 /* Reducing */ = {
 			isa = PBXGroup;
 			children = (
@@ -864,7 +897,7 @@
 				DED79DFC2B195A06007C257C /* Main */,
 				DED79DFF2B195B2A007C257C /* Module */,
 				DED734872B5E531500315E79 /* Components */,
-				DED79D832B19552F007C257C /* Assets.xcassets */,
+				DE78F70C2C1B014E007B90CB /* Resources */,
 				DE3928E72B560165003E290B /* Info.plist */,
 				DEDEE4982B72130400D9AC40 /* Model.xcdatamodeld */,
 				DED79DFA2B195A00007C257C /* Summarize.md */,
@@ -1110,6 +1143,7 @@
 			knownRegions = (
 				en,
 				Base,
+				fr,
 			);
 			mainGroup = DED79D732B19552D007C257C;
 			productRefGroup = DED79D7D2B19552D007C257C /* Products */;
@@ -1128,7 +1162,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE78F7082C1B0138007B90CB /* Error.strings in Resources */,
 				DED79D872B19552F007C257C /* Preview Assets.xcassets in Resources */,
+				DE78F7022C1B0012007B90CB /* Localizable.strings in Resources */,
 				DED79DFB2B195A00007C257C /* Summarize.md in Resources */,
 				DED79D842B19552F007C257C /* Assets.xcassets in Resources */,
 			);
@@ -1270,6 +1306,7 @@
 				DEBFD2BD2B82FC2500F7FDA8 /* StepperTutorial.swift in Sources */,
 				DEB1CAA82C06CB0900004E4E /* SubjectsTutorial.swift in Sources */,
 				DE1B200E2B95683400813B57 /* ActorsTutorial.swift in Sources */,
+				DED061332C22E013001ED842 /* ShapeViewTutorial.swift in Sources */,
 				DE3867852BECD037003DE856 /* CancelableTutorial.swift in Sources */,
 				DE1B200A2B95681700813B57 /* AsyncSequencesTutorial.swift in Sources */,
 				DEBFD2B72B82EF7F00F7FDA8 /* RenameButtonTutorial.swift in Sources */,
@@ -1287,6 +1324,7 @@
 				DE7476342BFF5E4B00D1DB27 /* CodingTutorial.swift in Sources */,
 				DE1B1FF52B91B47A00813B57 /* ListStyleTutorial.swift in Sources */,
 				DE151D302B85D94800785708 /* ProgressViewStyleTutorial.swift in Sources */,
+				DED061352C22E17C001ED842 /* AnyShapeTutorial.swift in Sources */,
 				DED79E052B195C34007C257C /* UIPage.swift in Sources */,
 				DE3867792BEB7160003DE856 /* PublisherPage.swift in Sources */,
 				DEDEE49E2B72288000D9AC40 /* AppearanceModifiersTutorial.swift in Sources */,
@@ -1370,6 +1408,7 @@
 				DE1E3AAE2BC9062400C1D1C3 /* EnvironmentDisplayTutorial.swift in Sources */,
 				DE1E3AA82BC905D500C1D1C3 /* EnvironmetActionTutorial.swift in Sources */,
 				DEBFD2CB2B84749100F7FDA8 /* SensoryFeedbackTutorial.swift in Sources */,
+				DED0612F2C22B9E5001ED842 /* AppearanceModifiersTutorail.swift in Sources */,
 				DE1E3ABD2BCCCA2300C1D1C3 /* SettingPreferencesTutorial.swift in Sources */,
 				DE1E3AB62BC9078F00C1D1C3 /* EnvironmentTextStyleTutorial.swift in Sources */,
 				DE6149C72C04A05E00303709 /* ConvincePublisherTutorial.swift in Sources */,
@@ -1437,6 +1476,27 @@
 			targetProxy = DED79D972B19552F007C257C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DE78F7042C1B0012007B90CB /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE78F7032C1B0012007B90CB /* en */,
+				DE78F7052C1B0014007B90CB /* fr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		DE78F70A2C1B0138007B90CB /* Error.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE78F7092C1B0138007B90CB /* en */,
+				DE78F70B2C1B0139007B90CB /* fr */,
+			);
+			name = Error.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		DED79D9E2B195530007C257C /* Debug */ = {

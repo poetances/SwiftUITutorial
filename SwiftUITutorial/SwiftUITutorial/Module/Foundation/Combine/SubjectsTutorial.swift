@@ -40,10 +40,15 @@ extension SubjectsTutorial {
             subject.send(1)
 
             // 订阅后才能收到值
-            subject.sinkAutoPrint().store(in: &bags)
+//            subject.sinkAutoPrint().store(in: &bags)
+            subject.sink { value in
+                print(value, Thread.current)
+            }.store(in: &bags)
             subject.send(2)
-            subject.send(3)
-            subject.send(completion: .finished)
+            DispatchQueue.global().async {
+                subject.send(3)
+            }
+            // subject.send(completion: .finished)
         }
     }
 }

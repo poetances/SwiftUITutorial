@@ -28,16 +28,10 @@ import SwiftUI
  */
 struct ShapesPage: View {
 
-    private let contents = [
-        Content(title: "Rectangular", destination: .rectangular),
-        Content(title: "Circle", destination: .circle),
-        Content(title: "Path", destination: .path),
-        Content(title: "Shape", destination: .shape)
-    ]
     // MARK: - system
     var body: some View {
-        List(contents) { content in
-            NavigationLink(content.title, value: content.destination)
+        List(Destination.allCases, id: \.rawValue) { des in
+            NavigationLink(des.rawValue.capitalized, value: des)
         }
         .navigationDestination(for: Destination.self) { des in
             switch des {
@@ -49,6 +43,10 @@ struct ShapesPage: View {
                 PathTutorial()
             case .shape:
                 ShapeTutorial()
+            case .shapeView:
+                ShapeViewTutorial()
+            case .anyShape:
+                AnyShapeTutorial()
             }
         }
         .toolbar(.hidden, for: .tabBar)
@@ -57,19 +55,13 @@ struct ShapesPage: View {
 
 extension ShapesPage {
 
-    struct Content: Identifiable {
-
-        let id = UUID()
-
-        let title: String
-        let destination: Destination
-    }
-
-    enum Destination: CaseIterable {
+    enum Destination: String, CaseIterable {
         case rectangular
         case circle
         case path
         case shape
+        case shapeView
+        case anyShape
     }
 }
 

@@ -99,9 +99,10 @@ extension FilteringTutorial {
 
     // MARK: - func removeDuplicates() -> Publishers.RemoveDuplicates<Self>
     /// Use removeDuplicates() to remove repeating elements from an upstream publisher. This operator has a two-element memory: the operator uses the current and previously published elements as the basis for its comparison.
+    /// 注意removeDuplicates是移除相邻两个相同的元素
     var removeDuplicates: some View {
         Button("RemoveDuplicates") {
-            let numbers = [0, 1, 2, 2, 3, 3, 3, 4, 4, 4, 4, 0]
+            let numbers = [0, 1, 2, 3,  2, 3, 3, 3, 4, 4, 4, 4, 0]
             numbers.publisher
                 .removeDuplicates()
                 .sinkAutoPrint()

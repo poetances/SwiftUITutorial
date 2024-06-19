@@ -30,6 +30,7 @@ import SwiftUI
  UnevenRoundedRectangle
 
  其它的Shape类型：
+ ShapeView也是一个协议
  StrokeShapeView
  You don’t create this type directly; it’s the return type of Shape.stroke.
 
@@ -74,12 +75,16 @@ extension ShapeTutorial {
         ScrollView(.horizontal, content: {
             HStack {
                 Circle.circle
+                    .trim(from: 0.0, to: 0.8)
+                    .stroke(.red, lineWidth: 2)
+
 
                 Rectangle.rect
                     .stroke(lineWidth: 2)
                     .frame(width: 100)
 
                 ButtonBorderShape.buttonBorder
+                    .fill(.pink)
                     .frame(width: 100)
 
                 Capsule.capsule

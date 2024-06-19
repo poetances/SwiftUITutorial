@@ -34,7 +34,7 @@ struct NavigationTutorial: View {
     // MARK: - system
     var body: some View {
          // navigationLink
-        Text("Navigation")
+        navigationPath
             .navigationBarTitleDisplayMode(.large)
             .navigationTitle("Navigation")
 
@@ -115,6 +115,11 @@ extension NavigationTutorial {
             }
             .navigationDestination(for: Int.self) { intValue in
                let _ = print(intValue)
+                if intValue == 12 {
+                    SearchTutorial()
+                } else {
+                    ToolBarToturial()
+                }
             }
             .navigationDestination(for: String.self) { stringValue in
                 let _ = print(stringValue)

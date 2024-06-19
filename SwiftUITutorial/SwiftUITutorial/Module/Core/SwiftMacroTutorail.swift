@@ -33,6 +33,7 @@ struct SwiftMacroTutorail: View {
     SwiftMacroTutorail()
 })
 
+/// 指定方向
 #Preview("Second", traits: .landscapeLeft, body: {
     SwiftMacroTutorail()
 })
@@ -55,3 +56,16 @@ class CombinePerson: ObservableObject {
     @Published var name = "Combine"
     @Published var count = 1
 }
+
+
+// 附加宏。附加宏是绑定到特定声明（如属性、方法、类、结构体等）上的宏。
+// 它们用于修改或扩展这些声明的行为或属性。
+/*
+ @attached(member, names: named(myFunction))
+ macro MyAttachedMacro() = #externalMacro(module: "SwiftUITutorial", type: "MyAttachedStruct")
+
+ @MyAttachedMacro
+ struct MyAttachedStruct {
+     var myProperty: Int
+ }
+ */

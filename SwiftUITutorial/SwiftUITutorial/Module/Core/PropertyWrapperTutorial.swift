@@ -24,6 +24,10 @@ extension Sequence {
 @propertyWrapper
 struct Wrapper<T> {
     var wrappedValue: T
+
+//    init(_ value: T) {
+//        self.wrappedValue = value
+//    }
 }
 
 /// swift中常见的属性包装器包括：@State、@Binding、@StateObjce、@ObservaObject、@Published、
@@ -34,6 +38,7 @@ struct PropertyWrapperTutorial: View {
     @State private var age = 12
     @State(wrappedValue: 12) private var age2
 
+    // 默认这种方式的初始化就是调用init(wrappedValue: T)方法
     @Wrapper private var name = "Wrapper"
     @Wrapper(wrappedValue: "Wrapper") private var name2
 
