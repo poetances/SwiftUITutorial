@@ -28,6 +28,7 @@ struct AsyncSequencesTutorial: View {
     var body: some View {
         VStack(spacing: 15) {
             taskgroup
+            async_stream
         }
     }
 }
@@ -71,9 +72,10 @@ extension AsyncSequencesTutorial {
      */
     var async_stream: some View {
         Button("AsyncStream") {
-            Task {
+            let task = Task {
                 let fileDownloader = FileDownloader()
-                let url = URL(string: "")!
+                let url = URL(string: "www.baidu.com")!
+
                 for try await result in fileDownloader.download(url) {
                     switch result {
                     case .downloading(let progress):
@@ -83,6 +85,11 @@ extension AsyncSequencesTutorial {
                     }
                 }
             }
+
+            let workItem = DispatchWorkItem {
+                task.cancel()
+            }
+            DispatchQueue.global().asyncAfter(deadline: .now() + 5, execute: workItem)
         }
     }
 }
@@ -95,6 +102,22 @@ struct FileDownloader {
 
     func download(_ url: URL, progressHandle: ((Float) -> Void)? = nil, completion: ((Result<Data, Error>) -> Void)? = nil) {
         // .. Download implementation
+        DispatchQueue.global().async {
+            // 模拟上传进度
+            for progress in stride(from: 0.0, through: 1.0, by: 0.1) {
+                DispatchQueue.main.async {
+                    print("Progress: ", progress)
+                    progressHandle?(Float(progress))
+                }
+                Thread.sleep(forTimeInterval: 1)
+            }
+
+            // 模拟上传成功并返回数据
+            DispatchQueue.main.async {
+                let data = "success".data(using: .utf8)!
+                completion?(.success(data))
+            }
+        }
     }
 }
 
@@ -102,6 +125,9 @@ extension FileDownloader {
 
     func download(_ url: URL) -> AsyncThrowingStream<Status, Error> {
         AsyncThrowingStream { continuation in
+            continuation.onTermination = { _ in
+                print("continuation.onTermination")
+            }
             download(url) { progress in
                 continuation.yield(.downloading(progress))
             } completion: { result in

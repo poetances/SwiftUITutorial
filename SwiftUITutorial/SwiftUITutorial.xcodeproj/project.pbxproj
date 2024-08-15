@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B8A5BE399A253C875D0E5616 /* Pods_SwiftUITutorial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 501C68E55187A4B1A48FB8E7 /* Pods_SwiftUITutorial.framework */; };
 		DDD6DE44B9B803309C9AFEC5 /* Pods_SwiftUITutorialTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C474B16181EA3D9D8D5CB1D8 /* Pods_SwiftUITutorialTests.framework */; };
 		DE02E3CE2BD103B300983F9F /* ViewFundamentalsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE02E3CD2BD103B300983F9F /* ViewFundamentalsPage.swift */; };
 		DE02E3D02BD11FCD00983F9F /* CreatingViewTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE02E3CF2BD11FCD00983F9F /* CreatingViewTutorial.swift */; };
@@ -67,6 +66,7 @@
 		DE1E3AC62BCE11EC00C1D1C3 /* SceneStorageTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1E3AC52BCE11EC00C1D1C3 /* SceneStorageTutorial.swift */; };
 		DE28B3DC2BCFE39000B81470 /* BindingTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE28B3DB2BCFE39000B81470 /* BindingTutorial.swift */; };
 		DE2CDB3E2B6333380032BB12 /* ModalPresentationsTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2CDB3D2B6333380032BB12 /* ModalPresentationsTutorial.swift */; };
+		DE3085822C45060700044346 /* KingfisherTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3085812C45060700044346 /* KingfisherTutorial.swift */; };
 		DE3867702BEA474C003DE856 /* CombinePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE38676F2BEA474C003DE856 /* CombinePage.swift */; };
 		DE3867792BEB7160003DE856 /* PublisherPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3867782BEB7160003DE856 /* PublisherPage.swift */; };
 		DE38677C2BEB7209003DE856 /* MappingTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE38677B2BEB7209003DE856 /* MappingTutorial.swift */; };
@@ -122,6 +122,7 @@
 		DED0612F2C22B9E5001ED842 /* AppearanceModifiersTutorail.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED0612E2C22B9E5001ED842 /* AppearanceModifiersTutorail.swift */; };
 		DED061332C22E013001ED842 /* ShapeViewTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED061322C22E013001ED842 /* ShapeViewTutorial.swift */; };
 		DED061352C22E17C001ED842 /* AnyShapeTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED061342C22E17C001ED842 /* AnyShapeTutorial.swift */; };
+		DED061372C23C459001ED842 /* CanvasTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED061362C23C459001ED842 /* CanvasTutorial.swift */; };
 		DED495622BF6160C005CEEE4 /* ReducingTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED495612BF6160C005CEEE4 /* ReducingTutorial.swift */; };
 		DED495652BF6F5A1005CEEE4 /* MathematicOperatorTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED495642BF6F5A1005CEEE4 /* MathematicOperatorTutorial.swift */; };
 		DED495682BF6FD0E005CEEE4 /* MatchingTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED495672BF6FD0E005CEEE4 /* MatchingTutorial.swift */; };
@@ -187,13 +188,8 @@
 
 /* Begin PBXFileReference section */
 		00B14A4A2B1CE2FDB50B046E /* Pods_SwiftUITutorial_SwiftUITutorialUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftUITutorial_SwiftUITutorialUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1B22E6D32960C67684EDBA83 /* Pods-SwiftUITutorial-SwiftUITutorialUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUITutorial-SwiftUITutorialUITests.debug.xcconfig"; path = "Target Support Files/Pods-SwiftUITutorial-SwiftUITutorialUITests/Pods-SwiftUITutorial-SwiftUITutorialUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		38B34728D976E073CD0F8DF2 /* Pods-SwiftUITutorial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUITutorial.release.xcconfig"; path = "Target Support Files/Pods-SwiftUITutorial/Pods-SwiftUITutorial.release.xcconfig"; sourceTree = "<group>"; };
-		3EA0D641CC39765464C1EFDF /* Pods-SwiftUITutorialTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUITutorialTests.release.xcconfig"; path = "Target Support Files/Pods-SwiftUITutorialTests/Pods-SwiftUITutorialTests.release.xcconfig"; sourceTree = "<group>"; };
-		4647FF61170D3BC7C679E25A /* Pods-SwiftUITutorialTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUITutorialTests.debug.xcconfig"; path = "Target Support Files/Pods-SwiftUITutorialTests/Pods-SwiftUITutorialTests.debug.xcconfig"; sourceTree = "<group>"; };
 		501C68E55187A4B1A48FB8E7 /* Pods_SwiftUITutorial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftUITutorial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C474B16181EA3D9D8D5CB1D8 /* Pods_SwiftUITutorialTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftUITutorialTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CA147CE32B3DCF8694968B1F /* Pods-SwiftUITutorial-SwiftUITutorialUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUITutorial-SwiftUITutorialUITests.release.xcconfig"; path = "Target Support Files/Pods-SwiftUITutorial-SwiftUITutorialUITests/Pods-SwiftUITutorial-SwiftUITutorialUITests.release.xcconfig"; sourceTree = "<group>"; };
 		DE02E3CD2BD103B300983F9F /* ViewFundamentalsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewFundamentalsPage.swift; sourceTree = "<group>"; };
 		DE02E3CF2BD11FCD00983F9F /* CreatingViewTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatingViewTutorial.swift; sourceTree = "<group>"; };
 		DE02E3D12BD11FD900983F9F /* ModifyViewTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyViewTutorial.swift; sourceTree = "<group>"; };
@@ -252,6 +248,7 @@
 		DE1E3AC52BCE11EC00C1D1C3 /* SceneStorageTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneStorageTutorial.swift; sourceTree = "<group>"; };
 		DE28B3DB2BCFE39000B81470 /* BindingTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingTutorial.swift; sourceTree = "<group>"; };
 		DE2CDB3D2B6333380032BB12 /* ModalPresentationsTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalPresentationsTutorial.swift; sourceTree = "<group>"; };
+		DE3085812C45060700044346 /* KingfisherTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KingfisherTutorial.swift; sourceTree = "<group>"; };
 		DE38676F2BEA474C003DE856 /* CombinePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombinePage.swift; sourceTree = "<group>"; };
 		DE3867782BEB7160003DE856 /* PublisherPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublisherPage.swift; sourceTree = "<group>"; };
 		DE38677B2BEB7209003DE856 /* MappingTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MappingTutorial.swift; sourceTree = "<group>"; };
@@ -311,6 +308,7 @@
 		DED0612E2C22B9E5001ED842 /* AppearanceModifiersTutorail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceModifiersTutorail.swift; sourceTree = "<group>"; };
 		DED061322C22E013001ED842 /* ShapeViewTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeViewTutorial.swift; sourceTree = "<group>"; };
 		DED061342C22E17C001ED842 /* AnyShapeTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyShapeTutorial.swift; sourceTree = "<group>"; };
+		DED061362C23C459001ED842 /* CanvasTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasTutorial.swift; sourceTree = "<group>"; };
 		DED495612BF6160C005CEEE4 /* ReducingTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReducingTutorial.swift; sourceTree = "<group>"; };
 		DED495642BF6F5A1005CEEE4 /* MathematicOperatorTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathematicOperatorTutorial.swift; sourceTree = "<group>"; };
 		DED495672BF6FD0E005CEEE4 /* MatchingTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchingTutorial.swift; sourceTree = "<group>"; };
@@ -357,7 +355,6 @@
 		DEE9F8282B62829500C6E0CE /* TabViewTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewTutorial.swift; sourceTree = "<group>"; };
 		DEF0C11A2B68F984004E2BA0 /* SearchTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTutorial.swift; sourceTree = "<group>"; };
 		DEF0C11E2B69F578004E2BA0 /* FoundationPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundationPage.swift; sourceTree = "<group>"; };
-		F3CAC3C5AF0952135C7BBFE7 /* Pods-SwiftUITutorial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUITutorial.debug.xcconfig"; path = "Target Support Files/Pods-SwiftUITutorial/Pods-SwiftUITutorial.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -365,7 +362,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8A5BE399A253C875D0E5616 /* Pods_SwiftUITutorial.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,6 +486,7 @@
 			isa = PBXGroup;
 			children = (
 				DEDEE49F2B7231BE00D9AC40 /* DrawingAndGraphicsTutorial.swift */,
+				DED061362C23C459001ED842 /* CanvasTutorial.swift */,
 			);
 			name = DrawingAndGraphics;
 			sourceTree = "<group>";
@@ -509,6 +506,7 @@
 				DE3867762BEB7133003DE856 /* Combine */,
 				DEA5F1092B9E8720005E9551 /* Observation */,
 				DE1B20042B9565A200813B57 /* Concurrency */,
+				DE3085802C45056300044346 /* Kingfisher */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -572,6 +570,14 @@
 				DE1E3AC52BCE11EC00C1D1C3 /* SceneStorageTutorial.swift */,
 			);
 			name = Storage;
+			sourceTree = "<group>";
+		};
+		DE3085802C45056300044346 /* Kingfisher */ = {
+			isa = PBXGroup;
+			children = (
+				DE3085812C45060700044346 /* KingfisherTutorial.swift */,
+			);
+			path = Kingfisher;
 			sourceTree = "<group>";
 		};
 		DE3867762BEB7133003DE856 /* Combine */ = {
@@ -874,7 +880,6 @@
 				DED79D8F2B19552F007C257C /* SwiftUITutorialTests */,
 				DED79D992B19552F007C257C /* SwiftUITutorialUITests */,
 				DED79D7D2B19552D007C257C /* Products */,
-				F1CF98B2EE2BD6D5B526C33E /* Pods */,
 				ACCE091F2E834A619BC2A789 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -1039,19 +1044,6 @@
 			name = List;
 			sourceTree = "<group>";
 		};
-		F1CF98B2EE2BD6D5B526C33E /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				F3CAC3C5AF0952135C7BBFE7 /* Pods-SwiftUITutorial.debug.xcconfig */,
-				38B34728D976E073CD0F8DF2 /* Pods-SwiftUITutorial.release.xcconfig */,
-				1B22E6D32960C67684EDBA83 /* Pods-SwiftUITutorial-SwiftUITutorialUITests.debug.xcconfig */,
-				CA147CE32B3DCF8694968B1F /* Pods-SwiftUITutorial-SwiftUITutorialUITests.release.xcconfig */,
-				4647FF61170D3BC7C679E25A /* Pods-SwiftUITutorialTests.debug.xcconfig */,
-				3EA0D641CC39765464C1EFDF /* Pods-SwiftUITutorialTests.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1059,17 +1051,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DED79DA02B195530007C257C /* Build configuration list for PBXNativeTarget "SwiftUITutorial" */;
 			buildPhases = (
-				B954222FE93D89A31F323E04 /* [CP] Check Pods Manifest.lock */,
 				DED79D782B19552D007C257C /* Sources */,
 				DED79D792B19552D007C257C /* Frameworks */,
 				DED79D7A2B19552D007C257C /* Resources */,
-				68CA170B750D2D5F076F1425 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = SwiftUITutorial;
+			packageProductDependencies = (
+			);
 			productName = SwiftUITutorial;
 			productReference = DED79D7C2B19552D007C257C /* SwiftUITutorial.app */;
 			productType = "com.apple.product-type.application";
@@ -1146,6 +1138,13 @@
 				fr,
 			);
 			mainGroup = DED79D732B19552D007C257C;
+			packageReferences = (
+				DE90C8E02C63609A009117E7 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				DE90C8E52C6369AB009117E7 /* XCRemoteSwiftPackageReference "Moya" */,
+				DE90C8E62C636C8F009117E7 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				DE6A199A2C6DA94A009DFA3A /* XCRemoteSwiftPackageReference "CombineCocoa" */,
+				DE6A199B2C6DAF65009DFA3A /* XCRemoteSwiftPackageReference "CombineExt" */,
+			);
 			productRefGroup = DED79D7D2B19552D007C257C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -1209,23 +1208,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		68CA170B750D2D5F076F1425 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SwiftUITutorial/Pods-SwiftUITutorial-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SwiftUITutorial/Pods-SwiftUITutorial-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftUITutorial/Pods-SwiftUITutorial-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		8A76CB61DD6E9392A70832B5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1263,28 +1245,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftUITutorial-SwiftUITutorialUITests/Pods-SwiftUITutorial-SwiftUITutorialUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B954222FE93D89A31F323E04 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SwiftUITutorial-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1365,6 +1325,7 @@
 				DE539B902B268CD100F91DE2 /* StateObjectTutorial.swift in Sources */,
 				DED79E032B195B69007C257C /* CorePage.swift in Sources */,
 				DEDEE49A2B72130400D9AC40 /* Model.xcdatamodeld in Sources */,
+				DE3085822C45060700044346 /* KingfisherTutorial.swift in Sources */,
 				DEBFD2C52B84465D00F7FDA8 /* GaugeTutorial.swift in Sources */,
 				DEBFD2D42B84835700F7FDA8 /* MenuAndCommandsPage.swift in Sources */,
 				DE1B1FFD2B91CFCE00813B57 /* ConfiguringRowsTutorial.swift in Sources */,
@@ -1427,6 +1388,7 @@
 				DE151D5A2B8728CE00785708 /* AddingAnimationActionTutorial.swift in Sources */,
 				DE28B3DC2BCFE39000B81470 /* BindingTutorial.swift in Sources */,
 				DE78B0622BFDE90200417F7E /* ControllingTimingTutorial.swift in Sources */,
+				DED061372C23C459001ED842 /* CanvasTutorial.swift in Sources */,
 				DEBFD2B12B82D24C00F7FDA8 /* ButtonTutorial.swift in Sources */,
 				DE3867882BECD938003DE856 /* SubscribersTutorial.swift in Sources */,
 				DEBFD2B52B82D7D000F7FDA8 /* PasteButtonTutorial.swift in Sources */,
@@ -1620,7 +1582,6 @@
 		};
 		DED79DA12B195530007C257C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F3CAC3C5AF0952135C7BBFE7 /* Pods-SwiftUITutorial.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1653,7 +1614,6 @@
 		};
 		DED79DA22B195530007C257C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 38B34728D976E073CD0F8DF2 /* Pods-SwiftUITutorial.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1686,7 +1646,6 @@
 		};
 		DED79DA42B195530007C257C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4647FF61170D3BC7C679E25A /* Pods-SwiftUITutorialTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1707,7 +1666,6 @@
 		};
 		DED79DA52B195530007C257C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3EA0D641CC39765464C1EFDF /* Pods-SwiftUITutorialTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1728,12 +1686,12 @@
 		};
 		DED79DA72B195530007C257C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1B22E6D32960C67684EDBA83 /* Pods-SwiftUITutorial-SwiftUITutorialUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = MDQZTEYSXR;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = wangxu.SwiftUITutorialUITests;
@@ -1747,12 +1705,12 @@
 		};
 		DED79DA82B195530007C257C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CA147CE32B3DCF8694968B1F /* Pods-SwiftUITutorial-SwiftUITutorialUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = MDQZTEYSXR;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = wangxu.SwiftUITutorialUITests;
@@ -1804,6 +1762,49 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DE6A199A2C6DA94A009DFA3A /* XCRemoteSwiftPackageReference "CombineCocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:CombineCommunity/CombineCocoa.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.1;
+			};
+		};
+		DE6A199B2C6DAF65009DFA3A /* XCRemoteSwiftPackageReference "CombineExt" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:CombineCommunity/CombineExt.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.8.1;
+			};
+		};
+		DE90C8E02C63609A009117E7 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+		DE90C8E52C6369AB009117E7 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:Moya/Moya.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.3;
+			};
+		};
+		DE90C8E62C636C8F009117E7 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.12.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCVersionGroup section */
 		DEDEE4982B72130400D9AC40 /* Model.xcdatamodeld */ = {

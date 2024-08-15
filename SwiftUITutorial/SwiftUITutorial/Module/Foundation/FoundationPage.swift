@@ -30,6 +30,8 @@ struct FoundationPage: View {
                     ObservationTutorial()
                 case .concurrency:
                     ConcurrencyPage()
+                case .kingfisher:
+                    KingfisherTutorial()
                 }
             }
         }
@@ -42,6 +44,7 @@ extension FoundationPage {
         case combine
         case observation
         case concurrency
+        case kingfisher
     }
 
     struct Content: Identifiable {
