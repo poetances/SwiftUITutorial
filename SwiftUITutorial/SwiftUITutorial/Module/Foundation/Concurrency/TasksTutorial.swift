@@ -16,6 +16,8 @@ struct TasksTutorial: View {
             task_cancel
             task_yield
             task_sleep
+            task_group
+            task_group2
         }
     }
 }
@@ -114,28 +116,75 @@ extension TasksTutorial {
                 let results = await withTaskGroup(of: String.self) { group in
                     group.addTask {
                         try? await Task.sleep(nanoseconds: 1_000_000_000)
+                        print("Task1", Date.now)
                         return "1"
                     }
 
                     group.addTask {
                         try? await Task.sleep(nanoseconds: 3_000_000_000)
+                        print("Task2", Date.now)
                         return "3"
                     }
 
+                    print("Group end1", Date.now)
                     var results = [String]()
                     for await result in group {
                         results.append(result)
                     }
+                    print("Group end2", Date.now)
                     return results
                 }
+                print("Result", Date.now)
                 print(results)
+                /*
+                 Group end1 2024-08-15 07:41:30 +0000
+                 Task1 2024-08-15 07:41:31 +0000
+                 Task2 2024-08-15 07:41:33 +0000
+                 Group end2 2024-08-15 07:41:33 +0000
+                 Result 2024-08-15 07:41:33 +0000
+                 */
             }
         }
     }
 
     /*
-     相对应的还有：TaskGroup、ThrowingTaskGroup、DiscardingTaskGroup
+     struct DiscardingTaskGroup
+     注意和TaskGroup不同，DiscardingTaskGroup是没有继承AsyncSequene
+
+     func withDiscardingTaskGroup<GroupResult>(
+         returning returnType: GroupResult.Type = GroupResult.self,
+         body: (inout DiscardingTaskGroup) async -> GroupResult
+     ) async -> GroupResult
+     从这个定义我们是可以知道，DiscardingTaskGroup其实是少了childTaskResultType，所以子Task是没有返回结果的
+
      */
+    var task_group2: some View {
+        Button("TaskGroup2") {
+            Task {
+                let result = await withDiscardingTaskGroup { group in
+                    group.addTask {
+                        try? await Task.sleep(nanoseconds: 1_000_000_000)
+                        print("Task1", Date.now)
+                    }
+
+                    group.addTask {
+                        try? await Task.sleep(nanoseconds: 3_000_000_000)
+                        print("Task2", Date.now)
+                    }
+                    print("Group end", Date.now)
+                    return 12
+                }
+                print("Result", Date.now)
+                print(result)
+                /*
+                 Group end 2024-08-15 07:39:21 +0000
+                 Task1 2024-08-15 07:39:22 +0000
+                 Task2 2024-08-15 07:39:24 +0000
+                 Result 2024-08-15 07:39:24 +0000
+                 */
+            }
+        }
+    }
 }
 
 #Preview {
