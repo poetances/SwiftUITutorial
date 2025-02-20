@@ -17,10 +17,12 @@ import Combine
  订阅确认后的任何时间，订阅者都可能调用 .cancel() 来发送 cancellation
  发布者可以选择性地发送 completion：receive(completion:)。 完成可以是正常终止，也可以是通过 .failure 完成，可选地传递一个错误类型。 已取消的管道不会发送任何完成事件。
  */
+
 struct CustomPubliserTutorial: View {
 
 
     @State private var bags = Set<AnyCancellable>()
+
     // MARK: - system
     var body: some View {
         List {

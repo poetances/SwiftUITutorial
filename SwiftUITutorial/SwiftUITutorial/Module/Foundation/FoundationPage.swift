@@ -12,7 +12,8 @@ struct FoundationPage: View {
     private var dataSouces: [Content] = [
         Content("Combine", .combine),
         Content("Observation", .observation),
-        Content("Concurrency", .concurrency)
+        Content("Concurrency", .concurrency),
+        Content("AlertToast", .alertToast),
     ]
 
     // MARK: - system
@@ -32,6 +33,8 @@ struct FoundationPage: View {
                     ConcurrencyPage()
                 case .kingfisher:
                     KingfisherTutorial()
+                case .alertToast:
+                    AlertToastPage()
                 }
             }
         }
@@ -45,6 +48,7 @@ extension FoundationPage {
         case observation
         case concurrency
         case kingfisher
+        case alertToast
     }
 
     struct Content: Identifiable {
